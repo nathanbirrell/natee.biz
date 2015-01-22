@@ -1,7 +1,26 @@
+body {
+	padding-top: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
-	@media #{$medium-up} {
+}
+
+#header {
+	height: auto;
+
+	a.page-title {
+		color: $body-font-color;
+		font-size: $h1-font-size;
 	}
-	@media #{$large-up} {
+	#nav {
+
+		i {
+			font-size: 150%;
+		}
+		&.inline-list li * {
+			// Fix for icons stacking vertically
+			display: inline-block;
+		}
 	}
 }
