@@ -1,13 +1,12 @@
-name : Foundation/Jykill starter
-brand : My Site
-description : This is the description of my site
-keyword: 
-url : http://daigo.org
-imageurl: http://www.daigo.org/wordpress/wp-content/themes/daigo_org-theme-2013/img/glasses.png
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author: Daigo Fujiwara
-analytics: UA-8418273-8
-year: 2014
+name : Nathan Birrell
+brand : Nathan Birrell | Web Developer, Melbourne
+description : Web developer based in Melbourne, Australia.
+keyword: web developer, contractor, melbourne, nathan birrell
+url : http://nathanbirrell.me
+email : nathanbirrell@gmail.com
+twitter : nathanbirrell
+github : nathanbirrell
+author: Nathan Birrell
+analytics: UA-xxxxxxxx-x
+year: 2015
 markdown: kramdown
