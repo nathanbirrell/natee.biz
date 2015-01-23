@@ -1,16 +1,21 @@
 <header id="header" class="row">
-	<div class="medium-8 small-centered columns">
+	<div class="medium-8 large-10 small-centered columns">
 		<!-- logo -->
-		<a class="page-title" href="{{ site.url }}">Nathan Birrell</a>
+		<span class="page-title" href="/">Nathan Birrell</span>
 
 		<!-- navigation -->
-		<ul id="nav" class="inline-list">
-		  <li>
-		  	<a href="https://instagram.com/{{ site.instagram }}"> <i class="fa fa-instagram"></i></a> 
-		  	<a href="https://twitter.com/{{ site.twitter }}"> <i class="fa fa-twitter"></i></a>
-		  	<a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i></a>
-		  </li>
-		  <li><a href="http://photo.nathanbirrell.me/">my photos</a></li>
-		</ul>
+		<nav id="nav"> 
+			<ul class="inline-list">
+			  <li><a href="{{ site.url }}"><i class="fa fa-home"></i></a></li>
+			  <li><a href="{{ site.photos }}"><i class="fa fa-camera-retro"></i></a></li>
+			  <li class="right social">
+			  	<a href="https://instagram.com/{{ site.instagram }}"> <i class="fa fa-instagram"></i></a> 
+			  	<a href="https://linkedin.com/in/{{ site.linkedin }}/"><i class="fa fa-linkedin-square"></i></a> 
+			  	<a href="https://twitter.com/{{ site.twitter }}"> <i class="fa fa-twitter-square"></i></a> 
+			  	<a href="https://github.com/{{ site.github }}/"><i class="fa fa-github-square"></i></a> 
+			  	<a href="mailto:{{ site.email }}/"><i class="fa fa-envelope"></i></a> 
+			  </li>
+			</ul>
+		</nav>
 	</div>
 </header>

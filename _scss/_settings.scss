@@ -41,8 +41,9 @@ $total-columns: 12;
 // Global
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default
-// $font-weight-bold: bold !default
+$font-weight-light: 300;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600;
 
 // We use these to control various global styles
 $body-bg: #fff;
@@ -60,8 +61,8 @@ $font-smoothing: antialiased;
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: #6d9877;
-$secondary-color: #e7e7e7;
+$primary-color: #5C755E;
+$secondary-color: #A97D5D;
 $alert-color: #f04124;
 
 $success-color: #43AC6A;

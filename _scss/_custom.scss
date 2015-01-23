@@ -1,5 +1,5 @@
 body {
-	padding-top: 20px;
+	padding-top: 36px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,18 +9,81 @@ h1, h2, h3, h4, h5, h6 {
 #header {
 	height: auto;
 
-	a.page-title {
+	.page-title {
 		color: $body-font-color;
 		font-size: $h1-font-size;
 	}
-	#nav {
+	nav {
+		margin-top: 12px;
 
 		i {
 			font-size: 150%;
+			margin: auto 2px;
+			vertical-align: middle;
 		}
-		&.inline-list li * {
+		.inline-list li * {
 			// Fix for icons stacking vertically
 			display: inline-block;
+		}
+	}
+}
+
+#home {
+	p {
+		font-size: 137%; 
+		font-weight: $font-weight-light;
+	}
+
+	h1.role {
+		font-size: 140%;
+		font-style: italic;
+	}
+}
+
+#cv {
+	h2 {
+		margin-top: 42px;
+		font-size: 120%;
+		font-weight: $font-weight-bold;
+		color: $primary-color;
+
+		&:before {
+			content:' ';
+			display:block;
+			border: 1px solid $primary-color;
+		}
+	}
+
+	h3 {
+		font-size: 145%;
+	}
+
+	ul {
+		// margin-left: 28px;
+	}
+
+	.updated {
+		font-style: italic;
+		margin-top: -12px;
+		display: block;
+		opacity: 0.6;
+	}
+
+	.leader {
+		font-size: 220%;
+		line-height: 1.2;
+		font-weight: $font-weight-light;
+		font-style: italic;
+		opacity: 0.6;
+	}
+
+	.summary {
+		font-weight: $font-weight-bold;
+		font-size: 95%;
+
+		a {
+			// color: #fff;
+			text-decoration: underline;
 		}
 	}
 }
