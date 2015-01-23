@@ -8,7 +8,7 @@ altname: cv
 
 <span class="updated">Updated: 23 January, 2015</span>
 
-{% include job-leader.html %}
+<p class="leader">Currently seeking a structured part-time developer role in Melbourne while completing my final year of study. </p>
 
 {% include summary.html %}
 
