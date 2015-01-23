@@ -2,15 +2,19 @@ name : Nathan Birrell
 brand : Nathan Birrell | Web Developer, Melbourne
 description : Web developer based in Melbourne, Australia.
 keyword: web developer, contractor, melbourne, nathan birrell
+
 url : http://nathanbirrell.me
+photos : http://photo.nathanbirrell.me/ 
+blog : http://blog.nathanbirrell.me/ 
+
 email : nathanbirrell@gmail.com
 twitter : nathanbirrell
 instagram : nathanbirrell
 facebook : nbirrell
 linkedin : nathanbirrell
 github : nathanbirrell
-photos : http://photo.nathanbirrell.me/ 
+
 author: Nathan Birrell
-analytics: UA-xxxxxxxx-x
 year: 2015
+analytics: UA-xxxxxxxx-x
 markdown: kramdown

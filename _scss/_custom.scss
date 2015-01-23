@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
 	height: auto;
+	margin-bottom: 22px;
 
 	.page-title {
 		color: $body-font-color;
@@ -15,16 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	nav {
 		margin-top: 12px;
-
-		i {
-			font-size: 150%;
-			margin: auto 2px;
-			vertical-align: middle;
-		}
-		.inline-list li * {
-			// Fix for icons stacking vertically
-			display: inline-block;
-		}
+	}
+	.inline-list li * {
+		// Fix for icons stacking vertically
+		display: inline-block;
 	}
 }
 
@@ -37,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
 	h1.role {
 		font-size: 140%;
 		font-style: italic;
+	}
+
+	blockquote {
+		font-size: 145%;
 	}
 }
 
@@ -57,11 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 	h3 {
 		font-size: 145%;
 	}
-
-	ul {
-		// margin-left: 28px;
-	}
-
 	.updated {
 		font-style: italic;
 		margin-top: -12px;
@@ -84,6 +78,27 @@ h1, h2, h3, h4, h5, h6 {
 		a {
 			// color: #fff;
 			text-decoration: underline;
+		}
+	}
+}
+
+.social {
+	i {
+		font-size: 150%;
+		margin: auto 2px;
+		vertical-align: middle;
+	}
+}
+
+footer.row {
+	margin-top: 52px;
+
+	ul.inline-list {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			float: none;
 		}
 	}
 }
