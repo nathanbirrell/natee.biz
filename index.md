@@ -4,7 +4,7 @@ title: Web developer
 altname: home
 ---
 
-**I build digital applications for small businesses to help them improve.** 
+**I build digital applications for small businesses.** 
 
 Most of my work is web-based, however, my skills are quite varied: I have experience in web development — both front-end and server-side — as well as graphic design and QA.
 
