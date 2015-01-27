@@ -12,10 +12,38 @@ h1, h2, h3, h4, h5, h6 {
 
 	.page-title {
 		color: $body-font-color;
-		font-size: $h1-font-size;
+		font-size: $h2-font-size;
+		margin-bottom: 14px;
+		display: inline-block;
+
+		@media #{$large-up} { 
+			margin-bottom: 0;
+			font-size: $h1-font-size;
+		}
 	}
 	nav {
-		margin-top: 12px;
+
+		ul {
+			width: 100%;
+			clear: both;
+
+			li { 
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		@media #{$medium-up} {
+			ul {
+				float: right;
+				clear: initial;
+				width: auto;
+				
+				li {
+					width: auto;
+				}
+			}
+		}
 	}
 	.inline-list li * {
 		// Fix for icons stacking vertically
