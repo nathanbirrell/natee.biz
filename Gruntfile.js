@@ -20,9 +20,9 @@ module.exports = function(grunt) {
       main: {
         files: [
           // includes files within path
-          {expand: true, src: ['bower_components/modernizr/modernizr.js'], dest: 'js/vendor/modernizr.js', filter: 'isFile'},
-          {expand: true, src: ['bower_components/foundation/js/foundation.min.js'], dest: 'js/foundation.min.js', filter: 'isFile'},
-          {expand: true, src: ['bower_components/jquery/jquery.js'], dest: 'js/jquery.js', filter: 'isFile'}
+          {expand: true, flatten: true, src: ['bower_components/modernizr/modernizr.js'], dest: 'js/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/foundation/js/foundation.min.js'], dest: 'js/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/jquery/jquery.js'], dest: 'js/', filter: 'isFile'}
         ],
       },
     },
