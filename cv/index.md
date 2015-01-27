@@ -13,7 +13,7 @@ altname: cv
 
 {% include summary.html %}
 
-## Role: Web Developer (Front-end, Rails & Java)
+## Role: Web application build team
 - After working for Deloitte Digital for a year, then my subsequent independent contracting, I have gained a range of skills in building websites (technical & business).
 - Technical background in: front-end, Ruby on Rails and Java Spring development.
 - Very business value driven with the products we build — strong interest in lean thinking, behaviour-driven development and analytics in past projects.
