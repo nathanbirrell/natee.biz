@@ -11,4 +11,4 @@ Most of my work is web-based, however, my skills are quite varied: I have experi
 Please [email me](mailto:{{site.email}}) to find out how I can help your business.
 
 
-> I am currently seeking structured part-time work while I study, please **[take a look at my CV](/cv)** for more information.
+> I am currently seeking part-time work while I study, please **[take a look at my CV](/cv)** for more information.
