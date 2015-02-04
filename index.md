@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Web developer
+description: Web development contractor for small businesses in Melbourne. Also studying Business/IT.
 altname: home
 ---
 
