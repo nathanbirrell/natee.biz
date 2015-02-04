@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 	blockquote {
 		font-size: 145%;
 	}
+
+	h1, h2 {
+		font-size: $h2-font-size;
+		font-weight: $font-weight-bold;
+		text-align: center;
+	}
 }
 
 #cv {
@@ -106,6 +112,18 @@ h1, h2, h3, h4, h5, h6 {
 		a {
 			// color: #fff;
 			text-decoration: underline;
+		}
+	}
+}
+
+#skills {
+	.skill {
+		i {
+			font-size: $h1-font-size;
+			color: $primary-color;
+		}
+		h3 {
+
 		}
 	}
 }
