@@ -12,9 +12,9 @@ altname: home
 
 # I build digital things for small businesses.
 
-I am a business student in Melbourne, working as a web development contractor. 
+I am a business/IT student in Melbourne, working as a web development contractor. 
 
-----------
+<br />
 
 ## What I do
 
@@ -36,6 +36,6 @@ I am a business student in Melbourne, working as a web development contractor.
 	</div>
 </section>
 
-----------
+<br />
 
 I am currently taking on work from March 2015 onwards, so please [email me](mailto:{{site.email}}) to find out how I can help your business.
