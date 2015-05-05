@@ -39,4 +39,4 @@ I am a business/IT student in Melbourne, working as a web development contractor
 
 <br />
 
-I am currently taking on work from April 2015 onwards, so please [email me](mailto:{{site.email}}) to find out how I can help your business.
+I am currently taking on work from June 2015 onwards, so please [email me](mailto:{{site.email}}) to find out how I can help you.
