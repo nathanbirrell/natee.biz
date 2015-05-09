@@ -1,46 +1,88 @@
+'use strict';
 module.exports = function(grunt) {
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
+  grunt.initConfig({
+    jshint: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        jshintrc: '.jshintrc'
       },
+      all: [
+        'Gruntfile.js',
+        'assets/js/*.js',
+        '!assets/js/plugins/*.js',
+        '!assets/js/scripts.min.js'
+      ]
+    },
+    uglify: {
+      dist: {
+        files: {
+          'assets/js/scripts.min.js': [
+            'assets/js/plugins/*.js',
+            'assets/js/_*.js'
+          ]
+        }
+      }
+    },
+    imagemin: {
       dist: {
         options: {
-          outputStyle: 'compressed'
+          optimizationLevel: 7,
+          progressive: true
         },
-        files: {
-          'css/style.css': '_scss/style.scss'
-        }        
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: '{,*/}*.{png,jpg,jpeg}',
+          dest: 'images/'
+        }]
       }
     },
-
-    copy: {
-      main: {
-        files: [
-          // includes files within path
-          {expand: true, flatten: true, src: ['bower_components/modernizr/modernizr.js'], dest: 'js/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['bower_components/foundation/js/foundation.min.js'], dest: 'js/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['bower_components/jquery/jquery.js'], dest: 'js/', filter: 'isFile'}
-        ],
-      },
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: '{,*/}*.svg',
+          dest: 'images/'
+        }]
+      }
     },
-
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
-
-      sass: {
-        files: '_scss/**/*.scss',
-        tasks: ['sass']
+      js: {
+        files: [
+          '<%= jshint.all %>'
+        ],
+        tasks: ['jshint','uglify']
       }
+    },
+    clean: {
+      dist: [
+        'assets/js/scripts.min.js'
+      ]
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  // Load tasks
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-svgmin');
 
-  grunt.registerTask('build', ['sass','copy']);
-  grunt.registerTask('default', ['build','watch']);
-}
+  // Register tasks
+  grunt.registerTask('default', [
+    'clean',
+    'uglify',
+    'imagemin',
+    'svgmin'
+  ]);
+  grunt.registerTask('dev', [
+    'watch'
+  ]);
+  grunt.registerTask('images', [
+    'imagemin',
+    'svgmin'
+  ]);
+
+};
