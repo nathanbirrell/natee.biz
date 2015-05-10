@@ -23,6 +23,6 @@ My work for Gaffneys involved:
 
 The project was built in [Rails](http://rubyonrails.org) to give Gaffneys the flexibility of experimenting with an in-house application that could improve their operational processes. The front-end of the website was built on [Foundation](http://foundation.zurb.com). Images used are a combination of my photography on-site, stock images and the company's own.
 
-[<i class="fa fa-link"></i> Click to view the site](http://gaffneys.com.au)
+## [<i class="fa fa-link"></i> Click to view the site](http://gaffneys.com.au)
 
-<a href="#" class="button">Go</a>
+<a href="http://gaffneys.com.au" class="button secondary radius" role="button" target="_blank"><i class="fa fa-link"></i> View the site</a>
