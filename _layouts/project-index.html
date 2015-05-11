@@ -34,22 +34,28 @@
   </div>
   <div id="index">
     <h1>{{ page.title }}</h1>
-    {% for blogpost in site.categories.projects %}  
-    {% unless blogpost.next %}
-      <h3>{{ blogpost.date | date: '%Y' }}</h3>
+    {% for project in site.categories.projects %}  
+    {% unless project.next %}
+      <!-- <h3>{{ project.date | date: '%Y' }}</h3> --><!--  Display the year -->
       {% else %}
-        {% capture year %}{{ blogpost.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ blogpost.next.date | date: '%Y' }}{% endcapture %}
+        {% capture year %}{{ project.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ project.next.date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
-          <h3>{{ blogpost.date | date: '%Y' }}</h3>
+          <h3>{{ project.date | date: '%Y' }}</h3>
         {% endif %}
       {% endunless %}
       <article>
-        {% if blogpost.link %}
-          <h2 class="link-blogpost"><a href="{{ site.url }}{{ blogpost.url }}" title="{{ blogpost.title }}">{{ blogpost.title }}</a> <a href="{{ blogpost.link }}" target="_blank" title="{{ blogpost.title }}"><i class="fa fa-link"></i></a></h2>
+        {% if project.link %}
+          <h2 class="link-project"><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a> <a href="{{ project.link }}" target="_blank" title="{{ project.title }}"><i class="fa fa-link"></i></a></h2>
         {% else %}
-          <h2><a href="{{ site.url }}{{ blogpost.url }}" title="{{ blogpost.title }}">{{ blogpost.title }}</a></h2>
-          <p>{{ blogpost.excerpt | strip_html | truncate: 160 }}</p>
+          {% if project.image.feature %}
+            <a href="{{ site.url }}{{ project.url }}">
+              <img src="{{ site.url }}/images/{{ project.image.feature }}" />
+            </a>
+          {% endif %}
+          <h2><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
+          <p><i>{{ project.date | date: '%B, %Y' }}</i></p>
+          <p>{{ project.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
     {% endfor %}

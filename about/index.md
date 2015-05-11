@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: Digital solutions for small businesses.
 tags: [about]
 comments: false
 share: false
@@ -8,16 +8,20 @@ image:
   feature: seal_rocks.jpg
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+> Currently taking on projects from __June 2015__ onwards, please [email me](mailto:{{ site.owner.email }}) to find out how I can help you.
 
-## Minimal Mistakes is all about:
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+## Services
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+### Websites
+
+I build websites for client
+
+See my [Projects](/projects) for an example of some recent solutions.
+
+
+### Web Applications and Software Development
+
+Custom applications built for businesses to improve both internal performance and customer experience. These types of projects are focused on continuously delivering business value, are generally run on an ongoing basis and are flexible to handle changes in business requirements.
+
+I work with a range of languages, frameworks and technologies, tending to choose them appropriate to the project. My experience is in: Ruby on Rails, Wordpress, PHP and some Java.
