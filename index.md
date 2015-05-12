@@ -1,42 +1,29 @@
 ---
-layout: default
-title: Web developer
-description: Web development contractor for small businesses in Melbourne. Also studying Business/IT.
-altname: home
+layout: home
+title: "Websites & Digital Services for Small Businesses in Melbourne"
+excerpt: "Web development contractor for small businesses in Melbourne."
+tags: [web developer, software, melbourne]
+image:
+  feature: projects/gaffneys.jpg
 ---
 
-<!-- 
-<div class="panel">
-	<p>I am currently seeking part-time work while I study, please <strong><a href="/cv">take a look at my CV</a></strong> for more information.</p>
+<div class="row services">
+    <div class="medium-4 columns text-center">
+        <i class="fa fa-desktop fa-5x"></i>
+        <h2>Websites &amp; E-Commerce Solutions</h2>
+        <p>Design, development and delivery of online soltions tailored to your business.</p>
+        <a href="/services" class="btn">More</a>
+    </div> 
+    <div class="medium-4 columns text-center">
+        <i class="fa fa-line-chart fa-5x"></i>
+        <h2>SEO, Social &amp; Digital Consulting</h2>
+        <p>Improve your business' existing online presence, sales leads and social media strategy.</p>
+        <a href="/services" class="btn">More</a>
+    </div> 
+    <div class="medium-4 columns text-center">
+        <i class="fa fa-code fa-5x"></i>
+        <h2>Web Applications &amp; Software Development</h2>
+        <p>Software built for your businesses' needs to improve your operational processes and efficiency.</p>
+        <a href="/services" class="btn">More</a>
+    </div> 
 </div>
- -->
-
-# I build digital things for small businesses.
-
-I am a business/IT student in Melbourne, working as a web development contractor. 
-
-<br />
-
-## What I do
-
-<section id="skills" class="row">
-	<div class="medium-4 columns text-center skill">
-		<i class="fa fa-paint-brush"></i>
-		<h3>Websites</h3>
-		<p>I work with small businesses to design and build online brands that they are proud of.</p>
-	</div>
-	<div class="medium-4 columns text-center skill">
-		<i class="fa fa-gears"></i>
-		<h3>Web applications</h3>
-		<p>Custom applications built for businesses to improve both internal performance and customer experience.</p>
-	</div>
-	<div class="medium-4 columns text-center skill">
-		<i class="fa fa-line-chart"></i>
-		<h3>Business focused</h3>
-		<p>Projects are priced on business value and work is delivered regularly for continuous feedback.</p>
-	</div>
-</section>
-
-<br />
-
-I am currently taking on work from June 2015 onwards, so please [email me](mailto:{{site.email}}) to find out how I can help you.

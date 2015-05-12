@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: Services
+  url: /services/
+
+# - title: Blog
+#   url: /blog/
+
+- title: My Work
+  url: /projects/
+
+- title: Theme Setup
+  url: /theme-setup/

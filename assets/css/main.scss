@@ -1,0 +1,60 @@
+---
+sitemap: false
+---
+
+/*
+ *
+ *  Minimal Mistakes
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
+
+// Partials
+@import "variables";
+@import "grid";
+@import "../bower_components/foundation/scss/foundation/components/buttons";
+@import "../bower_components/foundation/scss/foundation/components/grid";
+@import "mixins";
+@import "normalize";
+@import "site";
+@import "typography";
+@import "pygments";
+@import "coderay";
+@import "elements";
+@import "forms";
+@import "page";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+//@import "vendor/google/fonts";
+
+
+// Nathan's Hacks
+
+.home {
+	@media only screen and (min-width: 40.0625em) {
+		#index {
+		  width: 70%;
+		  article {
+		  	width: 75%;
+		  }
+		}
+	}
+
+	@media only screen and (min-width: 86.375em) {
+		#index {
+		  width: 60%;
+		}
+	}
+	.services {
+		text-align: center;
+		i {
+			color: #666;
+		}
+	}
+}
+
+h1, h1 a, h1 a:visited {
+	// color: #9C9F84;
+}

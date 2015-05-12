@@ -1,20 +1,60 @@
-name : Nathan Birrell
-brand : Nathan Birrell | Web Developer, Melbourne
-description : Web developer based in Melbourne, Australia.
-keyword: web developer, contractor, melbourne, nathan birrell
+# Site wide configuration
 
-url : http://nathanbirrell.me
-photos : http://photo.nathanbirrell.me/ 
-blog : http://blog.nathanbirrell.me/ 
+title:            Nathan Birrell
+locale:           en_US
+url:              
 
-email : nathanbirrell@gmail.com
-twitter : nathanbirrell
-instagram : nathanbirrell
-facebook : nbirrell
-linkedin : nathanbirrell
-github : nathanbirrell
 
-author: Nathan Birrell
-year: 2015
-analytics: UA-41066869-1
-markdown: kramdown
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Nathan Birrell
+  avatar: bio-photo.jpg
+  bio: "Web/software development contractor for small businesses, located in Melbourne."
+  email: "nathanbirrell@gmail.com"
+  disqus-shortname: 
+  twitter: "@nathanbirrell"
+  facebook: "nbirrell"
+  google:
+    # plus: "NathanBirrell"
+    analytics: UA-41066869-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: "nathanbirrell"
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: "nathanbirrell"
+  xing: #username
+  instagram: "nathanbirrell"
+  # lastfm: "nathanbirrell"
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: "nbirrell"
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
