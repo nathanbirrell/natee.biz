@@ -2,7 +2,7 @@
 
 title:            Nathan Birrell
 locale:           en_US
-url:              http://nathanbirrell.me
+# url:              http://nathanbirrell.me
 
 
 # Jekyll configuration
@@ -30,6 +30,9 @@ owner:
   avatar: bio-photo.jpg
   bio: "Web/software development contractor for small businesses, located in Melbourne."
   email: "nathanbirrell@gmail.com"
+  phone: "0418 636 581"
+  location: "Melbourne, VIC"
+  location_url: "https://www.google.com.au/maps/place/Melbourne+VIC/"
   disqus-shortname: 
   twitter: "@nathanbirrell"
   facebook: "nbirrell"
