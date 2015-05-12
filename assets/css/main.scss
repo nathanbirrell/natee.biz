@@ -14,7 +14,7 @@ sitemap: false
 // Partials
 @import "variables";
 @import "grid";
-// @import "../bower_components/foundation/scss/foundation/components/grid";
+@import "../bower_components/foundation/scss/foundation/components/grid";
 @import "mixins";
 @import "normalize";
 @import "site";
