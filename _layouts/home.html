@@ -33,7 +33,18 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <h3><a href="{{ site.url}}/projects/">Recent Projects</a></h3>
+    <div class="headline-wrap">
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      {{ content }}
+      <hr />
+    </div><!-- /.article-wrap -->
+    <h2><a href="{{ site.url}}/projects/">Recent Projects</a></h2>
     {% for project in site.categories.projects limit:3 %}    
     <article>
         {% if project.link %}
@@ -55,6 +66,7 @@
 
 <div class="footer-wrap">
   <footer>
+    <hr />
     {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
