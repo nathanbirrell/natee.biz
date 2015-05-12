@@ -34,7 +34,7 @@ owner:
   twitter: "@nathanbirrell"
   facebook: "nbirrell"
   google:
-    plus: "NathanBirrell"
+    # plus: "NathanBirrell"
     analytics: UA-41066869-1
     verify: 
     ad-client: 
@@ -45,7 +45,7 @@ owner:
   linkedin: "nathanbirrell"
   xing: #username
   instagram: "nathanbirrell"
-  lastfm: "nathanbirrell"
+  # lastfm: "nathanbirrell"
   tumblr: #username
   pinterest: #username
   foursquare: #username

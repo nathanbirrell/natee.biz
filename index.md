@@ -1,7 +1,8 @@
 ---
 layout: home
-excerpt: "Web development contractor for small businesses in Melbourne. Also studying Business/IT."
+title: "Digital Services for Small Businesses in Melbourne"
+excerpt: "Web development contractor for small businesses in Melbourne."
 tags: [web developer, software, melbourne]
 image:
-  feature: seal_rocks.jpg
+  feature: projects/gaffneys.jpg
 ---

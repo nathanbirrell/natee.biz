@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Digital solutions for small businesses.
-tags: [about]
+tags: [services]
 comments: false
 share: false
 image:
-  feature: seal_rocks.jpg
+  feature: projects/gaffneys.jpg
 ---
 
 <p class="notice">Currently taking on projects from June 2015 onwards, please <a href="mailto:{{ site.owner.email }}">email me</a> to find out how I can help you.</p>

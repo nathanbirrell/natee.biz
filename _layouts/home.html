@@ -33,16 +33,22 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:5 %}    
+    <h3><a href="{{ site.url}}/projects/">Recent Projects</a></h3>
+    {% for project in site.categories.projects limit:3 %}    
     <article>
-      {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-      {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% endif %}
-    </article>
+        {% if project.link %}
+          <h2 class="link-project"><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a> <a href="{{ project.link }}" target="_blank" title="{{ project.title }}"><i class="fa fa-link"></i></a></h2>
+        {% else %}
+          {% if project.image.feature %}
+            <a href="{{ site.url }}{{ project.url }}">
+              <img src="{{ site.url }}/images/{{ project.image.feature }}" />
+            </a>
+          {% endif %}
+          <h2><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
+          <p><i>{{ project.date | date: '%B, %Y' }}</i></p>
+          <p>{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
+      </article>
     {% endfor %}
   </div><!-- /#index -->
 </div><!-- /#main -->
