@@ -29,3 +29,9 @@ Email, calendars and cloud storage are all critical to many small business opera
 Custom applications built for businesses to improve both internal performance and customer experience. These types of projects are focused on continuously delivering business value, are generally run on an ongoing basis and are flexible to handle changes in business requirements.
 
 I work with a range of languages, frameworks and technologies, tending to choose them appropriate to the project. My experience is in: Ruby on Rails, Wordpress, PHP and some Java.
+
+## Other
+
+* Graphic design
+* Social media strategy
+* Blogging and content marketing strategy
