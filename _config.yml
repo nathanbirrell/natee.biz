@@ -35,7 +35,7 @@ owner:
   location_url: "https://www.google.com.au/maps/place/Melbourne+VIC/"
   disqus-shortname: 
   twitter: "@nathanbirrell"
-  facebook: "nbirrell"
+  # facebook: "nbirrell"
   google:
     # plus: "NathanBirrell"
     analytics: UA-41066869-1
