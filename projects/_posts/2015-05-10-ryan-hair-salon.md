@@ -8,7 +8,9 @@ image:
   feature: projects/ryan.jpg
 ---
 
-[{{page.title}}](http://ryanssalon.com.au) contracted me to set up a brand new website and online appointment booking. The site is built on Wordpress for a CMS and started with the [Coffieur](http://themeforest.net/item/coiffeur-hair-salon-wordpress-theme/9306758) theme.
+[{{page.title}}](http://ryanssalon.com.au) contracted me to set up an affordable brand new website and online appointment booking. 
+
+The site is built on Wordpress for a CMS and started with the [Coffieur](http://themeforest.net/item/coiffeur-hair-salon-wordpress-theme/9306758) theme.
 
 ###### &nbsp; <!-- Break the paragraph indent -->
 
