@@ -1,4 +1,5 @@
 {% if site.owner.google.ad-client and site.owner.google.ad-slot %}
+{% if page.share != false %}{% include _social-share.html %}{% endif %}
 <div class="google-ads">
   <!-- 320 x 50 ad -->
   <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
