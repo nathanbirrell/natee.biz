@@ -5,6 +5,8 @@ modified: 2015-06-28T12:00:00.00000-00:00
 comments: false
 share: false
 hideauthor: true
+image:
+  feature: gucci.jpg
 ---
 
 <style type="text/css"> h3 a {color: #81b71a;} </style>
