@@ -1,63 +1,28 @@
-# Site wide configuration
+# Site settings
+title:
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
-title:            Nathan Birrell
-locale:           en_US
-# url:              http://localhost:4000
-url:              http://nathanbirrell.me
-
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-
-# Site owner
+# User setting
 owner:
-  name: Nathan Birrell
-  avatar: bio-photo.jpg
-  bio: "Web/software development contractor for small businesses, located in Melbourne."
-  email: "nathanbirrell@gmail.com"
-  phone: "0418 636 581"
-  location: "Melbourne, VIC"
-  location_url: "https://www.google.com.au/maps/place/Melbourne+VIC/"
-  disqus-shortname: 
-  twitter: "@nathanbirrell"
-  # facebook: "nbirrell"
-  google:
-    # plus: "NathanBirrell"
-    analytics: UA-41066869-1
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: "nathanbirrell"
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: "nathanbirrell"
-  xing: #username
-  instagram: "nathanbirrell"
-  # lastfm: "nathanbirrell"
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: "nbirrell"
+email:
+facebook_username:
+twitter_username:
+github_username:
+address:
+  - line:
+  - line:
+  # Feel free to add more lines here 
+telephone:
+copyright:
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# API settings
+google_api_key:
+
+# Build settings
+markdown: kramdown
