@@ -1,28 +1,26 @@
 # Site settings
-title:
-email:
+title: Nathan Birrell | Digital services for small businesses, Melbourne
+email: nathanbirrell@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
-address:
-  - line:
-  - line:
+owner: Nathan Birrell
+email: nathanbirrell@gmail.com
+facebook_username: nbirrell
+twitter_username: nathanbirrell
+github_username: nathanbirrell
+address: Melbourne, Australia
+  # - line:
+  # - line:
   # Feel free to add more lines here 
-telephone:
-copyright:
+telephone: 0418 636 581
+copyright: 2013 - 
 
 # API settings
-google_api_key:
+google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc
 
 # Build settings
 markdown: kramdown
