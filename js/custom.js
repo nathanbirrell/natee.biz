@@ -27,6 +27,10 @@ $(function() {
   });
 });
 
+$(".thumbnail").hover(function(e) {
+  $(this).find(".caption").toggleClass("hide");
+});
+
 // Map scrolling behaviour
 $(document).ready(function() {
   $('#map_iframe').addClass('scrolloff');
