@@ -196,12 +196,17 @@ hr.small {
     float: none;
 }
 
+.callout p {
+    font-size: 1.4em;
+}
+
 blockquote {
   background: rgba(255,255,255,0.2);
   border-left: 10px solid #fff;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
 }
 blockquote:before {
   color: #fff;
