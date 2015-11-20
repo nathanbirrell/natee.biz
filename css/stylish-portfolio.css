@@ -211,7 +211,7 @@ hr.small {
     border: none;
 }
 .thumbnail:hover img {
-    opacity: 0.7;
+    opacity: 0.55;
 }
 .thumbnail a {
     display: block;
@@ -220,7 +220,7 @@ hr.small {
 
 .caption {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     width: 100%;
 }
