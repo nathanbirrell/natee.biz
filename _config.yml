@@ -4,6 +4,7 @@ email: nathanbirrell@gmail.com
 description: "I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology."
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://nathanbirrell.me" # the base hostname & protocol for your site
+locale: en_US
 
 # User setting
 owner: Nathan Birrell
@@ -23,3 +24,6 @@ google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc
 
 # Build settings
 markdown: kramdown
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
