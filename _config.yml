@@ -1,7 +1,7 @@
 # Site settings
 title: "Nathan Birrell | Digital services for small businesses, Melbourne"
 email: nathanbirrell@gmail.com
-description: "I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology.""
+description: "I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology."
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://nathanbirrell.me" # the base hostname & protocol for your site
 
