@@ -162,6 +162,12 @@ hr.small {
     -o-background-size: cover;
 }
 
+/* Nathan's edits */
+.header {
+    height: 55%;
+    background-position: bottom;
+}
+
 /* About */
 
 .about {
@@ -198,15 +204,16 @@ hr.small {
 
 .callout p {
     font-size: 1.4em;
+    text-align: left;
 }
 
 blockquote {
-  background: rgba(255,255,255,0.2);
   border-left: 10px solid #fff;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   font-style: italic;
+  font-size: 19.5px;
 }
 blockquote:before {
   color: #fff;
@@ -216,8 +223,13 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+blockquote:after {
+  visibility: hidden;
+  content: close-quote;
+}
 blockquote p {
   display: inline;
+  font-weight: bold;
 }
 
 /* Portfolio */
