@@ -1,8 +1,7 @@
 # Site settings
 title: Nathan Birrell | Digital services for small businesses, Melbourne
 email: nathanbirrell@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology.
+description: "I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology.""
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://nathanbirrell.me" # the base hostname & protocol for your site
 
@@ -13,7 +12,7 @@ facebook_username: nbirrell
 twitter_username: nathanbirrell
 github_username: nathanbirrell
 address: 
-  - line: Melbourne, Australia
+  - line: "Melbourne, Australia"
   # - line:
   # Feel free to add more lines here 
 telephone: 0418 636 581
