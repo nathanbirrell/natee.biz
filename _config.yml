@@ -1,63 +1,26 @@
-# Site wide configuration
+# Site settings
+title: Nathan Birrell | Digital services for small businesses, Melbourne
+email: nathanbirrell@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
-title:            Nathan Birrell
-locale:           en_US
-# url:              http://localhost:4000
-url:              http://nathanbirrell.me
+# User setting
+owner: Nathan Birrell
+email: nathanbirrell@gmail.com
+facebook_username: nbirrell
+twitter_username: nathanbirrell
+github_username: nathanbirrell
+address: 
+  - line: Melbourne, Australia
+  # - line:
+  # Feel free to add more lines here 
+telephone: 0418 636 581
+copyright: 2013 - 
 
-# Jekyll configuration
+# API settings
+google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc
 
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-
-# Site owner
-owner:
-  name: Nathan Birrell
-  avatar: bio-photo.jpg
-  bio: "Web/software development contractor for small businesses, located in Melbourne."
-  email: "nathanbirrell@gmail.com"
-  phone: "0418 636 581"
-  location: "Melbourne, VIC"
-  location_url: "https://www.google.com.au/maps/place/Melbourne+VIC/"
-  disqus-shortname: 
-  twitter: "@nathanbirrell"
-  # facebook: "nbirrell"
-  google:
-    # plus: "NathanBirrell"
-    analytics: UA-41066869-1
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: "nathanbirrell"
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: "nathanbirrell"
-  xing: #username
-  instagram: "nathanbirrell"
-  # lastfm: "nathanbirrell"
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: "nbirrell"
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+# Build settings
+markdown: kramdown
