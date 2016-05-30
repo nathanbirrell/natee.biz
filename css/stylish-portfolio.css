@@ -249,14 +249,13 @@ blockquote p {
 .thumbnail {
     position: relative;
     padding: 0;
-    background-color: black;
     border: none;
 }
 .thumbnail img {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 .thumbnail .caption {
-  color: #fff;
+  color: #000;
   top: 33%;
 }
 .thumbnail:hover img {
