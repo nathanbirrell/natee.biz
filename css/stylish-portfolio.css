@@ -248,10 +248,18 @@ blockquote p {
 
 .thumbnail {
     position: relative;
+    padding: 0;
     border: none;
 }
+.thumbnail img {
+    opacity: 0.3;
+}
+.thumbnail .caption {
+  color: #000;
+  top: 33%;
+}
 .thumbnail:hover img {
-    opacity: 0.55;
+    opacity: 1;
 }
 .thumbnail a {
     display: block;
