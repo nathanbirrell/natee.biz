@@ -257,6 +257,7 @@ blockquote p {
 }
 .thumbnail .caption {
   color: #fff;
+  top: 33%;
 }
 .thumbnail:hover img {
     opacity: 1;
