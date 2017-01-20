@@ -1,4 +1,0 @@
----
-title: Fourth on the Lake
-location:
----

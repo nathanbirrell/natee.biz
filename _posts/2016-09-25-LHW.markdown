@@ -1,4 +1,0 @@
----
-title: Lake House Weekend
-location:
----

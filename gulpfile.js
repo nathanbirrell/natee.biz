@@ -34,7 +34,6 @@ const eslint = require('gulp-eslint');
 const exif = require('exif-parser');
 const fs = require('fs');
 const junk = require('junk');
-const glob = require('glob');
 const imagemin = require('gulp-imagemin');
 const imgsize = require('image-size');
 const merge = require('deepmerge');
@@ -91,7 +90,7 @@ const walkPhotos = (path, index) => {
 
     for (var j = 0; j < photos.length; j++) {
       // recursiveReadSync returns the path relative to the CWD, not just the name
-      // like fs.readdirSync so this will be /source/Photography/.../whatever.img
+      // like fs.readdirSync so this will be /source/photos/.../whatever.img
       const photo = photos[j];
 
       // So split on / and take the last component for the filename.
@@ -169,14 +168,14 @@ gulp.task('index', 'Scan for new and deleted photos and albums, merge with the i
       throw e;
     }
   }
-  walkPhotos('source/Photography', generatedIndex);
+  walkPhotos('source/photos', generatedIndex);
   const mergedIndex = merge(index, generatedIndex);
 
   fs.writeFileSync('source/index.yml', yaml.safeDump(mergedIndex));
 });
 
 gulp.task('photos', 'Rebuild all image derivatives: original, medium, thumb, mini. WARNING: ~30 minutes', () => {
-  return gulp.src('source/Photography/**/*.jpg')
+  return gulp.src('source/photos/**/*.jpg')
     .pipe(rename((path) => {
       // Sometimes I use subdirectories within albums to denote days, squash em
       // @TODO: Technically this could lead to collisions, but it is unlikely because the

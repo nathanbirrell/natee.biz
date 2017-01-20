@@ -1,4 +1,0 @@
----
-title: Great Western Roadtrip
-location:
----

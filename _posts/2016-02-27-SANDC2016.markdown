@@ -1,4 +1,0 @@
----
-title: SANDCamp 2016
-location:
----

@@ -1,4 +1,0 @@
----
-title: DrupalCon New Orleans
-location:
----

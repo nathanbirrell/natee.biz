@@ -1,8 +1,8 @@
 # Site settings
-title: Taylor Smith
-description:
+title: Nathan Birrell
+description: Images captured by Nathan Birrell, Melbourne, Australia.
 baseurl: ""
-url: "http://www.tsmithphotos.com"
+url: "http://nathanbirrell.me"
 
 # Build settings
 markdown: kramdown

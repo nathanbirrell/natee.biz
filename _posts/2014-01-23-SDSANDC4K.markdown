@@ -1,4 +1,0 @@
----
-title: San Diego for SANDCamp w 4K
-location:
----

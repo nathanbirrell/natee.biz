@@ -1,4 +1,0 @@
----
-title: Nashville - Chattanooga
-location:
----

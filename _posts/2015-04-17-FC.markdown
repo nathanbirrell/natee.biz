@@ -1,4 +1,0 @@
----
-title: Fort Collins
-location:
----
