@@ -35,9 +35,6 @@ const exif = require('exif-parser');
 const fs = require('fs');
 const junk = require('junk');
 const glob = require('glob');
-const gulpicon = require('gulpicon/tasks/gulpicon');
-const gulpiconConfig = require('./_icons/config.js');
-const gulpiconFiles = glob.sync('./_icons/*.svg');
 const imagemin = require('gulp-imagemin');
 const imgsize = require('image-size');
 const merge = require('deepmerge');
@@ -193,15 +190,16 @@ gulp.task('photos', 'Rebuild all image derivatives: original, medium, thumb, min
     }))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/photo/original/'))
-    .pipe(resize({width: 600, height: 600, crop: false, upscale: false}))
+    .pipe(resize({width: 920, height: 920, crop: false, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/photo/medium/'))
-    .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
+    // .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
+    // .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    // .pipe(gulp.dest('_site/photo/thumb/'))
+    .pipe(resize({width: 50, height: 50, crop: true, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('_site/photo/thumb/'))
-    .pipe(resize({width: 100, height: 100, crop: true, upscale: false}))
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('_site/photo/mini/'));
+    .pipe(gulp.dest('_site/photo/mini/'))
+    ;
     // @TODO: Can we do that thing Rupl used to do with blurry 10px images for a pre-load?
 });
 
@@ -299,9 +297,7 @@ gulp.task('lint', 'Lint all non-vendor JS', () => {
 
 gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-photoswipe', 'js-photoswipe-assets', 'js-all', 'lint']);
 
-gulp.task('icons', false, gulpicon(gulpiconFiles, gulpiconConfig));
-
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons'], () => {
+gulp.task('graphics', 'Compress site graphics', [], () => {
   return gulp.src('./_gfx/**/*.*')
     .pipe(imagemin())
     .pipe(gulp.dest('./_site/gfx/'));
@@ -336,8 +332,8 @@ gulp.task('update', 'Add/remove photos and albums: index, photos, prime-posts, a
   runSequence(['index', 'photos'], 'prime-posts', 'jekyll', cb);
 });
 
-gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, htaccess then jekyll', (cb) => {
-  runSequence(['sass', 'js', 'graphics', 'icons', 'htaccess'], 'jekyll', cb);
+gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, htaccess then jekyll', (cb) => {
+  runSequence(['sass', 'js', 'graphics', 'htaccess'], 'jekyll', cb);
 });
 
 /*
@@ -351,10 +347,9 @@ gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, ht
 
 gulp.task('default', false, ['help']);
 
-gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () => {
+gulp.task('watch', 'Watch-run sass, jekyll, js and graphics tasks', () => {
   gulp.watch('./_sass/**/*.scss', ['sass']);
   gulp.watch(['./*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/.*.md', '!./_site/**'], ['jekyll']);
   gulp.watch(['./**/*.js', '!./_site/**', '!./node_modules/**'], ['js']);
   gulp.watch(['./_gfx/**/*.*'], ['graphics']);
-  gulp.watch(['./_icons/**/*.*'], ['icons']);
 });
