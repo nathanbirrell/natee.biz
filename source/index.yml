@@ -1,5 +1,19 @@
 2017-01-14-old-faithful:
   title: Old Faithful
-  date: 2017-01-14
+  date: 2017-01-14T00:00:00.000Z
   contents:
-    -filename: pipe.jpg
+    '-filename': pipe.jpg
+2017-01-14-OF:
+  title: Old Faithful
+  date: '2017-01-14'
+  contents:
+    - filename: pipe.jpg
+      width: 1280
+      height: 960
+      camera: 'OLYMPUS '
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 10
+      shutter: 1/640
+      iso: 200
+      date: 1484389433

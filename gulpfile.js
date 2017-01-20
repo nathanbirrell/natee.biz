@@ -77,9 +77,7 @@ const walkPhotos = (path, index) => {
     const album = directory[i];
 
     // Skip junk files
-    if (junk.is(album)) {
-      continue;
-    }
+    if (junk.is(album)) { continue; }
 
     // This is the directory shortname Gulp is using for image output.
     const dirname = album.replace(/[a-z]/g, '').replace(/ /, '-').replace(/\s/g, '');
@@ -95,6 +93,9 @@ const walkPhotos = (path, index) => {
 
       // So split on / and take the last component for the filename.
       const file = photo.split('/').pop();
+
+      // Skip junk files
+      if (junk.is(file)) { continue; }
 
       // Original images are sometimes in subdirectories by day or activity, which
       // is why we recused the whole thing. Don't try to get stats on a directory,
