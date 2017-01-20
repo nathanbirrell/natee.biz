@@ -128,7 +128,6 @@ const walkPhotos = (path, index) => {
         date: exifResult.tags.DateTimeOriginal || null
       });
     }
-
     index[dirname] = {
       title: album.replace(/.+? /, ''),
       date: album.split(/ /, 1)[0],
@@ -320,6 +319,14 @@ gulp.task('jekyll', 'Run jekyll build', (cb) => {
   });
 });
 
+gulp.task('serve', 'Run jekyll serve', (cb) => {
+  const spawn = require('child_process').spawn;
+  const jekyll = spawn('jekyll', ['serve'], {stdio: 'inherit'});
+  jekyll.on('exit', (code) => {
+    cb(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
+  });
+});
+
 gulp.task('htaccess', 'Update/install .htaccess files', () => {
   const root = gulp.src('./_htaccess/root').pipe(rename('.htaccess')).pipe(gulp.dest('./_site/'));
   const photo = gulp.src('./_htaccess/photo').pipe(rename('.htaccess')).pipe(gulp.dest('./_site/photo/'));
@@ -346,6 +353,8 @@ gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, htaccess 
 */
 
 gulp.task('default', false, ['help']);
+
+gulp.task('dev', false, ['build', 'serve', 'watch']);
 
 gulp.task('watch', 'Watch-run sass, jekyll, js and graphics tasks', () => {
   gulp.watch('./_sass/**/*.scss', ['sass']);
