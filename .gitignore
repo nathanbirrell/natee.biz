@@ -1,5 +1,8 @@
-/.sass-cache/*
-*.DS_Store
-_site/*
-Gemfile.lock
-/node_modules/*
+# Modules and Dependencies
+node_modules
+
+# Build Directory
+_site
+
+# Temp Directories
+.sass-cache
