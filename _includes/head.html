@@ -36,11 +36,8 @@
   <meta name="description" content="{{ description }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="preload" href="/gfx/icons/icons.data.svg.css" as="style" onload="this.rel='stylesheet'">
 
-  <!-- Prefetch the domain name for typeface provider now; defer loading. Preload CSS is polyfilled by LoadCSS in the footer. -->
-  <link rel="dns-prefetch" href="https://cloud.typography.com/">
-  <link rel="preload" href="https://cloud.typography.com/6795652/7424152/css/fonts.css" as="style" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Raleway:500,700,900" rel="stylesheet">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 

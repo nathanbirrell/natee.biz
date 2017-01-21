@@ -13,13 +13,28 @@ html {
 }
 
 body {
-  font-family: $archer;
+  font-family: $open-sans;
   font-size: 100%;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $raleway;
   line-height: 1.15;
+  margin: 0;
+}
+
+h1, h2 {
+  font-size: 20px;
+  color: #4A4A4A;
+  letter-spacing: -0.14px;
+  line-height: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #CCCCCC;
 }
 
 a {
@@ -27,11 +42,11 @@ a {
 }
 
 a, a:link {
-  color: #3347af;
+  color: #4A4A4A;
 }
 
 a:hover, a:active {
-  color: #3957f1;
+  color: #000;
 }
 
 img {
