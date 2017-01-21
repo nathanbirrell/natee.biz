@@ -4,16 +4,65 @@
 (function () {
   'use strict';
 
+  function getNextImageFromUrlAnchor() {
+    // get anchor tag frm url, get that photo el
+    var url = window.location.href;
+    var idx = url.indexOf('#');
+    var hash = idx !== -1 ? url.substring(idx + 1) : '';
+    return hash;
+  }
+
+  function getNextImageInGallery() {
+    var hash = getNextImageFromUrlAnchor();
+    var nextImage = document.getElementById(hash);
+
+    // if no anchor or image for it, get first .photo el
+    if (!nextImage) {
+      nextImage = document.querySelectorAll('.photo')[0];
+    }
+
+    return nextImage;
+  }
+
+  function getCurrentImageElementAndRemoveClass() {
+    var currentImage = document.querySelectorAll('.photo.current')[0];
+    currentImage.className = currentImage.className.replace(new RegExp('(^|\\b)' + 'current'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    return currentImage;
+  }
+
   function setCurrentImage() {
-    console.debug('we runnin'); // eslint-disable-line no-console
-    // remove .current from current el
-    // TODO
-    // get anchor tag frm url, if not, get first .photo el
-    var nextImage = document.querySelectorAll('.photo');
-    console.debug(nextImage); // eslint-disable-line no-console
-    // find in DOM
-    // add current class to it!
+    // remove default .current class from current el
+    getCurrentImageElementAndRemoveClass();
+
+    var nextImageEl = getNextImageInGallery();
+
+    console.debug(nextImageEl); // eslint-disable-line no-console
+
+    nextImageEl.className += ' current';
+  }
+
+  function nextImage() {
+    event.preventDefault(); // for anchor link compatability
+
+    // remove default .current class from current el
+    var currentImage = document.querySelectorAll('.photo.current')[0];
+    currentImage.className = currentImage.className.replace(new RegExp('(^|\\b)' + 'current'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+
+    var nextImageEl = currentImage.nextElementSibling;
+
+    if (!nextImageEl) {
+      nextImageEl = document.querySelectorAll('.photo')[0];
+    }
+
+    var nextImageId = nextImageEl.id;
+    window.location.hash = nextImageId;
+
+    nextImageEl.className += ' current';
+
+    return false;
   }
 
   window.addEventListener('load', setCurrentImage);
+
+  document.getElementById('gallery').addEventListener('click', nextImage);
 })();
