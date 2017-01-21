@@ -1,14 +1,5 @@
 ---
 layout: default
 ---
-<div class="page">
-  <article class="page-content">
-    <h2>{{ page.title }}</h2>
-    <div class="wrapper">
-      {% unless page.nowrap %}<div class="copy">{% endunless %}
-      {{ content }}
-      {% unless page.nowrap %}</div>{% endunless %}
-    </div>
-  </article>
 
-</div>
+{{ content }}

@@ -1,11 +1,25 @@
-/**
- * @file _site-header.scss
- * Header banner
- */
+header {
+  text-align: center;
 
-.site-header {
-  z-index: 1000;
+  @include breakpoint($tablet-up) {
+    text-align: right;
+  }
+}
 
-  h1 {
+header .nav {
+  margin-top: 18px;
+
+  a {
+    font-family: $raleway;
+    color: #CCCCCC;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 }

@@ -9,9 +9,15 @@ layout: compress
 
   <body>
 
-    {% include header.html %}
+    <div class="wrapper">
+      <header class="column side">
+        {% include header.html %}
+      </header>
 
-    {{ content }}
+      <article class="column main">
+        {{ content }}
+      </article>
+    </div>
 
     {% include footer.html %}
 

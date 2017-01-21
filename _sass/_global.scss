@@ -24,7 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 20px;
   color: #4A4A4A;
   letter-spacing: -0.14px;
@@ -67,8 +68,33 @@ img {
   }
 }
 
+.hide {
+  display: none;
+}
+
+/*
+  Site wrapper
+ */
 .wrapper {
+  flex-wrap: wrap;
+
   @extend %clearfix;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 1rem auto;
+  display: flex;
+}
+
+.column {
+  flex: 1 1 100%;
+  margin: 1em;
+
+  @include breakpoint($tablet-up) {
+    flex: 1 1;
+  }
+}
+
+.column.main {
+  @include breakpoint($tablet-up) {
+    flex: 4 4;
+  }
 }
