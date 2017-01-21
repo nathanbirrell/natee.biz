@@ -13,3 +13,18 @@
       iso: 200
       date: 1484389433
       hero: true
+2016-11-01-OF:
+  title: Old Faithful
+  date: '2016-11-01'
+  contents:
+    - filename: old-faithful.jpg
+      width: 1280
+      height: 960
+      camera: 'OLYMPUS '
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 5
+      shutter: 1/2000
+      iso: 200
+      date: 1479628187
+      hero: true

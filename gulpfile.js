@@ -278,6 +278,7 @@ gulp.task('js-photoswipe-assets', false, () => {
 
 gulp.task('js-all', false, () => {
   return gulp.src([
+    './_js/app.js',
     './_js/lazyload.js',
     './node_modules/fg-loadcss/src/loadCSS.js',
     './node_modules/fg-loadcss/src/cssrelpreload.js'

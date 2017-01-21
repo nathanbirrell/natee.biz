@@ -15,6 +15,11 @@ header .nav {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      color: #000;
+    }
   }
 
   ul, li {
