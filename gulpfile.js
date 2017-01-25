@@ -80,7 +80,7 @@ const walkPhotos = (path, index) => {
     if (junk.is(album)) { continue; }
 
     // This is the directory shortname Gulp is using for image output.
-    const dirname = album.replace(/[a-z]/g, '').replace(/ /, '-').replace(/\s/g, '');
+    const dirname = album.replace(/\s/g, '-').toLowerCase();
 
     // This will be the image contents and any subdirectories
     const photos = recursiveReadSync(path + '/' + album);
@@ -183,9 +183,9 @@ gulp.task('photos', 'Rebuild all image derivatives: original, medium, thumb, min
       path.dirname = path.dirname.split('/')[0];
 
       // Now, for shorter and more URL friendly paths, drop spaces and lowercase letters
-      // so '2016-03-21 Tulsa Weekend for Roadtrip Video with Fuji XE1' becomes
-      // '2016-03-21-TWRVFXE1'. Keeping capital letters and numbers helps with collisions.
-      path.dirname = path.dirname.replace(/[a-z]/g, '').replace(/ /, '-').replace(/\s/g, '');
+      // so '2016-03-21 Tulsa Weekend for Roadtrip' becomes
+      // '2016-03-21-tulsa-weekend-for-roadtrip'. Helps with collisions.
+      path.dirname = path.dirname.replace(/\s/g, '-').toLowerCase();
     }))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/photo/original/'))

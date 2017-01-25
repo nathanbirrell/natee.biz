@@ -2,5 +2,3 @@
 title: Backdoor Shootout 2017
 location: Pipeline, Oahu
 ---
-
-Testing
