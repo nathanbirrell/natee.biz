@@ -88,14 +88,10 @@ img {
   flex: 1 1 100%;
   margin: 1em;
   position: relative;
+}
 
-  @include breakpoint($tablet-up) {
-    flex: 1 1;
-  }
+.column.nav {
 }
 
 .column.main {
-  @include breakpoint($tablet-up) {
-    flex: 4 4;
-  }
 }

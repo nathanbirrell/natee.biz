@@ -1,28 +1,33 @@
-header {
-  text-align: center;
+.nav {
+  display: flex;
 
-  @include breakpoint($tablet-up) {
+  .title {
+    flex: 1 1 50%;
+  }
+  .nav-links {
+    flex: 1 1 50%;
     text-align: right;
   }
 }
 
-header .nav {
+.nav {
   margin-top: 18px;
+  font-family: $raleway;
+  color: #CCCCCC;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 
   a {
-    font-family: $raleway;
     color: #CCCCCC;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-
     &:hover,
     &:active {
-      color: #000;
+      color: #4A4A4A;
     }
   }
 
   ul, li {
+    display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;

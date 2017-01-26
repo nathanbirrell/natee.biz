@@ -7,18 +7,20 @@
   .gallery {
   }
   .photo {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-
-    position: absolute;
     background: #fff;
-    margin: 0 1em 0 -0.5em;
+    margin: 0 1em 0 0;
+    overflow: hidden;
   }
   .photo.current {
-    z-index: 1;
+    display: flex;
   }
   .photo a {
     flex: 1 1 100%;
+  }
+  .photo img {
+    width: 100%;
   }
   .photo .meta {
     flex: 1 1 50%;
