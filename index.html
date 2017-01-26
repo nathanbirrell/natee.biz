@@ -20,13 +20,15 @@ nowrap: 1
               <img src="/photo/medium/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" />
             </a>
             <div class="meta">
-              {% if post.location %}{{ post.location }}{% endif %} <br>
-              {{ photo.date | date: "%b %-d, %Y" }}
-            </div>
-            <div class="meta right">
-              {{ photo.camera }} with {{ photo.lens }} <br>
-              ISO{{ photo.iso }} {{ photo.shutter }} @ f/{{ photo.aperture }} {{ photo.focal }}mm
-              <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
+              <div class="meta-column">
+                {% if post.location %}{{ post.location }}{% endif %} <br>
+                {{ photo.date | date: "%B, %Y" }}
+              </div>
+              <div class="meta-column">
+                {{ photo.camera }} <!-- with {{ photo.lens }} --> <br>
+                ISO{{ photo.iso }} {{ photo.shutter }} @ f/{{ photo.aperture }} {{ photo.focal }}mm
+                <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
+              </div>
             </div>
           {% endif %}
         {% endfor %}
