@@ -33,11 +33,8 @@
   function setCurrentImage() {
     // remove default .current class from current el
     getCurrentImageElementAndRemoveClass();
-
     var nextImageEl = getNextImageInGallery();
-
-    console.debug(nextImageEl); // eslint-disable-line no-console
-
+    // console.debug(nextImageEl); // eslint-disable-line no-console
     nextImageEl.className += ' current';
   }
 
@@ -62,7 +59,10 @@
     return false;
   }
 
-  window.addEventListener('load', setCurrentImage);
+  var galleryElement = document.getElementById('gallery');
 
-  document.getElementById('gallery').addEventListener('click', nextImage);
+  if (galleryElement) {
+    window.addEventListener('load', setCurrentImage);
+    galleryElement.addEventListener('click', nextImage);
+  }
 })();
