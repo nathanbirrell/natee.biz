@@ -1,7 +1,7 @@
 # Site settings
 title: Nathan Birrell
 description: Images captured by Nathan Birrell, Melbourne, Australia.
-baseurl: "/"
+baseurl: ""
 url: "http://nathanbirrell.me"
 
 # User settings
