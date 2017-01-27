@@ -13,16 +13,16 @@
 .nav {
   margin-top: 18px;
   font-family: $raleway;
-  color: #CCCCCC;
+  color: $grey;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 
   a {
-    color: #CCCCCC;
+    color: $grey;
     &:hover,
     &:active {
-      color: #4A4A4A;
+      color: $dark-grey;
     }
   }
 
@@ -31,5 +31,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  .nav-links ul li {
+    margin: 0 0.3em;
   }
 }

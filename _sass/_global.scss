@@ -20,22 +20,27 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $raleway;
-  line-height: 1.15;
+  line-height: 18px;
+  letter-spacing: -0.14px;
+  color: $dark-grey;
+  font: 1em;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 900;
+  text-transform: uppercase;
   margin: 0;
 }
 
-h1,
 h2 {
-  font-size: 20px;
-  color: #4A4A4A;
-  letter-spacing: -0.14px;
-  line-height: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: none;
 }
 
-h2 {
-  color: #CCCCCC;
+h3 {
+  font-size: 1.2em;
 }
 
 a {
@@ -43,7 +48,7 @@ a {
 }
 
 a, a:link {
-  color: #4A4A4A;
+  color: $dark-grey;
 }
 
 a:hover, a:active {
@@ -80,7 +85,7 @@ img {
 
   @extend %clearfix;
   max-width: 1080px;
-  margin: 1rem auto;
+  margin: 1em auto;
   display: flex;
 }
 
