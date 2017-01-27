@@ -1,8 +1,17 @@
 # Site settings
 title: Nathan Birrell
 description: Images captured by Nathan Birrell, Melbourne, Australia.
-baseurl: ""
+baseurl: "/"
 url: "http://nathanbirrell.me"
+
+# User settings
+owner: Nathan Birrell
+email: nathanbirrell@gmail.com
+facebook_username: nbirrell
+instagram_username: nathanbirrell
+github_username: nathanbirrell
+location: "Melbourne, Australia"
+# telephone: +61 418 636 581
 
 # Build settings
 markdown: kramdown
@@ -47,3 +56,5 @@ defaults:
 paginate: 10
 paginate_path: "/archive/:num/"
 permalink: /:year-:month-:day-:title/
+
+google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc
