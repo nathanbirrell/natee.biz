@@ -6,7 +6,6 @@ permalink: /about/
 
 ## On the web
 
-- [Email]({{ site.email }})
 - [Github](https://github.com/{{ site.github_username }})
 - [LinkedIn](http://linkedin.com/in/nathanbirrell)
 - [Insta](http://instagram.com/nathanbirrell)
