@@ -57,7 +57,8 @@ p a:hover, a:active {
 }
 
 p a:focus {
-  background: $black;
+  background: $dark-grey;
+  border: $dark-grey;
   color: $white;
 }
 
