@@ -16,22 +16,20 @@ nowrap: 1
           the whole post photo array and pull out the hero when we find it. Sadface.
         {% endcomment %}
         {% for photo in site.data.index[gallery].contents %}
-          {% if photo.hero %}
-            <a href="#">
-              <img src="/photo/medium/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" />
-            </a>
-            <div class="meta">
-              <div class="meta-column">
-                {% if post.location %}{{ post.location }}{% endif %} <br>
-                {{ photo.date | date: "%B, %Y" }}
-              </div>
-              <div class="meta-column">
-                {{ photo.camera }} <!-- with {{ photo.lens }} --> <br>
-                ISO{{ photo.iso }} {{ photo.shutter }} @ f/{{ photo.aperture }} {{ photo.focal }}mm
-                <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
-              </div>
+          <a href="#">
+            <img src="/photo/medium/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" />
+          </a>
+          <div class="meta">
+            <div class="meta-column">
+              {% if post.location %}{{ post.location }}{% endif %} <br>
+              {{ photo.date | date: "%B, %Y" }}
             </div>
-          {% endif %}
+            <div class="meta-column">
+              {{ photo.camera }} <!-- with {{ photo.lens }} --> <br>
+              ISO{{ photo.iso }} {{ photo.shutter }} @ f/{{ photo.aperture }} {{ photo.focal }}mm
+              <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
+            </div>
+          </div>
         {% endfor %}
       </div>
     {% endfor %}
