@@ -261,7 +261,7 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
       restructuring: false,
       shorthandCompacting: false
     }))
-    .pipe(gulp.dest('./_site/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('js-photoswipe', false, () => {
@@ -273,7 +273,7 @@ gulp.task('js-photoswipe', false, () => {
 
 gulp.task('js-photoswipe-assets', false, () => {
   return gulp.src(['./node_modules/photoswipe/dist/default-skin/*.png', './node_modules/photoswipe/dist/default-skin/*.svg', './node_modules/photoswipe/dist/default-skin/*.gif'])
-    .pipe(gulp.dest('./_site/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('js-all', false, () => {
