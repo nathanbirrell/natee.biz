@@ -16,12 +16,10 @@
   }
 
   .pswp__counter {
-    font-family: $raleway;
-    font-weight: 600;
+    font-weight: $font-weight-normal;
   }
 
   .pswp__share-tooltip {
-    font-family: $raleway;
     text-transform: uppercase;
   }
 
@@ -33,11 +31,10 @@
 
     .camera, .exposure {
       display: block;
-      font-family: $raleway;
     }
 
     .camera {
-      font-weight: 600;
+      font-weight: $font-weight-normal;
     }
   }
 }

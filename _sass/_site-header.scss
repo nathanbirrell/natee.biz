@@ -1,25 +1,25 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 
-  .title {
-    flex: 1 1 50%;
-  }
+  .title,
   .nav-links {
-    flex: 1 1 50%;
-    text-align: right;
+    flex: 1 1 100%;
   }
 }
 
 .nav {
   margin-top: 18px;
-  font-family: $raleway;
   color: $grey;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: $font-weight-normal;
   text-transform: uppercase;
 
   a {
     color: $grey;
+    border: none;
+
     &:hover,
     &:active {
       color: $dark-grey;
@@ -34,6 +34,7 @@
   }
 
   .nav-links ul li {
+    font-weight: $font-weight-light;
     margin: 0 0.3em;
   }
 }

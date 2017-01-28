@@ -2,4 +2,7 @@
 layout: default
 ---
 
-{{ content }}
+<div class="column {% if page.thin %}thin{% endif %}">
+  <!-- <h2>{{ page.title }}</h2> -->
+  {{ content }}
+</div>

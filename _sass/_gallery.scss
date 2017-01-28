@@ -9,8 +9,9 @@
   .photo.current {
     display: flex;
   }
-  .photo a
+  .photo a,
   .meta {
+    border: none;
     margin: 0 auto;
   }
   .photo img {
@@ -30,7 +31,7 @@
   .photo .meta .meta-column {
     flex: 1 1 50%;
 
-    font-weight: 500;
+    font-weight: $font-weight-light;
     font-size: 10px;
     color: $grey;
     letter-spacing: -0.07px;

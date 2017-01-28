@@ -22,12 +22,11 @@
     }
 
     .camera, .exposure, .link {
-      font-family: $raleway;
       font-size: 0.625rem;
     }
 
     a, .camera {
-      font-weight: 600;
+      font-weight: $font-weight-normal;
     }
   }
 }

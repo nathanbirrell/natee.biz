@@ -19,8 +19,12 @@ $tablet-up: 768px;
 $desktop-up: 1024px;
 
 // Fonts
-$raleway: 'Raleway', sans-serif;
-$open-sans: 'Open Sans', sans-serif;
+$main-font: 'Chivo', serif;
+// $open-sans: 'Open Sans', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 // Global stuff
 @import "normalize";

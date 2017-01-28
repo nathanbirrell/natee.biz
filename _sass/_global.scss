@@ -13,13 +13,13 @@ html {
 }
 
 body {
-  font-family: $open-sans;
+  font-family: $main-font;
   font-size: 100%;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $raleway;
+  font-family: $main-font;
   line-height: 18px;
   letter-spacing: -0.14px;
   color: $dark-grey;
@@ -28,14 +28,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.2em;
-  font-weight: 900;
+  font-weight: $font-weight-normal;
   text-transform: uppercase;
   margin: 0;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: $font-weight-normal;
   text-transform: none;
 }
 
@@ -47,12 +47,23 @@ a {
   text-decoration: none;
 }
 
-a, a:link {
+p a, a:link {
   color: $dark-grey;
+  border-bottom: 2px solid $dark-grey;
 }
 
-a:hover, a:active {
-  color: #000;
+p a:hover, a:active {
+  color: $black;
+}
+
+p a:focus {
+  background: $black;
+  color: $white;
+}
+
+.lead {
+  font-size: 1.25em;
+  font-weight: $font-weight-light;
 }
 
 img {
@@ -99,4 +110,9 @@ img {
 }
 
 .column.main {
+}
+
+.column.thin {
+  max-width: 368px;
+  margin: 0 auto;
 }
