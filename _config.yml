@@ -1,29 +1,60 @@
 # Site settings
-title: "Nathan Birrell | Digital services for small businesses, Melbourne"
-email: nathanbirrell@gmail.com
-description: "I am a digital contractor for small businesses in Melbourne. Specialising in the web, I help clients improve their business using technology."
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://nathanbirrell.me" # the base hostname & protocol for your site
-locale: en_US
+title: Nathan Birrell
+description: Images captured by Nathan Birrell, Melbourne, Australia.
+baseurl: ""
+url: "http://nathanbirrell.me"
 
-# User setting
+# User settings
 owner: Nathan Birrell
 email: nathanbirrell@gmail.com
 facebook_username: nbirrell
-twitter_username: nathanbirrell
+instagram_username: nathanbirrell
 github_username: nathanbirrell
-address:
-  - line: "Melbourne, Australia"
-  # - line:
-  # Feel free to add more lines here
-telephone: 0418 636 581
-copyright: 2013 -
-
-# API settings
-google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc
+location: "Melbourne, Australia"
+# telephone: +61 418 636 581
 
 # Build settings
 markdown: kramdown
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude:
+  - source # Don't include the original photos directory
+  - node_modules # Apparently this is magic sauce to make Jekyll less super slow
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - '*~'
+  - '#*#'
+  - GPL.txt # No need for this to be in the site. LICENSE.md is, but not linked anywhere
+
+keep_files:
+  - photo # Don't clobber the photo exports directory
+  - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
+  - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
+  - gfx   # Don't clobber site graphics/images/assets
+  - .htaccess
+
+# Use the ingenuitive "compress.html" HTML minification template from
+# https://github.com/penibelst/jekyll-compress-html
+compress_html:
+  clippings: [div, ul, section]
+  comments: all
+  endings: []
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+defaults:
+  -
+    scope:
+      type: posts
+    values:
+      layout: post
+
+paginate: 10
+paginate_path: "/archive/:num/"
+permalink: /:year-:month-:day-:title/
+
+google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc

@@ -1,0 +1,39 @@
+// Pull in other libraries
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../node_modules/photoswipe/src/css/main.scss";
+@import "../node_modules/photoswipe/src/css/default-skin/default-skin.scss";
+
+// Variables
+
+// Colours
+$primary-colour: #4A4A4A;
+$dark-grey: #4A4A4A;
+$grey: #CCCCCC;
+$black: #000;
+$white: #fff;
+
+// Breakpoints
+
+$mobile-only: 0px 320px;
+$tablet-up: 768px;
+$desktop-up: 1024px;
+
+// Fonts
+$main-font: 'Chivo', serif;
+// $open-sans: 'Open Sans', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Global stuff
+@import "normalize";
+@import "global";
+
+// Individual components
+@import "site-header";
+@import "gallery";
+@import "paginator";
+@import "photo-block";
+@import "photoswipe";
+@import "site-footer";

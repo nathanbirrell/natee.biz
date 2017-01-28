@@ -1,0 +1,43 @@
+.gallery {
+  .photo {
+    display: none;
+    flex-wrap: wrap;
+    background: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .photo.current {
+    display: flex;
+  }
+  .photo a,
+  .meta {
+    border: none;
+    margin: 0 auto;
+  }
+  .photo img {
+    width: auto;
+    max-height: 88vh;
+    flex: 1 1 100%;
+
+    @include breakpoint($tablet-up) {
+      max-height: none;
+    };
+  }
+
+  .photo .meta {
+    display: flex;
+    width: 100%;
+  }
+  .photo .meta .meta-column {
+    flex: 1 1 50%;
+
+    font-weight: $font-weight-light;
+    font-size: 10px;
+    color: $grey;
+    letter-spacing: -0.07px;
+    line-height: 12px;
+  }
+  .photo .meta .meta-column:nth-child(2) {
+    text-align: right;
+  }
+}
