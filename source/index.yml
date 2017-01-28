@@ -43,3 +43,357 @@
       iso: 200
       date: 1454248711
       hero: true
+2017-01-28-todo-organise:
+  title: TODO organise
+  date: '2017-01-28'
+  contents:
+    - filename: 20150128-225630-2.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20131231-144324.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20131231-145922.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20131231-145952.jpg
+      width: 849
+      height: 1280
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140407-212131-2.jpg
+      width: 1280
+      height: 857
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140407-212131.jpg
+      width: 1280
+      height: 857
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140605-033202-2.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140605-033202.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150520-134530.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225630.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225630-3.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20131231-145644.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225558.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140619-041425.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 14
+      aperture: 5
+      shutter: 1/200
+      iso: 800
+      date: 1403151265
+    - filename: 20140619-062440.jpg
+      width: 853
+      height: 1280
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 42
+      aperture: 8
+      shutter: 1/200
+      iso: 200
+      date: 1403159080
+    - filename: 20140802-205055.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 3.2
+      shutter: 1/8
+      iso: 3200
+      date: 1407012655
+    - filename: 20140913-121205.jpg
+      width: 1200
+      height: 800
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.17mm F1.8
+      focal: 17
+      aperture: 4
+      shutter: 1/2000
+      iso: 200
+      date: 1410610325
+    - filename: 20140913-124835.jpg
+      width: 1280
+      height: 1280
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.17mm F1.8
+      focal: 17
+      aperture: 10
+      shutter: 1/640
+      iso: 200
+      date: 1410612515
+    - filename: 20141018-095201.jpg
+      width: 1200
+      height: 800
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 42
+      aperture: 5.6
+      shutter: 1/640
+      iso: 200
+      date: 1413625921
+    - filename: 20141230-124701.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.5
+      shutter: 1/1250
+      iso: 200
+      date: 1419943621
+    - filename: 20150120-102533.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 3.5
+      shutter: 1/4000
+      iso: 160
+      date: 1421749533
+    - filename: 20150524-162618.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.8
+      shutter: 1/1600
+      iso: 200
+      date: 1432484778
+    - filename: 20150524-163322.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.8
+      shutter: 1/1250
+      iso: 200
+      date: 1432485202
+    - filename: 20150530-171507.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/125
+      iso: 1250
+      date: 1433006107
+    - filename: 20150706-173622.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 5
+      shutter: 1/1250
+      iso: 200
+      date: 1436204182
+    - filename: 20150706-173702.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 5
+      shutter: 1/500
+      iso: 200
+      date: 1436204222
+    - filename: 20160101-154841.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 21
+      aperture: 4.2
+      shutter: 1/1600
+      iso: 200
+      date: 1451663321
+    - filename: 20160102-091636.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 42
+      aperture: 5.6
+      shutter: 1/4000
+      iso: 200
+      date: 1451726196
+    - filename: 20160131-135831.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 4
+      shutter: 1/2000
+      iso: 200
+      date: 1454248711
+    - filename: 20160131-140347.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 4
+      shutter: 1/2500
+      iso: 200
+      date: 1454249027
+    - filename: 20160206-150750.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 3.2
+      shutter: 1/4000
+      iso: 125
+      date: 1454771270
+    - filename: 20160210-113359.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 10
+      shutter: 1/640
+      iso: 200
+      date: 1455104039
+    - filename: 20160215-191319.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 7.1
+      shutter: 1/400
+      iso: 200
+      date: 1455563599
+    - filename: 20160217-111440.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 6.3
+      shutter: 1/400
+      iso: 200
+      date: 1455707680
+    - filename: 20160503-201301.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 5.6
+      shutter: 1/1600
+      iso: 200
+      date: 1462306381
