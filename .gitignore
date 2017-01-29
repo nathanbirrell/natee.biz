@@ -6,3 +6,4 @@ _site
 
 # Temp Directories
 .sass-cache
+/.publish
