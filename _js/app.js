@@ -26,6 +26,9 @@
 
   function getCurrentImageElementAndRemoveClass() {
     var currentImage = document.querySelectorAll('.photo.current')[0];
+    if (!currentImage) {
+      currentImage = document.querySelectorAll('.photo')[0];
+    }
     currentImage.className = currentImage.className.replace(new RegExp('(^|\\b)' + 'current'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
     return currentImage;
   }
