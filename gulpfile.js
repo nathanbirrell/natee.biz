@@ -188,16 +188,16 @@ gulp.task('photos', 'Rebuild all image derivatives: original, medium, thumb, min
       path.dirname = path.dirname.replace(/\s/g, '-').toLowerCase();
     }))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('_site/photo/original/'))
+    .pipe(gulp.dest('./photo/original/'))
     .pipe(resize({width: 920, height: 920, crop: false, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('_site/photo/medium/'))
+    .pipe(gulp.dest('./photo/medium/'))
     // .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
     // .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    // .pipe(gulp.dest('_site/photo/thumb/'))
+    // .pipe(gulp.dest('./photo/thumb/'))
     .pipe(resize({width: 50, height: 50, crop: true, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('_site/photo/mini/'))
+    .pipe(gulp.dest('./photo/mini/'))
     ;
     // @TODO: Can we do that thing Rupl used to do with blurry 10px images for a pre-load?
 });
@@ -261,19 +261,19 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
       restructuring: false,
       shorthandCompacting: false
     }))
-    .pipe(gulp.dest('./_site/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('js-photoswipe', false, () => {
   return gulp.src(['./node_modules/photoswipe/dist/*.js', '_js/photoswipe.tsp.js'])
     .pipe(concat('photoswipe.all.js'))
     .pipe(uglify({mangle: false}))
-    .pipe(gulp.dest('./_site/js'));
+    .pipe(gulp.dest('./js'));
 });
 
 gulp.task('js-photoswipe-assets', false, () => {
   return gulp.src(['./node_modules/photoswipe/dist/default-skin/*.png', './node_modules/photoswipe/dist/default-skin/*.svg', './node_modules/photoswipe/dist/default-skin/*.gif'])
-    .pipe(gulp.dest('./_site/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('js-all', false, () => {
@@ -285,7 +285,7 @@ gulp.task('js-all', false, () => {
   ])
     .pipe(concat('all.js'))
     .pipe(uglify({mangle: false}))
-    .pipe(gulp.dest('./_site/js'));
+    .pipe(gulp.dest('./js'));
 });
 
 gulp.task('lint', 'Lint all non-vendor JS', () => {
@@ -296,12 +296,6 @@ gulp.task('lint', 'Lint all non-vendor JS', () => {
 });
 
 gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-photoswipe', 'js-photoswipe-assets', 'js-all', 'lint']);
-
-gulp.task('graphics', 'Compress site graphics', [], () => {
-  return gulp.src('./_gfx/**/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./_site/gfx/'));
-});
 
 /*
      _ _         _           _ _     _
@@ -340,8 +334,8 @@ gulp.task('update', 'Add/remove photos and albums: index, photos, prime-posts, a
   runSequence(['index', 'photos'], 'prime-posts', 'jekyll', cb);
 });
 
-gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, htaccess then jekyll', (cb) => {
-  runSequence(['sass', 'js', 'graphics', 'htaccess'], 'jekyll', cb);
+gulp.task('build', 'Run all site-generating tasks: sass, js, htaccess then jekyll', (cb) => {
+  runSequence(['sass', 'js', 'htaccess'], 'jekyll', cb);
 });
 
 /*
@@ -357,9 +351,9 @@ gulp.task('default', false, ['help']);
 
 gulp.task('dev', false, ['build', 'serve', 'watch']);
 
-gulp.task('watch', 'Watch-run sass, jekyll, js and graphics tasks', () => {
+gulp.task('watch', 'Watch-run sass, jekyll, js and photo update tasks', () => {
   gulp.watch('./_sass/**/*.scss', ['sass']);
   gulp.watch(['./*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/.*.md', '!./_site/**'], ['jekyll']);
-  gulp.watch(['./**/*.js', '!./_site/**', '!./node_modules/**'], ['js']);
-  gulp.watch(['./_gfx/**/*.*'], ['graphics']);
+  gulp.watch(['./_js/*.js', '!./node_modules/**'], ['js']);
+  gulp.watch('./source/**/*.*', ['update']);
 });
