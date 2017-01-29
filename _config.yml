@@ -31,7 +31,6 @@ keep_files:
   - photo # Don't clobber the photo exports directory
   - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
   - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
-  - gfx   # Don't clobber site graphics/images/assets
   - .htaccess
 
 # Use the ingenuitive "compress.html" HTML minification template from
@@ -53,8 +52,8 @@ defaults:
     values:
       layout: post
 
-paginate: 10
-paginate_path: "/archive/:num/"
+# paginate: 10
+# paginate_path: "/archive/:num/"
 permalink: /:year-:month-:day-:title/
 
 google_api_key: AIzaSyCbpOUWLrvGrRBT4cmb8yDfVl0ZFpCLUGc

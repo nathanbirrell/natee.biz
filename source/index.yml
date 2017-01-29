@@ -47,7 +47,7 @@
   title: TODO organise
   date: '2017-01-28'
   contents:
-    - filename: 20150128-225630-2.jpg
+    - filename: 20150128-225630-3.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -57,17 +57,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20131231-144324.jpg
-      width: 1280
-      height: 849
-      camera: NORITSU Controller
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20131231-145922.jpg
+    - filename: 20131231-145644.jpg
       width: 1280
       height: 849
       camera: NORITSU Controller
@@ -147,20 +137,20 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150128-225630-3.jpg
+    - filename: 20131231-145922.jpg
       width: 1280
-      height: 865
-      camera: FUJI SP-3000
+      height: 849
+      camera: NORITSU Controller
       lens: null
       focal: null
       aperture: null
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20131231-145644.jpg
+    - filename: 20150128-225630-2.jpg
       width: 1280
-      height: 849
-      camera: NORITSU Controller
+      height: 865
+      camera: FUJI SP-3000
       lens: null
       focal: null
       aperture: null
@@ -387,6 +377,16 @@
       shutter: 1/400
       iso: 200
       date: 1455707680
+    - filename: 20160503-201301.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 5.6
+      shutter: 1/1600
+      iso: 200
+      date: 1462306381
     - filename: 20160503-201301.jpg
       width: 1280
       height: 960
