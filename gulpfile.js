@@ -45,6 +45,7 @@ const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const yaml = require('js-yaml');
+const ghPages = require('gulp-gh-pages');
 
 /*
        _           _
@@ -336,6 +337,10 @@ gulp.task('update', 'Add/remove photos and albums: index, photos, prime-posts, a
 
 gulp.task('build', 'Run all site-generating tasks: sass, js, htaccess then jekyll', (cb) => {
   runSequence(['sass', 'js', 'htaccess'], 'jekyll', cb);
+});
+
+gulp.task('deploy', 'Deploy to Github Pages', () => {
+  return gulp.src('./_site/**/*').pipe(ghPages({branch: 'master'}));
 });
 
 /*
