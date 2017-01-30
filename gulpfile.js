@@ -196,7 +196,7 @@ gulp.task('photos', 'Rebuild all image derivatives: original, medium, thumb, min
     // .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
     // .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     // .pipe(gulp.dest('./photo/thumb/'))
-    .pipe(resize({width: 50, height: 50, crop: true, upscale: false}))
+    .pipe(resize({width: 30, height: 30, crop: false, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('./photo/mini/'))
     ;
