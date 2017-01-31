@@ -2,7 +2,8 @@
  * @file gulpfile.js
  *
  * Build tasks and generator tools for www.tsmithphotos.com
- * By Taylor Smith @tsmith512 - www.tsmithcreative.com 2016.
+ * By Nathan Birrell @nathanbirrell - www.nathanbirrell.me 2017
+ * Original fork from Taylor Smith @tsmith512 - www.tsmithcreative.com 2016.
  *
  * Run `gulp help` to for a list of suggested tasks.
  */

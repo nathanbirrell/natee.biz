@@ -4,9 +4,9 @@
   "description": "The source repository for tsmithphotos.com, the photography hobby site of Taylor Smith.",
   "repository": {
     "type": "git",
-    "url": "ssh://git@kaa.tsmithcreative.com/project/tsmithphotos.git"
+    "url": "git@github.com:nathanbirrell/nathanbirrell.github.io.git"
   },
-  "author": "Taylor Smith <tsmith@tsmithcreative.com>",
+  "author": "Nathan Birrell <nathanbirrell@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
     "breakpoint-sass": "^2.7.0",
