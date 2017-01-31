@@ -63,6 +63,21 @@
     return false;
   }
 
+  function identifyPortraitImages() {
+    var photoBlocks = document.querySelectorAll('.photo-block');
+    photoBlocks.forEach(function(photoBlock) { // eslint-disable-line
+      var img = photoBlock.querySelector('.photo-mini');
+      var isPortrait = img.clientWidth < img.clientHeight;
+      var isSquare = img.clientWidth === img.clientHeight;
+      if (isPortrait) {
+        photoBlock.classList.add('is-portrait');
+      }
+      if (isSquare) {
+        photoBlock.classList.add('is-square');
+      }
+    });
+  }
+
   function loadImages() {
     var photoBlocks = document.querySelectorAll('.photo-block');
 
@@ -97,6 +112,7 @@
     if (galleryElement) {
       setCurrentImage();
       loadImages();
+      identifyPortraitImages();
 
       galleryElement.addEventListener('click', nextImage);
     }
