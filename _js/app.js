@@ -122,7 +122,8 @@
       loadImages();
 
       galleryElement.addEventListener('click', nextImage);
-      document.addEventListener('keydown', handleArrowKeys, false);
+      window.addEventListener('keydown', handleArrowKeys, false);
+      window.addEventListener('hashchange', setCurrentImage);
     }
   }
 
