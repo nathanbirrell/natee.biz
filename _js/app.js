@@ -109,10 +109,11 @@
   function init() {
     var galleryElement = document.getElementById('gallery');
 
+    identifyPortraitImages();
+
     if (galleryElement) {
       setCurrentImage();
       loadImages();
-      identifyPortraitImages();
 
       galleryElement.addEventListener('click', nextImage);
     }

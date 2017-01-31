@@ -5,23 +5,19 @@
     background: #fff;
     overflow: hidden;
     margin: 0 auto;
+    justify-content: center;
   }
 
   .photo.current {
     display: flex;
   }
 
-  .photo .photo-block {
+  .photo-block {
     position: relative;
     border: none;
     margin: 0;
     width: 100%;
     overflow: hidden;
-  }
-
-  .meta {
-    border: none;
-    margin: 4px auto 0 auto;
   }
 
   .photo img {
@@ -34,6 +30,19 @@
     @include breakpoint($tablet-up) {
       max-height: none;
     };
+  }
+
+  .photo-block.is-portrait,
+  .photo-block.is-square {
+    @include breakpoint($tablet-up) {
+      height: 77vh;
+      width: auto;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 
   .photo img.photo-mini {
@@ -49,6 +58,12 @@
 
   img.loaded {
     opacity: 1;
+  }
+
+
+  .meta {
+    border: none;
+    margin: 4px auto 0 auto;
   }
 
   .photo .meta {

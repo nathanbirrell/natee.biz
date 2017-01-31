@@ -14,7 +14,7 @@ layout: compress
         {% include header.html %}
       </header>
 
-      <article class="column main">
+      <article class="column main {% if page.thin %}thin{% endif %}">
         {{ content }}
       </article>
     </div>
