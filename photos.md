@@ -12,15 +12,19 @@ nowrap: 1
             {% assign gallery = post.path | split : '/' | last | split : '.' | first %}
 
             {% for photo in site.data.index[gallery].contents %}
-                <div id="{{ gallery }}" class="photo">
-                    <a href="#">
-                        <img src="/photo/medium/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}"/>
+                <figure id="{{ gallery }}-{{ photo.filename }}" class="photo" title="{{ post.title | xml_escape }} | Click to see next">
+                    <a href="#" class="photo-block" data-large="/photo/medium/{{ gallery }}/{{ photo.filename }}">
+                        <img src="/photo/mini/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" class="photo-mini" />
                     </a>
                     <div class="meta">
                         <div class="meta-column">
                             {% if post.location %}{{ post.location }}{% endif %}
                             <br>
-                            {{ photo.date | date: "%B, %Y" }}
+                            {% if photo.date %}
+                              {{ photo.date | date: "%B, %Y" }}
+                            {% else %}
+                              {{ post.date | date: "%B, %Y" }}
+                            {% endif %}
                         </div>
                         <div class="meta-column">
                             {{ photo.camera }}
@@ -33,7 +37,7 @@ nowrap: 1
                             <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
                         </div>
                     </div>
-                </div>
+                </figure>
             {% endfor %}
 
         {% endfor %}

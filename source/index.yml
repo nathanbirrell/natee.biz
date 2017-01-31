@@ -1,63 +1,18 @@
-2016-11-01-old-faithful:
-  title: Old Faithful
-  date: '2016-11-01'
+2013-12-01-south-east-asia:
+  title: South-East Asia
+  date: '2013-12-01'
   contents:
-    - filename: old-faithful.jpg
+    - filename: 20131231-144324.jpg
       width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: OLYMPUS M.45mm F1.8
-      focal: 45
-      aperture: 5
-      shutter: 1/2500
-      iso: 200
-      date: 1479628188
-      hero: true
-2017-01-14-backdoor-shootout-2017:
-  title: Backdoor Shootout 2017
-  date: '2017-01-14'
-  contents:
-    - filename: pipe.jpg
-      width: 1280
-      height: 960
-      camera: 'OLYMPUS '
-      lens: OLYMPUS M.45mm F1.8
-      focal: 45
-      aperture: 10
-      shutter: 1/640
-      iso: 200
-      date: 1484389433
-      hero: true
-2016-01-31-cerro-campanario:
-  title: Cerro Campanario
-  date: '2016-01-31'
-  contents:
-    - filename: cerro-campanario.jpg
-      width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 4
-      shutter: 1/2000
-      iso: 200
-      date: 1454248711
-      hero: true
-2017-01-28-todo-organise:
-  title: TODO organise
-  date: '2017-01-28'
-  contents:
-    - filename: 20150128-225630-2.jpg
-      width: 1280
-      height: 865
-      camera: FUJI SP-3000
+      height: 849
+      camera: NORITSU Controller
       lens: null
       focal: null
       aperture: null
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20131231-144324.jpg
+    - filename: 20131231-145644.jpg
       width: 1280
       height: 849
       camera: NORITSU Controller
@@ -107,6 +62,10 @@
       shutter: 1/NaN
       iso: null
       date: null
+2014-01-01-victoria:
+  title: Victoria
+  date: '2014-01-01'
+  contents:
     - filename: 20140605-033202-2.jpg
       width: 1280
       height: 865
@@ -127,76 +86,6 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150520-134530.jpg
-      width: 1280
-      height: 865
-      camera: FUJI SP-3000
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20150128-225630.jpg
-      width: 1280
-      height: 865
-      camera: FUJI SP-3000
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20150128-225630-3.jpg
-      width: 1280
-      height: 865
-      camera: FUJI SP-3000
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20131231-145644.jpg
-      width: 1280
-      height: 849
-      camera: NORITSU Controller
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20150128-225558.jpg
-      width: 1280
-      height: 865
-      camera: FUJI SP-3000
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20140619-041425.jpg
-      width: 1280
-      height: 853
-      camera: OLYMPUS E-M10
-      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
-      focal: 14
-      aperture: 5
-      shutter: 1/200
-      iso: 800
-      date: 1403151265
-    - filename: 20140619-062440.jpg
-      width: 853
-      height: 1280
-      camera: OLYMPUS E-M10
-      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
-      focal: 42
-      aperture: 8
-      shutter: 1/200
-      iso: 200
-      date: 1403159080
     - filename: 20140802-205055.jpg
       width: 1280
       height: 960
@@ -216,7 +105,7 @@
       aperture: 4
       shutter: 1/2000
       iso: 200
-      date: 1410610325
+      date: 1413202325
     - filename: 20140913-124835.jpg
       width: 1280
       height: 1280
@@ -226,7 +115,7 @@
       aperture: 10
       shutter: 1/640
       iso: 200
-      date: 1410612515
+      date: 1413204515
     - filename: 20141018-095201.jpg
       width: 1200
       height: 800
@@ -237,16 +126,6 @@
       shutter: 1/640
       iso: 200
       date: 1413625921
-    - filename: 20141230-124701.jpg
-      width: 1280
-      height: 853
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 2.5
-      shutter: 1/1250
-      iso: 200
-      date: 1419943621
     - filename: 20150120-102533.jpg
       width: 1280
       height: 853
@@ -257,6 +136,98 @@
       shutter: 1/4000
       iso: 160
       date: 1421749533
+2014-06-19-sumbawa:
+  title: Sumbawa
+  date: '2014-06-19'
+  contents:
+    - filename: 20140619-041425.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 14
+      aperture: 5
+      shutter: 1/200
+      iso: 800
+      date: 1405743265
+    - filename: 20140619-062440.jpg
+      width: 853
+      height: 1280
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.14-42mm F3.5-5.6 EZ
+      focal: 42
+      aperture: 8
+      shutter: 1/200
+      iso: 200
+      date: 1405751080
+2015-01-14-nsw:
+  title: NSW
+  date: '2015-01-14'
+  contents:
+    - filename: 20150128-225558.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225630-2.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225630-3.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150128-225630.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20141230-124701.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.5
+      shutter: 1/1250
+      iso: 200
+      date: 1419943621
+2015-05-01-victoria:
+  title: Victoria
+  date: '2015-05-01'
+  contents:
+    - filename: 20150520-134530.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
     - filename: 20150524-162618.jpg
       width: 1280
       height: 853
@@ -287,6 +258,10 @@
       shutter: 1/125
       iso: 1250
       date: 1433006107
+2015-07-01-indo:
+  title: Indo
+  date: '2015-07-01'
+  contents:
     - filename: 20150706-173622.jpg
       width: 1280
       height: 960
@@ -307,6 +282,10 @@
       shutter: 1/500
       iso: 200
       date: 1436204222
+2016-01-01-yamba:
+  title: Yamba
+  date: '2016-01-01'
+  contents:
     - filename: 20160101-154841.jpg
       width: 1280
       height: 960
@@ -327,7 +306,21 @@
       shutter: 1/4000
       iso: 200
       date: 1451726196
+2016-02-01-south-america:
+  title: South America
+  date: '2016-02-01'
+  contents:
     - filename: 20160131-135831.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 4
+      shutter: 1/2000
+      iso: 200
+      date: 1454248711
+    - filename: cerro-campanario.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -356,7 +349,7 @@
       aperture: 3.2
       shutter: 1/4000
       iso: 125
-      date: 1454771270
+      date: 1457276870
     - filename: 20160210-113359.jpg
       width: 1280
       height: 960
@@ -366,7 +359,7 @@
       aperture: 10
       shutter: 1/640
       iso: 200
-      date: 1455104039
+      date: 1457609639
     - filename: 20160215-191319.jpg
       width: 1280
       height: 960
@@ -376,7 +369,7 @@
       aperture: 7.1
       shutter: 1/400
       iso: 200
-      date: 1455563599
+      date: 1458069199
     - filename: 20160217-111440.jpg
       width: 1280
       height: 960
@@ -386,8 +379,12 @@
       aperture: 6.3
       shutter: 1/400
       iso: 200
-      date: 1455707680
-    - filename: 20160503-201301.jpg
+      date: 1458213280
+2016-05-01-vicco:
+  title: Vicco
+  date: '2016-05-01'
+  contents:
+    - filename: cathedral.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -397,3 +394,27 @@
       shutter: 1/1600
       iso: 200
       date: 1462306381
+    - filename: old-faithful.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 5
+      shutter: 1/2500
+      iso: 200
+      date: 1482220188
+2017-01-14-backdoor-shootout-2017:
+  title: Backdoor Shootout 2017
+  date: '2017-01-14'
+  contents:
+    - filename: pipe.jpg
+      width: 1280
+      height: 960
+      camera: 'OLYMPUS '
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 10
+      shutter: 1/640
+      iso: 200
+      date: 1484389433
