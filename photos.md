@@ -12,7 +12,7 @@ nowrap: 1
             {% assign gallery = post.path | split : '/' | last | split : '.' | first %}
 
             {% for photo in site.data.index[gallery].contents %}
-                <div id="{{ gallery }}" class="photo">
+                <figure id="{{ gallery }}" class="photo">
                     <a href="#" class="photo-block" data-large="/photo/medium/{{ gallery }}/{{ photo.filename }}">
                         <img src="/photo/mini/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" class="photo-mini" />
                     </a>
@@ -33,7 +33,7 @@ nowrap: 1
                             <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
                         </div>
                     </div>
-                </div>
+                </figure>
             {% endfor %}
 
         {% endfor %}

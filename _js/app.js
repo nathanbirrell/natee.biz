@@ -64,26 +64,31 @@
   }
 
   function loadImages() {
-    var photoBlock = document.querySelector('.photo-block');
-    var mini = photoBlock.querySelector('.photo-mini');
+    var photoBlocks = document.querySelectorAll('.photo-block');
 
-    // 1: load mini image and show it
-    var imgSmall = new Image();
-    imgSmall.src = mini.src;
-    function onloadSmall() {
-      mini.classList.add('loaded');
-    }
-    imgSmall.onload = onloadSmall;
+    photoBlocks.forEach(function(photoBlock) { // eslint-disable-line
+      var mini = photoBlock.querySelector('.photo-mini');
 
-    // 2: load large image
-    var imgLarge = new Image();
-    imgLarge.src = photoBlock.dataset.large;
-    function onloadLarge() {
-      mini.classList.add('large-loaded');
-      imgLarge.classList.add('loaded');
-    }
-    imgLarge.onload = onloadLarge;
-    photoBlock.appendChild(imgLarge);
+      // 1: load mini image and show it
+      var imgSmall = new Image();
+      imgSmall.src = mini.src;
+      function onloadSmall() {
+        mini.classList.add('loaded');
+      }
+      imgSmall.onload = onloadSmall;
+
+      // 2: load large image
+      var imgLarge = new Image();
+      imgLarge.src = photoBlock.dataset.large;
+      function onloadLarge() {
+        mini.classList.remove('loaded'); // hide mini
+        imgLarge.classList.add('loaded');
+      }
+      imgLarge.classList.add('photo-large');
+      photoBlock.appendChild(imgLarge);
+
+      imgLarge.onload = onloadLarge;
+    });
   }
 
   function init() {
