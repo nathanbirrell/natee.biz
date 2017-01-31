@@ -1,4 +1,4 @@
 ---
 title: Backdoor Shootout 2017
-location:
+location: Banzai Pipeline, Oahu, Hawaii
 ---

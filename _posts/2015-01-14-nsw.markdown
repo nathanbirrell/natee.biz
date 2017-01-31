@@ -1,4 +1,4 @@
 ---
 title: NSW
-location:
+location: New South Wales
 ---

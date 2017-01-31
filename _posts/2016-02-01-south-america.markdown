@@ -1,4 +1,4 @@
 ---
 title: South America
-location:
+location: South America
 ---

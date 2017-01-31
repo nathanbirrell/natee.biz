@@ -1,4 +1,4 @@
 ---
 title: South-East Asia
-location:
+location: Thailand, Laos, Cambodia
 ---

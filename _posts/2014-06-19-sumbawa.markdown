@@ -1,4 +1,4 @@
 ---
 title: Sumbawa
-location:
+location: Sumbawa, Indonesia
 ---
