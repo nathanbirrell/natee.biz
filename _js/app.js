@@ -42,14 +42,22 @@
     nextImageEl.className += ' current';
   }
 
-  function nextImage() {
+  function nextImage(previousParam) {
     event.preventDefault(); // for anchor link compatability
+
+    var previous = previousParam ? previousParam : false;
 
     // remove default .current class from current el
     var currentImage = document.querySelectorAll('.photo.current')[0];
-    currentImage.className = currentImage.className.replace(new RegExp('(^|\\b)' + 'current'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    currentImage.classList.remove('current');
 
-    var nextImageEl = currentImage.nextElementSibling;
+    var nextImageEl;
+    if (previous) {
+      nextImageEl = currentImage.previousElementSibling;
+    }
+    else {
+      nextImageEl = currentImage.nextElementSibling;
+    }
 
     if (!nextImageEl) {
       nextImageEl = document.querySelectorAll('.photo')[0];
@@ -61,6 +69,21 @@
     nextImageEl.className += ' current';
 
     return false;
+  }
+
+  function handleArrowKeys(event) {
+    var keyCode = event.keyCode;
+    var left = 37;
+    var up = 38;
+    var right = 39;
+    var down = 40;
+
+    if (keyCode === right || keyCode === up) {
+      nextImage(false);
+    }
+    else if (keyCode === left || keyCode === down) {
+      nextImage(true);
+    }
   }
 
   function loadImages() {
@@ -99,6 +122,7 @@
       loadImages();
 
       galleryElement.addEventListener('click', nextImage);
+      document.addEventListener('keydown', handleArrowKeys, false);
     }
   }
 
