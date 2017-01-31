@@ -34,6 +34,7 @@
   }
 
   function setCurrentImage() {
+    console.debug('setCurrentImage'); // eslint-disable-line no-console
     // remove default .current class from current el
     getCurrentImageElementAndRemoveClass();
     var nextImageEl = getNextImageInGallery();
@@ -62,10 +63,39 @@
     return false;
   }
 
-  var galleryElement = document.getElementById('gallery');
+  function loadImages() {
+    var photoBlock = document.querySelector('.photo-block');
+    var mini = photoBlock.querySelector('.photo-mini');
 
-  if (galleryElement) {
-    window.addEventListener('load', setCurrentImage);
-    galleryElement.addEventListener('click', nextImage);
+    // 1: load mini image and show it
+    var imgSmall = new Image();
+    imgSmall.src = mini.src;
+    function onloadSmall() {
+      mini.classList.add('loaded');
+    }
+    imgSmall.onload = onloadSmall;
+
+    // 2: load large image
+    var imgLarge = new Image();
+    imgLarge.src = photoBlock.dataset.large;
+    function onloadLarge() {
+      mini.classList.add('large-loaded');
+      imgLarge.classList.add('loaded');
+    }
+    imgLarge.onload = onloadLarge;
+    photoBlock.appendChild(imgLarge);
   }
+
+  function init() {
+    var galleryElement = document.getElementById('gallery');
+
+    if (galleryElement) {
+      setCurrentImage();
+      loadImages();
+
+      galleryElement.addEventListener('click', nextImage);
+    }
+  }
+
+  window.onload = init;
 })();

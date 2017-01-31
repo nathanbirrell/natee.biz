@@ -13,7 +13,7 @@ nowrap: 1
 
             {% for photo in site.data.index[gallery].contents %}
                 <div id="{{ gallery }}" class="photo">
-                    <a href="#">
+                    <a href="#" class="photo-block" data-large="/photo/medium/{{ gallery }}/{{ photo.filename }}">
                         <img src="/photo/mini/{{ gallery }}/{{ photo.filename }}" alt="{{ post.title | xml_escape }}" title="{{ post.title | xml_escape }}" class="photo-mini" />
                     </a>
                     <div class="meta">
