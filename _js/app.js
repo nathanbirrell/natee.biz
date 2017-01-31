@@ -73,7 +73,7 @@
         photoBlock.classList.add('is-portrait');
       }
       if (isSquare) {
-        photoBlock.classList.add('is-square');
+        // photoBlock.classList.add('is-square');
       }
     });
   }
