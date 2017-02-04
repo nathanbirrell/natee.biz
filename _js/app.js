@@ -45,7 +45,9 @@
   function nextImage(previousParam) {
     event.preventDefault(); // for anchor link compatability
 
-    var previous = previousParam ? previousParam : false;
+    var previous = previousParam === true ? previousParam : false;
+
+    console.debug('previous', previous); //eslint-disable-line
 
     // remove default .current class from current el
     var currentImage = document.querySelectorAll('.photo.current')[0];
@@ -123,7 +125,7 @@
 
       galleryElement.addEventListener('click', nextImage);
       window.addEventListener('keydown', handleArrowKeys, false);
-      window.addEventListener('hashchange', setCurrentImage);
+      // window.addEventListener('hashchange', setCurrentImage);
     }
   }
 
