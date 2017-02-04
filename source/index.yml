@@ -2,16 +2,6 @@
   title: South-East Asia
   date: '2013-12-01'
   contents:
-    - filename: 20131231-144324.jpg
-      width: 1280
-      height: 849
-      camera: NORITSU Controller
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
     - filename: 20131231-145644.jpg
       width: 1280
       height: 849
@@ -43,6 +33,16 @@
       iso: null
       date: null
     - filename: 20140407-212131-2.jpg
+      width: 1280
+      height: 857
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140407-212131.jpg
       width: 1280
       height: 857
       camera: FUJI SP-3000
@@ -105,17 +105,7 @@
       aperture: 4
       shutter: 1/2000
       iso: 200
-      date: 1413202325
-    - filename: 20140913-124835.jpg
-      width: 1280
-      height: 1280
-      camera: OLYMPUS E-M10
-      lens: OLYMPUS M.17mm F1.8
-      focal: 17
-      aperture: 10
-      shutter: 1/640
-      iso: 200
-      date: 1413204515
+      date: 1410610325
     - filename: 20141018-095201.jpg
       width: 1200
       height: 800
@@ -126,6 +116,16 @@
       shutter: 1/640
       iso: 200
       date: 1413625921
+    - filename: 20150120-102533.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 3.5
+      shutter: 1/4000
+      iso: 160
+      date: 1421749533
     - filename: 20150120-102533.jpg
       width: 1280
       height: 853
@@ -149,7 +149,7 @@
       aperture: 5
       shutter: 1/200
       iso: 800
-      date: 1405743265
+      date: 1403151265
     - filename: 20140619-062440.jpg
       width: 853
       height: 1280
@@ -159,7 +159,7 @@
       aperture: 8
       shutter: 1/200
       iso: 200
-      date: 1405751080
+      date: 1403159080
 2015-01-14-nsw:
   title: NSW
   date: '2015-01-14'
@@ -349,17 +349,7 @@
       aperture: 3.2
       shutter: 1/4000
       iso: 125
-      date: 1457276870
-    - filename: 20160210-113359.jpg
-      width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 10
-      shutter: 1/640
-      iso: 200
-      date: 1457609639
+      date: 1454771270
     - filename: 20160215-191319.jpg
       width: 1280
       height: 960
@@ -369,7 +359,17 @@
       aperture: 7.1
       shutter: 1/400
       iso: 200
-      date: 1458069199
+      date: 1455563599
+    - filename: 20160217-111440.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 6.3
+      shutter: 1/400
+      iso: 200
+      date: 1455707680
     - filename: 20160217-111440.jpg
       width: 1280
       height: 960
@@ -403,7 +403,7 @@
       aperture: 5
       shutter: 1/2500
       iso: 200
-      date: 1482220188
+      date: 1479628188
 2017-01-14-backdoor-shootout-2017:
   title: Backdoor Shootout 2017
   date: '2017-01-14'
