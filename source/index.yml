@@ -2,27 +2,7 @@
   title: South-East Asia
   date: '2013-12-01'
   contents:
-    - filename: 20131231-145644.jpg
-      width: 1280
-      height: 849
-      camera: NORITSU Controller
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20131231-145922.jpg
-      width: 1280
-      height: 849
-      camera: NORITSU Controller
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/NaN
-      iso: null
-      date: null
-    - filename: 20131231-145952.jpg
+    - filename: 20131231-baloon.jpg
       width: 849
       height: 1280
       camera: NORITSU Controller
@@ -32,7 +12,27 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20140407-212131-2.jpg
+    - filename: 20131231-killing-fields.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20131231-laos-street.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140407-captain.jpg
       width: 1280
       height: 857
       camera: FUJI SP-3000
@@ -42,7 +42,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20140407-212131.jpg
+    - filename: 20140407-kids.jpg
       width: 1280
       height: 857
       camera: FUJI SP-3000
@@ -52,7 +52,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20140407-212131.jpg
+    - filename: 20140407-water-village.jpg
       width: 1280
       height: 857
       camera: FUJI SP-3000
@@ -66,7 +66,17 @@
   title: Victoria
   date: '2014-01-01'
   contents:
-    - filename: 20140605-033202-2.jpg
+    - filename: 20131231-tom.jpg
+      width: 1280
+      height: 849
+      camera: NORITSU Controller
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140605-13th.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -76,7 +86,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20140605-033202.jpg
+    - filename: 20140605-morning-west.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -86,7 +96,17 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20140802-205055.jpg
+    - filename: 20140605-woolies.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20140802-stoking.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -96,7 +116,27 @@
       shutter: 1/8
       iso: 3200
       date: 1407012655
-    - filename: 20140913-121205.jpg
+    - filename: 20140802-zzz.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 1.8
+      shutter: 1/30
+      iso: 3200
+      date: 1407013663
+    - filename: 20140803-hunter-dj.jpg
+      width: 1280
+      height: 960
+      camera: OLYMPUS E-M10
+      lens: OLYMPUS M.45mm F1.8
+      focal: 45
+      aperture: 1.8
+      shutter: 1/320
+      iso: 200
+      date: 1407054219
+    - filename: 20140913-east.jpg
       width: 1200
       height: 800
       camera: OLYMPUS E-M10
@@ -106,7 +146,7 @@
       shutter: 1/2000
       iso: 200
       date: 1410610325
-    - filename: 20141018-095201.jpg
+    - filename: 20141018-fishing.jpg
       width: 1200
       height: 800
       camera: OLYMPUS E-M10
@@ -116,17 +156,7 @@
       shutter: 1/640
       iso: 200
       date: 1413625921
-    - filename: 20150120-102533.jpg
-      width: 1280
-      height: 853
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 3.5
-      shutter: 1/4000
-      iso: 160
-      date: 1421749533
-    - filename: 20150120-102533.jpg
+    - filename: 20150120-portsea-shorey.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -140,7 +170,7 @@
   title: Sumbawa
   date: '2014-06-19'
   contents:
-    - filename: 20140619-041425.jpg
+    - filename: 20140619-sumbawa.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -150,7 +180,7 @@
       shutter: 1/200
       iso: 800
       date: 1403151265
-    - filename: 20140619-062440.jpg
+    - filename: 20140619-super.jpg
       width: 853
       height: 1280
       camera: OLYMPUS E-M10
@@ -160,11 +190,21 @@
       shutter: 1/200
       iso: 200
       date: 1403159080
+    - filename: 20140622-sumbawa-west.jpg
+      width: 1280
+      height: 853
+      camera: Apple 5
+      lens: iPhone 5 back camera 4.12mm f/2.4
+      focal: 4.12
+      aperture: 2.4
+      shutter: 1/320
+      iso: 50
+      date: 1403459863
 2015-01-14-nsw:
   title: NSW
   date: '2015-01-14'
   contents:
-    - filename: 20150128-225558.jpg
+    - filename: 20150128-angourie-troop.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -174,7 +214,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150128-225630-2.jpg
+    - filename: 20150128-angourie.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -184,7 +224,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150128-225630-3.jpg
+    - filename: 20150128-man-and-troop.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -194,7 +234,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150128-225630.jpg
+    - filename: 20150128-seal-rocks.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -204,7 +244,7 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20141230-124701.jpg
+    - filename: 20141230-byron.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -218,7 +258,7 @@
   title: Victoria
   date: '2015-05-01'
   contents:
-    - filename: 20150520-134530.jpg
+    - filename: 20150520-east-illford.jpg
       width: 1280
       height: 865
       camera: FUJI SP-3000
@@ -228,7 +268,17 @@
       shutter: 1/NaN
       iso: null
       date: null
-    - filename: 20150524-162618.jpg
+    - filename: 20150520-mc.jpg
+      width: 1280
+      height: 865
+      camera: FUJI SP-3000
+      lens: null
+      focal: null
+      aperture: null
+      shutter: 1/NaN
+      iso: null
+      date: null
+    - filename: 20150524-13th-frame.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -238,7 +288,7 @@
       shutter: 1/1600
       iso: 200
       date: 1432484778
-    - filename: 20150524-163322.jpg
+    - filename: 20150524-13th-fence.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -248,7 +298,7 @@
       shutter: 1/1250
       iso: 200
       date: 1432485202
-    - filename: 20150530-171507.jpg
+    - filename: 20150530-wye.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -262,7 +312,7 @@
   title: Indo
   date: '2015-07-01'
   contents:
-    - filename: 20150706-173622.jpg
+    - filename: 20150706-nusa-lembongan.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -272,7 +322,7 @@
       shutter: 1/1250
       iso: 200
       date: 1436204182
-    - filename: 20150706-173702.jpg
+    - filename: 20150706-nusa-lembongan-sunset.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -286,7 +336,7 @@
   title: Yamba
   date: '2016-01-01'
   contents:
-    - filename: 20160101-154841.jpg
+    - filename: 20160101-pacific-hotel.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -296,7 +346,7 @@
       shutter: 1/1600
       iso: 200
       date: 1451663321
-    - filename: 20160102-091636.jpg
+    - filename: 20160102-angourie-pt.jpg
       width: 1280
       height: 853
       camera: OLYMPUS E-M10
@@ -310,7 +360,7 @@
   title: South America
   date: '2016-02-01'
   contents:
-    - filename: 20160131-135831.jpg
+    - filename: 20160131-cerro-campinaro.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -330,7 +380,7 @@
       shutter: 1/2000
       iso: 200
       date: 1454248711
-    - filename: 20160131-140347.jpg
+    - filename: 20160131-argentina.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -340,7 +390,7 @@
       shutter: 1/2500
       iso: 200
       date: 1454249027
-    - filename: 20160206-150750.jpg
+    - filename: 20160206-granite.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -350,7 +400,7 @@
       shutter: 1/4000
       iso: 125
       date: 1454771270
-    - filename: 20160215-191319.jpg
+    - filename: 20160215-peru.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
@@ -360,7 +410,7 @@
       shutter: 1/400
       iso: 200
       date: 1455563599
-    - filename: 20160217-111440.jpg
+    - filename: 20160217-machu.jpg
       width: 1280
       height: 960
       camera: OLYMPUS E-M10
