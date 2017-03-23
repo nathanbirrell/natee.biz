@@ -12,6 +12,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20131231-killing-fields.jpg
       width: 1280
       height: 849
@@ -22,6 +24,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20131231-laos-street.jpg
       width: 1280
       height: 849
@@ -32,6 +36,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140407-captain.jpg
       width: 1280
       height: 857
@@ -42,6 +48,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140407-kids.jpg
       width: 1280
       height: 857
@@ -52,6 +60,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140407-water-village.jpg
       width: 1280
       height: 857
@@ -62,6 +72,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
 2014-01-01-victoria:
   title: Victoria
   date: '2014-01-01'
@@ -76,6 +88,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140605-13th.jpg
       width: 1280
       height: 865
@@ -86,6 +100,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140605-morning-west.jpg
       width: 1280
       height: 865
@@ -96,6 +112,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140605-woolies.jpg
       width: 1280
       height: 865
@@ -106,6 +124,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20140802-stoking.jpg
       width: 1280
       height: 960
@@ -116,6 +136,8 @@
       shutter: 1/8
       iso: 3200
       date: 1407012655
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20140802-zzz.jpg
       width: 1280
       height: 960
@@ -126,6 +148,8 @@
       shutter: 1/30
       iso: 3200
       date: 1407013663
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20140803-hunter-dj.jpg
       width: 1280
       height: 960
@@ -136,6 +160,8 @@
       shutter: 1/320
       iso: 200
       date: 1407054219
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20140913-east.jpg
       width: 1200
       height: 800
@@ -146,6 +172,8 @@
       shutter: 1/2000
       iso: 200
       date: 1410610325
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20141018-fishing.jpg
       width: 1200
       height: 800
@@ -156,6 +184,8 @@
       shutter: 1/640
       iso: 200
       date: 1413625921
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20150120-portsea-shorey.jpg
       width: 1280
       height: 853
@@ -166,6 +196,8 @@
       shutter: 1/4000
       iso: 160
       date: 1421749533
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2014-06-19-sumbawa:
   title: Sumbawa
   date: '2014-06-19'
@@ -180,6 +212,8 @@
       shutter: 1/200
       iso: 800
       date: 1403151265
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20140619-super.jpg
       width: 853
       height: 1280
@@ -190,6 +224,8 @@
       shutter: 1/200
       iso: 200
       date: 1403159080
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20140622-sumbawa-west.jpg
       width: 1280
       height: 853
@@ -200,6 +236,8 @@
       shutter: 1/320
       iso: 50
       date: 1403459863
+      film: Processed with VSCOcam with a3 preset
+      description: Processed with VSCOcam with a3 preset
 2015-01-14-nsw:
   title: NSW
   date: '2015-01-14'
@@ -214,6 +252,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20150128-angourie.jpg
       width: 1280
       height: 865
@@ -224,6 +264,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20150128-man-and-troop.jpg
       width: 1280
       height: 865
@@ -234,6 +276,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20150128-seal-rocks.jpg
       width: 1280
       height: 865
@@ -244,6 +288,8 @@
       shutter: 1/NaN
       iso: null
       date: null
+      film: null
+      description: null
     - filename: 20141230-byron.jpg
       width: 1280
       height: 853
@@ -254,6 +300,8 @@
       shutter: 1/1250
       iso: 200
       date: 1419943621
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2015-05-01-victoria:
   title: Victoria
   date: '2015-05-01'
@@ -261,23 +309,51 @@
     - filename: 20150520-east-illford.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
       shutter: 1/NaN
       iso: null
       date: null
+      film: Illford XP2
+      description: Illford XP2
     - filename: 20150520-mc.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
       shutter: 1/NaN
       iso: null
       date: null
+      film: Illford XP2
+      description: Illford XP2
+    - filename: 20150524-13th-frame.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.8
+      shutter: 1/1600
+      iso: 200
+      date: 1432484778
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
+    - filename: 20150524-13th-fence.jpg
+      width: 1280
+      height: 853
+      camera: OLYMPUS E-M10
+      lens: LUMIX G 20/F1.7 II
+      focal: 20
+      aperture: 2.8
+      shutter: 1/1250
+      iso: 200
+      date: 1432485202
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20150524-13th-frame.jpg
       width: 1280
       height: 853
@@ -298,16 +374,6 @@
       shutter: 1/1250
       iso: 200
       date: 1432485202
-    - filename: 20150530-wye.jpg
-      width: 1280
-      height: 853
-      camera: OLYMPUS E-M10
-      lens: null
-      focal: null
-      aperture: null
-      shutter: 1/125
-      iso: 1250
-      date: 1433006107
 2015-07-01-indo:
   title: Indo
   date: '2015-07-01'
@@ -322,6 +388,8 @@
       shutter: 1/1250
       iso: 200
       date: 1436204182
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20150706-nusa-lembongan-sunset.jpg
       width: 1280
       height: 853
@@ -332,6 +400,8 @@
       shutter: 1/500
       iso: 200
       date: 1436204222
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2016-01-01-yamba:
   title: Yamba
   date: '2016-01-01'
@@ -346,6 +416,8 @@
       shutter: 1/1600
       iso: 200
       date: 1451663321
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20160102-angourie-pt.jpg
       width: 1280
       height: 853
@@ -356,6 +428,8 @@
       shutter: 1/4000
       iso: 200
       date: 1451726196
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2016-02-01-south-america:
   title: South America
   date: '2016-02-01'
@@ -370,6 +444,8 @@
       shutter: 1/2000
       iso: 200
       date: 1454248711
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20160131-argentina.jpg
       width: 1280
       height: 960
@@ -380,6 +456,8 @@
       shutter: 1/2500
       iso: 200
       date: 1454249027
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20160206-granite.jpg
       width: 1280
       height: 960
@@ -390,6 +468,8 @@
       shutter: 1/4000
       iso: 125
       date: 1454771270
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20160215-peru.jpg
       width: 1280
       height: 960
@@ -400,6 +480,8 @@
       shutter: 1/400
       iso: 200
       date: 1455563599
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
     - filename: 20160217-machu.jpg
       width: 1280
       height: 960
@@ -410,6 +492,8 @@
       shutter: 1/400
       iso: 200
       date: 1455707680
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2016-05-01-vicco:
   title: Vicco
   date: '2016-05-01'
@@ -424,6 +508,8 @@
       shutter: 1/2500
       iso: 200
       date: 1479628188
+      film: OLYMPUS DIGITAL CAMERA
+      description: OLYMPUS DIGITAL CAMERA
 2017-01-14-backdoor-shootout-2017:
   title: Backdoor Shootout 2017
   date: '2017-01-14'
@@ -438,3 +524,5 @@
       shutter: 1/640
       iso: 200
       date: 1484389433
+      film: OLYMPUS DIGITAL CAMERA          Processed with VSCO with a6 preset
+      description: OLYMPUS DIGITAL CAMERA          Processed with VSCO with a6 preset

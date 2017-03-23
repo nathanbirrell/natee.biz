@@ -121,6 +121,7 @@ const walkPhotos = (path, index) => {
         lens: exifResult.tags.LensModel || null,
         focal: exifResult.tags.FocalLength || null,
         aperture: exifResult.tags.FNumber || null,
+        description: exifResult.tags.ImageDescription || null, // Using to store Film when aperture/focal not available
         // EXIF shutter speed is written in decimal seconds, which isn't how that is
         // actually written. For times over 1 second, write as is with an "s" to signify
         // full seconds. Otherwise, turn it into a fraction 1/x which is what people

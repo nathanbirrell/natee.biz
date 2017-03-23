@@ -35,10 +35,16 @@ nowrap: 1
                           {{ photo.camera }}
                           <!-- with {{ photo.lens }} -->
                           <br>
-                          ISO{{ photo.iso }}
-                          {{ photo.shutter }}
-                          @ f/{{ photo.aperture }}
-                          {{ photo.focal }}mm
+
+                          {% if photo.aperture != null and photo.focal != null and photo.shutter != null %}
+                            ISO{{ photo.iso }}
+                            {{ photo.shutter }}
+                            @ f/{{ photo.aperture }}
+                            {{ photo.focal }}mm
+                          {% else %}
+                            <!-- Using this to store Film type -->
+                            on {{ photo.description }}
+                          {% endif %}
                           <!-- <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
                       </div>
                   </div>
