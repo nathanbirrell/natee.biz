@@ -5,7 +5,7 @@
     - filename: 20131231-baloon.jpg
       width: 849
       height: 1280
-      camera: NORITSU Controller
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -13,11 +13,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
     - filename: 20131231-killing-fields.jpg
       width: 1280
       height: 849
-      camera: NORITSU Controller
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -25,11 +25,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
     - filename: 20131231-laos-street.jpg
       width: 1280
       height: 849
-      camera: NORITSU Controller
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -37,11 +37,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
     - filename: 20140407-captain.jpg
       width: 1280
       height: 857
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -49,11 +49,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
     - filename: 20140407-kids.jpg
       width: 1280
       height: 857
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -61,11 +61,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
     - filename: 20140407-water-village.jpg
       width: 1280
       height: 857
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -73,7 +73,7 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Kodak Gold 400
 2014-01-01-victoria:
   title: Victoria
   date: '2014-01-01'
@@ -81,7 +81,7 @@
     - filename: 20131231-tom.jpg
       width: 1280
       height: 849
-      camera: NORITSU Controller
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -89,11 +89,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Fujicolor Industrial 100
     - filename: 20140605-13th.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -101,11 +101,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Fujicolor Industrial 100
     - filename: 20140605-morning-west.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -113,11 +113,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Fujicolor Industrial 100
     - filename: 20140605-woolies.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -125,7 +125,7 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Fujicolor Industrial 100
     - filename: 20140802-stoking.jpg
       width: 1280
       height: 960
@@ -245,7 +245,7 @@
     - filename: 20150128-angourie-troop.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -253,11 +253,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Illford XP2
     - filename: 20150128-angourie.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -265,11 +265,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Fujicolor Industrial 100
     - filename: 20150128-man-and-troop.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -277,11 +277,11 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Illford XP2
     - filename: 20150128-seal-rocks.jpg
       width: 1280
       height: 865
-      camera: FUJI SP-3000
+      camera: Canon AE-1
       lens: null
       focal: null
       aperture: null
@@ -289,7 +289,7 @@
       iso: null
       date: null
       film: null
-      description: null
+      description: Illford XP2
     - filename: 20141230-byron.jpg
       width: 1280
       height: 853
