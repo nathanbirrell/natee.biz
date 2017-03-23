@@ -370,16 +370,6 @@
       shutter: 1/2000
       iso: 200
       date: 1454248711
-    - filename: 20160131-cerro-campinaro.jpg
-      width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 4
-      shutter: 1/2000
-      iso: 200
-      date: 1454248711
     - filename: 20160131-argentina.jpg
       width: 1280
       height: 960
@@ -420,30 +410,10 @@
       shutter: 1/400
       iso: 200
       date: 1455707680
-    - filename: 20160217-111440.jpg
-      width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 6.3
-      shutter: 1/400
-      iso: 200
-      date: 1458213280
 2016-05-01-vicco:
   title: Vicco
   date: '2016-05-01'
   contents:
-    - filename: cathedral.jpg
-      width: 1280
-      height: 960
-      camera: OLYMPUS E-M10
-      lens: LUMIX G 20/F1.7 II
-      focal: 20
-      aperture: 5.6
-      shutter: 1/1600
-      iso: 200
-      date: 1462306381
     - filename: old-faithful.jpg
       width: 1280
       height: 960

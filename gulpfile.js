@@ -344,6 +344,15 @@ gulp.task('deploy', 'Deploy to Github Pages', () => {
   return gulp.src('./_site/**/*').pipe(ghPages({branch: 'master'}));
 });
 
+gulp.task('dev', false, ['build', 'serve', 'watch']);
+
+gulp.task('watch', 'Watch-run sass, jekyll, js and photo update tasks', () => {
+  gulp.watch('./_sass/**/*.scss', ['sass']);
+  gulp.watch(['./*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/.*.md', '!./_site/**'], ['jekyll']);
+  gulp.watch(['./_js/*.js', '!./node_modules/**'], ['js']);
+  gulp.watch('./source/**/**/*', ['update']);
+});
+
 /*
              _             _          __  __
   __ _ _   _| |_ __    ___| |_ _   _ / _|/ _|
@@ -354,12 +363,3 @@ gulp.task('deploy', 'Deploy to Github Pages', () => {
 */
 
 gulp.task('default', false, ['help']);
-
-gulp.task('dev', false, ['build', 'serve', 'watch']);
-
-gulp.task('watch', 'Watch-run sass, jekyll, js and photo update tasks', () => {
-  gulp.watch('./_sass/**/*.scss', ['sass']);
-  gulp.watch(['./*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/.*.md', '!./_site/**'], ['jekyll']);
-  gulp.watch(['./_js/*.js', '!./node_modules/**'], ['js']);
-  gulp.watch('./source/**/*.*', ['update']);
-});
