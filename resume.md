@@ -2,7 +2,6 @@
 layout: page
 title: Resume
 permalink: /resume/
-nowrap: 1
 ---
 
 # Nathan Birrell: Javascript Developer — Résumé

@@ -10,6 +10,7 @@ $primary-colour: #4A4A4A;
 $dark-grey: #4A4A4A;
 $grey: #CCCCCC;
 $black: #000;
+$off-white: #fefefe;
 $white: #fff;
 
 // Breakpoints
@@ -34,6 +35,7 @@ $font-weight-bold: 700;
 @import "site-header";
 @import "gallery";
 @import "paginator";
+@import "resume";
 @import "photo-block";
 @import "photoswipe";
 @import "site-footer";
