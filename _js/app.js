@@ -163,7 +163,7 @@
       // window.addEventListener('hashchange', setCurrentImage);
     }
 
-    initResume();
+    // initResume();
   }
 
   window.onload = init;

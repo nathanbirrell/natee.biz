@@ -41,8 +41,18 @@
 
   .resume-wrapper {
     position: relative;
-    text-align: center;
     height: 100%;
+  }
+
+  h1 {
+    margin-left: 40px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400;
   }
 
   .container {
@@ -61,92 +71,9 @@
       width: 60%;
     }
 
-    h1 {
-      font-size: 2.5em;
-      text-transform: uppercase;
-      line-height: 1em;
-      padding-top: 40px;
-      @include breakpoint(mama-bear) {
-        padding-top: 20px;
-      }
-      @include breakpoint(baby-bear) {
-        font-size: 1.8em;
-        padding-top: 20px;
-      }
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .picture-resume-wrapper {
-      width: 40%;
-      display: block;
-      float: left;
-
-      @include breakpoint(mama-bear) {
-        width: 100%;
-      }
-    }
-
-    .picture-resume {
-      width: 220px;
-      height: 220px;
-      background-size: cover;
-      border-radius: 50%;
-      margin-right: 0;
-      display: table;
-      position: relative;
-      vertical-align: middle;
-
-      span {
-        display: table-cell;
-        vertical-align: middle;
-        position: relative;
-        margin: 0 auto;
-        z-index: 10;
-        text-align: center;
-      }
-
-      img {
-        border-radius: 50%;
-        width: 130px;
-        @include breakpoint(papa-bear) {
-          width: 80px;
-        }
-        @include breakpoint(mama-bear) {
-          width: 120px;
-          height: 120px;
-        }
-      }
-      @include breakpoint(papa-bear) {
-        width: 150px;
-        height: 150px;
-      }
-      @include breakpoint(mama-bear) {
-        width: 200px;
-        height: 200px;
-      }
-      @include breakpoint(baby-bear) {
-        width: 180px;
-        height: 180px;
-      }
-    }
-
-    .contact-info {
-      margin-top: 100px;
-      font-weight: 300;
-      @include breakpoint(mama-bear) {
-        margin-top: 70px;
-      }
-      @include breakpoint(baby-bear) {
-        margin-top: 50px;
-      }
-    }
-
     .list-titles {
       float: left;
-      text-align: left;
+
       font-weight: 600;
       width: 40%;
       color: $primary-colour;
@@ -155,24 +82,10 @@
     .list-content {
       float: left;
       width: 60%;
-      text-align: left;
+
       font-weight: 300;
     }
 
-    .contact-presentation {
-      text-align: left;
-      font-weight: 300;
-      margin-top: 100px;
-      margin-bottom: 100px;
-      @include breakpoint(mama-bear) {
-        margin-top: 70px;
-        margin-bottom: 70px;
-      }
-      @include breakpoint(brother-bear) {
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-    }
 
     svg {
       width: 100%;
@@ -199,19 +112,10 @@
       width: 100%;
     }
 
-    h3.experience-title {
-      color: $primary-colour;
-      text-align: left;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      font-weight: 400;
-    }
-
     .company-wrapper {
       width: 30%;
       float: left;
-      text-align: left;
+
       padding-right: 5%;
       margin-bottom: 60px;
       @include breakpoint(baby-bear) {
@@ -223,7 +127,7 @@
     .job-wrapper {
       width: 70%;
       float: left;
-      text-align: left;
+
       padding-right: 5%;
       margin-bottom: 60px;
       @include breakpoint(baby-bear) {
@@ -239,19 +143,19 @@
   }
 
   .section-padding {
-    padding: 60px 60px 40px 40px;
+    padding: 20px 60px 40px 40px;
     @include breakpoint(brother-bear) {
-      padding: 80px 15% 40px 10%;
+      padding: 40px 15% 40px 10%;
     }
     @include breakpoint(baby-bear) {
-      padding: 40px 10% 20px 5%;
+      padding: 20px 10% 20px 5%;
     }
   }
 
   .section-wrapper {
     width: 50%;
     float: left;
-    text-align: left;
+
     font-weight: 300;
     margin-bottom: 20px;
     @include breakpoint(baby-bear) {
@@ -264,7 +168,7 @@
 
     h3.section-title {
       color: $primary-colour;
-      text-align: left;
+
       text-transform: uppercase;
       font-size: 1.2em;
       margin-bottom: 20px;
