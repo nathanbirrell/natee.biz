@@ -20,8 +20,16 @@
     color: $grey;
     border: none;
 
+    // First override default link click colours
+    &, &:link, &:focus {
+      color: $grey;
+      border: none;
+      background: transparent;
+    }
+
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       color: $dark-grey;
     }
   }

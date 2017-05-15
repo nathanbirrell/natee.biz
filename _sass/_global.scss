@@ -16,14 +16,14 @@ body {
   font-family: $main-font;
   font-size: 100%;
   line-height: 1.5;
+  color: $dark-grey;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $main-font;
   line-height: 18px;
   letter-spacing: -0.14px;
-  color: $dark-grey;
-  font: 1em;
 }
 
 h1 {
@@ -47,16 +47,21 @@ a {
   text-decoration: none;
 }
 
-p a, a:link {
+a:visited {
+  color: $dark-grey;
+  font-weight: $font-weight-light;
+}
+
+a, a:link {
   color: $dark-grey;
   border-bottom: 2px solid $dark-grey;
 }
 
-p a:hover, a:active {
+a:hover, a:active {
   color: $black;
 }
 
-p a:focus {
+a:focus {
   background: $dark-grey;
   border: $dark-grey;
   color: $white;
@@ -65,6 +70,13 @@ p a:focus {
 .lead {
   font-size: 1.25em;
   font-weight: $font-weight-light;
+}
+
+blockquote {
+  margin: 0;
+  border-left: 4px solid $dark-grey;
+  padding-left: 1em;
+  font-style: italic;
 }
 
 img {
