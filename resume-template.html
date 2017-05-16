@@ -21,12 +21,11 @@ wrap_classes: resume
         <li>Primary focus on front-end development — React JS, Redux, ES6, Webpack, Jest, Grunt/Gulp, Zurb Foundation, Sass, graphic design software and so on</li>
         <li>gaining Proficiency in the full-stack framework Ruby on Rails (outside of my day job)</li>
       </ul>
-      <h2>Contact & around the web</h2>
+      <h2>Contact &amp; around the web</h2>
       <ul>
-        <li><a href="mailto:nathanbirrell@gmail.com">nathanbirrell@gmail.com</a></li>
-        <li><a href="https://www.nathanbirrell.me">Web</a></li>
-        <li><a href="https://github.com/nathanbirrell">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/nathanbirrell">LinkedIn</a></li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="https://github.com/{{ site.github_username }}">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>
       </ul>
     </div>
   </section>
@@ -37,59 +36,66 @@ wrap_classes: resume
 
       <div class="experience-wrapper">
         <div class="company-wrapper clearfix">
+          <h4><a href="https://www.belong.com.au">Belong - powered by Telstra</a></h4>
+          <div class="time">Nov 2016 - Present</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <h4>Front End Developer</h4>
+          <p>Mid-level Front-end Developer on a React/Redux web application. Key activities:</p>
+          <ul>
+            <li>Working with UX designers, Back-end developers (Java) and testers to deliver new features to our website</li>
+            <li>Approval and feedback on team members&#39; feature pull requests</li>
+            <li>Onboarding new developers, helping them get up to speed</li>
+            <li>Writing Jest unit tests</li>
+          </ul>
+          <p>Involved in multiple front-end migrations:</p>
+          <ul>
+            <li>Iterative migration of our legacy app out of an unmaintainable Knockout &amp; JQuery app to a more suitable React/Redux ecosystem</li>
+            <li>Re-platform from T Cloud (Telstra) to AWS</li>
+            <li>Pulling the app out of painful enterprise CMS into a static site build with basic Express server</li>
+          </ul>
+        </div>
+
+        <div class="company-wrapper clearfix">
           <h4>Company name</h4>
           <div class="time">Nov 2012 - Present</div>
         </div>
-
         <div class="job-wrapper clearfix">
           <h4>Front End Developer </h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
         </div>
 
-        <div class="company-wrapper clearfix">
-          <h4>Company name</h4>
-          <div class="time">Nov 2010 - Present</div>
-        </div>
-
-        <div class="job-wrapper clearfix">
-          <h4>Freelance, Web Designer / Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-        </div>
-
-        <div class="company-wrapper clearfix">
-          <h4>Company name</h4>
-          <div class="time">Nov 2009 - Nov 2010</div>
-        </div>
-
-        <div class="job-wrapper clearfix">
-          <h4>Web Designer </h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-        </div>
-
       </div>
-      <!--Skill experience-->
 
       <div class="section-wrapper clearfix">
-        <h3>Skills</h3>
-        <!-- YOUR SET OF SKILLS  -->
+        <h3>Skills &amp; Education</h3>
         <ul>
-          <li class="skill-percentage skill-80">HTML / HTML5</li>
-          <li class="skill-percentage skill-90">CSS / CSS3 / SASS / LESS</li>
-          <li class="skill-percentage skill-60">Javascript</li>
-          <li class="skill-percentage skill-60">Jquery</li>
-          <li class="skill-percentage skill-40">Wordpress</li>
-          <li class="skill-percentage skill-20">Photoshop</li>
-
+          <li class="skill-percentage skill-80">Javascript</li>
+          <li class="skill-percentage skill-90">HTML, CSS, Sass</li>
+          <li class="skill-percentage skill-60">React/Redux</li>
+          <li class="skill-percentage skill-60">Grunt &amp; Gulp</li>
+          <li class="skill-percentage skill-80">Git &amp; git-flow</li>
+          <li class="skill-percentage skill-40">Figma/Sketch/Photoshop/Illustrator</li>
+          <li class="skill-percentage skill-40">Ruby &amp; Rails</li>
+          <li class="skill-percentage skill-20">Electron</li>
         </ul>
-
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Bachelor of Business (Information Systems) (Applied) </strong> (minor in Marketing) - RMIT University, 2012 – 2015</li>
+          <li>Certificate IV in Business Sales - Talent2 Education (2012)</li>
+          <li>High School - St. Kevin&#39;s College, graduated 2011, ATAR: 93</li>
+        </ul>
       </div>
 
       <div class="section-wrapper clearfix">
-        <h3>Hobbies</h3>
-        <!-- DESCRIPTION OF YOUR HOBBIES -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
+        <h3>Interests</h3>
+        <ol>
+          <li>Strong interest in best practices in software development, writing readable and maintainable code. Also essentially everything in the <a href="http://rubyonrails.org/doctrine/">Rails Doctrine</a> and <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code</a>.</li>
+          <li>Improving quality: thru sharing culture, PRs and pair prog, unit testing (peace of mind), etc</li>
+          <li>Community involvement (internally and externally), open source, melbJS, meetups</li>
+          <li>Managing teams and workflows in building software</li>
+        </ol>
+        <p>Outside of work I generally spend away from my computer: surfing uncrowded waves with friends, camping in my van and making espresso. I also listen to a lot of rap when coding.</p>
       </div>
 
     </div>
