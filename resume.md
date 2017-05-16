@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Resume
-permalink: /resume/
+title: Resume (Markdown)
+permalink: /resume-md/
 ---
 
 # Nathan Birrell: Javascript Developer — Résumé
