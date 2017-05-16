@@ -20,30 +20,13 @@ $tablet-up: 768px;
 $desktop-up: 1024px;
 
 // Fonts
-@font-face {
-  font-family: 'iosevka';
-  font-weight: 400;
-  src:  url('/fonts/iosevka-regular.woff2') format('woff2'),
-        url('/fonts/iosevka-regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'iosevka';
-  font-weight: 300;
-  src:  url('/fonts/iosevka-light.woff2') format('woff2'),
-        url('/fonts/iosevka-light.woff') format('woff');
-}
-@font-face {
-  font-family: 'iosevka';
-  font-weight: 700;
-  src:  url('/fonts/iosevka-bold.woff2') format('woff2'),
-        url('/fonts/iosevka-bold.woff') format('woff');
-}
-
+@import "font.scss";
 $main-font: 'iosevka', 'Helvetica', 'Arial', sans-serif;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-bold: 700;
+$font-weight-bold: 600;
+$font-weight-heavy: 700;
 
 // Global stuff
 @import "normalize";
