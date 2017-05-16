@@ -16,7 +16,7 @@ _Currently **not** looking for work._
 ## Summary
 * 3+ years' software engineering experience at some of Australia's largest companies
 * Primary focus on front-end development — React JS, Redux, ES6, Webpack, Jest, Grunt/Gulp, Zurb Foundation, Sass, graphic design software and so on
-* gaining Proficiency in the full-stack framework Ruby on Rails (outside of my day job)
+* Gaining competency in Ruby on Rails (on a personal project)
 
 ## Experience
 
