@@ -20,8 +20,26 @@ $tablet-up: 768px;
 $desktop-up: 1024px;
 
 // Fonts
-$main-font: 'Chivo', serif;
-// $open-sans: 'Open Sans', sans-serif;
+@font-face {
+  font-family: 'iosevka';
+  font-weight: 400;
+  src:  url('/fonts/iosevka-regular.woff2') format('woff2'),
+        url('/fonts/iosevka-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'iosevka';
+  font-weight: 300;
+  src:  url('/fonts/iosevka-light.woff2') format('woff2'),
+        url('/fonts/iosevka-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'iosevka';
+  font-weight: 700;
+  src:  url('/fonts/iosevka-bold.woff2') format('woff2'),
+        url('/fonts/iosevka-bold.woff') format('woff');
+}
+
+$main-font: 'iosevka', 'Helvetica', 'Arial', sans-serif;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
