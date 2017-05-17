@@ -1,150 +1,54 @@
 .resume {
-  $time: 0.6s;
-
-  @mixin breakpoint($point) {
-     @if $point == papa-bear{
-      @media (max-width: 1500px) {
-         @content;
-      }
-    }
-    @if $point == mama-bear {
-       @media (max-width: 1200px){
-        @content;
-      }
-    }
-    @if $point == brother-bear {
-       @media (max-width: 850px){
-        @content;
-      }
-    }
-    @else if $point == baby-bear {
-       @media (max-width: 450px){
-        @content;
-      }
-    }
-  }
+  display: flex;
 
   &.wrapper {
-    margin: 0;
+    margin: 1em 2em;
     max-width: none;
   }
 
-  .clearfix::after,
-  .clearfix::before {
-    content: " ";
-    display: table;
+  .column {
+    margin: 1em 0;
+    width: 100%;
   }
 
-  .clearfix::after {
-    clear: both;
-  }
-
-  .resume-wrapper {
-    position: relative;
-    height: 100%;
+  .resume__column {
+    width: 100%;
   }
 
   h1 {
     font-size: 5rem;
     font-weight: 700;
-    margin-left: 40px;
-    margin-right: 40px;
-    line-height: 1em;
+    line-height: 1.1;
     border-bottom: 0.1em solid $dark-grey;
   }
 
   h2 {
     text-transform: uppercase;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 0;
   }
 
   h3 {
     text-transform: uppercase;
     font-size: 1.2em;
     margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  h4 {
+    color: $primary-colour;
+    margin: 0;
     font-weight: 400;
+    margin-bottom: 15px;
   }
 
-  .container {
-    min-height: 600px;
-  }
-
-  .profile {
-    width: 40%;
-    float: left;
-    @include breakpoint(brother-bear) {
-      width: 100%;
-    }
-  }
-
-  .experience {
-    width: 60%;
-    float: left;
-    position: relative;
-    font-weight: 300;
-    min-height: 100%;
-    min-height: 100vh;
-
-    @include breakpoint(brother-bear) {
-      width: 100%;
-    }
-
-    .company-wrapper {
-      width: 30%;
-      float: left;
-
-      padding-right: 5%;
-      margin-bottom: 60px;
-      @include breakpoint(baby-bear) {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-
-    .job-wrapper {
-      width: 70%;
-      float: left;
-
-      padding-right: 5%;
-      margin-bottom: 60px;
-      @include breakpoint(baby-bear) {
-        width: 100%;
-        margin-bottom: 40px;
-      }
-    }
-
-    h4 {
-      color: $primary-colour;
-      margin: 0;
-      font-weight: 400;
-      margin-bottom: 15px;
-    }
-  }
-
-  .section-padding {
-    padding: 20px 60px 40px 40px;
-    @include breakpoint(brother-bear) {
-      padding: 40px 15% 40px 10%;
-    }
-    @include breakpoint(baby-bear) {
-      padding: 20px 10% 20px 5%;
-    }
-  }
-
-  .section-wrapper {
-    width: 50%;
-    float: left;
-
-    font-weight: 300;
-    margin-bottom: 20px;
-    @include breakpoint(baby-bear) {
-      width: 100%;
-    }
-
-    &:nth-child(3) {
-      padding-right: 8%;
-    }
+  p,
+  ul,
+  ol,
+  span {
+    margin-top: 0;
+    font-weight: 400;
   }
 
   // Skill percentage CSS
@@ -170,6 +74,8 @@
       margin-top: 3px;
       bottom: 0;
     }
+
+    $time: 0.6s;
 
     &.skill-90::before {
       width: 90%;
