@@ -32,6 +32,20 @@
   }
 
   .resume__experience {
+    @include breakpoint($mobile-only) {
+      .resume__experience-company {
+        display: flex;
+        margin-top: 14px;
+
+        * {
+          width: 50%;
+        }
+
+        p {
+          text-align: right;
+        }
+      }
+    }
     @include breakpoint($tablet-up) {
       display: flex;
 
