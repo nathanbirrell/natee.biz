@@ -1,11 +1,16 @@
 .resume {
   &.wrapper {
-    margin: 1em 2em;
+    margin: 14px 24px;
     max-width: none;
+
+    @include breakpoint($wide-desktop-up) {
+      max-width: 1400px;
+      margin: 14px auto;
+    }
   }
 
   .column {
-    margin: 1em 0;
+    margin: 14px 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -32,10 +37,22 @@
 
       .resume__experience-company {
         width: 30%;
+        padding-right: 12px;
       }
       .resume__experience-description {
         width: 70%;
       }
+    }
+  }
+
+  @include breakpoint($tablet-up) {
+    .resume__half {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .resume__half div {
+      width: 50%;
+      padding-right: 14px;
     }
   }
 
