@@ -46,7 +46,12 @@ module.exports = {
     },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/resume']
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
