@@ -2,9 +2,12 @@
 
 ## Get started
 
+Install
+
 `yarn`
 
+Run locally
 `yarn dev`
 
-## Running in development
-`gatsby develop`
+Deploy
+`yarn run deploy`
