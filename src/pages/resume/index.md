@@ -22,8 +22,14 @@ Summary
 Experience
 ----------
 
+### [Stax](https://stax.io/)
+Oct 2018 - present
+
+* Building and managing strategy around our frontend application
+* Tech: Typescript, GraphQL, Apollo, React, Jest, Lambda and other AWS fun
+
 ### [Bureau of Meteorology](https://beta.weather.bom.gov.au/)
-Mar 2018 - present (contract)
+Mar 2018 - Oct 2018
 
 * Working on a project team to build a completely new weather experience for BOM's general public audience.
 * One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
