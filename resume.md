@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+title: "Resume — Nathan Birrell"
 date: 2021-11-05
 layout: layouts/base.njk
 ---
@@ -8,11 +8,9 @@ layout: layouts/base.njk
 
 Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 
-## About
+Skip to: [Experience](#experience) | [Side Projects](#side-projects) | [Interests](#interests)
 
-Determined to make the web a better place with beautiful, maintainable, accessible and thought-out software applications.
-
-## Summary
+About me:
 
 - Software engineering experience with some of Australia’s largest companies since 2012.
 - Primary focus on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node.
@@ -20,16 +18,20 @@ Determined to make the web a better place with beautiful, maintainable, accessib
 
 ## Experience
 
-### [Stax](https://stax.io/)
+### Stax
 
 Oct 2018 - present
+
+[stax.io](https://stax.io/)
 
 - Building and managing strategy around our frontend application
 - Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, Lambda and other AWS fun
 
-### [Bureau of Meteorology](https://beta.weather.bom.gov.au/)
+### Bureau of Meteorology
 
 Mar 2018 - Oct 2018
+
+➡️ [View the app at weather.bom.gov.au](https://weather.bom.gov.au/)
 
 - Working on a project team to build a completely new weather experience for BOM's general public audience.
 - One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
@@ -39,22 +41,9 @@ Mar 2018 - Oct 2018
   - finding the right abstractions for reusable components
   - working with a medium-to-large team to agree on long-term technical decisions
 
-### [Poseidon](http://surfposeidon.io)
+### Belong (by Telstra)
 
-June 2017 - 2018
-
-A side project with a friend, which involved a create-react-app + Typescript frontend and a Rails backend.
-
-The goal for the project was to improve the experience around surf forecast modelling, so we had some fun challenges around presenting graphs and numerical data in a friendly way; storing and parsing model data and so on. Multiple third-party integrations involved, including: NOAA, BOM, PlanetOS and Willyweather.
-
-We decided to discontinue the project after some longstanding companies in the area vastly improved their offering and felt we couldn't add enough additional value.
-
-### [Belong](https://www.belong.com.au)
-
-powered by Telstra
-Nov 2016 - Mar 2018
-
-#### Front-end Developer
+Front-end Developer Nov 2016 - Mar 2018
 
 Mid-level Front-end Developer on a React/Redux/Webpack web application. Key activities:
 
@@ -63,11 +52,9 @@ Mid-level Front-end Developer on a React/Redux/Webpack web application. Key acti
 - Onboarding new developers, maintaining Jest unit testing coverage
 - Migration of our legacy front-end app out of an unmaintainable Knockout/JQuery set-up to a more manageable React/Redux ecosystem.
 
-### [Deloitte Digital](http://www.deloittedigital.com/au/work)
+### Deloitte Digital
 
-Jan '14 - Nov '16
-
-#### Front-end Developer
+Front-end Developer Jan '14 - Nov '16
 
 Website and web application builds for clients such as [Telstra](https://www.telstra.com.au), [ANZ](https://www.anz.com.au/personal/) , [Herbert Smith Freehills](https://www.herbertsmithfreehills.com) , [RACQ](https://www.racq.com.au), [Victorian Comprehensive Cancer Centre](https://conexus.victorianccc.org.au) and [QSuper](https://qsuper.qld.gov.au) .
 
@@ -79,18 +66,30 @@ Front-end feature development in SCRUM delivery teams:
 - Attended conferences and completed training such as: Deloitte FED training (mostly React & Angular), Pluralsight courses (i.e. Crockford’s JS Good Parts) and meetups/conferences (MelbJS, LASTConf).
 - Helped design/introduce a feature-based Git workflow (‘git flow’) for multiple clients.
 
-### [The Incentive Lab](http://www.theincentivelab.com)
+### The Incentive Lab
 
 Full-Stack Developer (PHP) Contractor, 2015
 
 - Part-time (and sole) full-stack PHP developer for the incentive marketing agency’s proprietary software, [Flashpoint](www.theflashpointapp.com), used by sales teams at BMW, Nissan and Samsung in Australia.
 - Technologies used: PHP, Symfony, Doctrine ORM, LAMP stack, Wordpress, Javascript/JQuery.
 
-### Freelance Projects
+## Side Projects
 
-2013 - Dec '16
+### Future Beats (2021)
 
-#### Developer / Digital Consultant
+As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7.
+
+➡️ [View the app at futurebeats.fm](https://futurebeats.fm)
+
+### Poseidon (June 2017 - 2018)
+
+A side project with a friend, which involved a create-react-app + Typescript frontend and a Rails backend.
+
+The goal for the project was to improve the experience around surf forecast modelling, so we had some fun challenges around presenting graphs and numerical data in a friendly way; storing and parsing model data and so on. Multiple third-party integrations involved, including: NOAA, BOM, PlanetOS and Willyweather.
+
+We decided to discontinue the project after some longstanding companies in the area vastly improved their offering and felt we couldn't add enough additional value.
+
+### Freelance Projects (2013 - 2016)
 
 - Worked for myself from university as a web developer and digital consultant to small businesses.
 - Provided services from as basic as a Wordpress/Squarespace build to a custom Rails application.
@@ -117,7 +116,7 @@ Full-Stack Developer (PHP) Contractor, 2015
 
 ## Education
 
-#### RMIT University (2012 - 2015)
+**RMIT University (2012 - 2015)**
 
 Bachelor of Business (Information Systems) (Applied) (minor in Marketing)
 
