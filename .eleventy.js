@@ -48,6 +48,8 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/github-markdown-css/github-markdown.css": "css/github-markdown.css" 
