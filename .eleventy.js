@@ -5,6 +5,45 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const ExifReader = require('exifreader');
+
+const PHOTOS_DIR = 'img/photos'
+const photos = fs.readdirSync(PHOTOS_DIR);
+
+const photoCollection = photos.map((filename) => {
+  return {
+    filename,
+    name: filename.split('.jpeg')[0],
+    src: `/${PHOTOS_DIR}/${filename}`,
+    path: `${PHOTOS_DIR}/${filename}`,
+  }
+})
+
+/* Parse date string in YYYY-MM-DD hh:mm:ss format
+** separator can be any non-digit character
+** e.g. 2017:03:09 14:49:21
+*/
+function parseDate(s) {
+  var b = s.split(/\D/);
+  return new Date(b[0],b[1]-1,b[2],b[3],b[4],b[5]);
+}
+
+async function readPhotosWithExif() {
+  const photosWithExif = []
+  await Promise.all(photoCollection.map(async (photo) => {
+    const exifData = await ExifReader.load(photo.path)
+    photosWithExif.push({
+      ...photo,
+      date: parseDate(exifData.DateTimeOriginal.description),
+      make: exifData.Make.description,
+      model: exifData.Model.description,
+      lens: exifData.Lens?.value,
+      // exifData
+    })
+  }));
+  // console.log(photosWithExif)
+  return photosWithExif
+}
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -55,6 +94,12 @@ module.exports = function(eleventyConfig) {
     "node_modules/github-markdown-css/github-markdown.css": "css/github-markdown.css" 
   });
 
+  // Create collection of photos
+  // TODO: assess processing these images for web https://www.raymondcamden.com/2021/04/07/building-a-simple-image-gallery-with-eleventy
+  eleventyConfig.addCollection('photos', async function(collectionApi) {
+    return await (await readPhotosWithExif()).sort((itemA, itemB) => itemB.date - itemA.date);
+  });
+
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
@@ -65,10 +110,11 @@ module.exports = function(eleventyConfig) {
       placement: "after",
       class: "direct-link",
       symbol: "#",
-      level: [1,2,3,4],
+      level: [1,2,3],
     }),
     slugify: eleventyConfig.getFilter("slug")
   });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Override Browsersync defaults (used only with --serve)
