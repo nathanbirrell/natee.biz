@@ -36,3 +36,30 @@ html {
   margin-bottom: 0;
   margin-top: 1rem;
 }
+
+figcaption {
+  font-size: 0.8rem;
+  color: var(--color-fg-muted);
+  /* text-transform: uppercase; */
+}
+
+.photo figcaption {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+figure.photo {
+  margin: 8rem 0;
+}
+
+/* figure.photo .photo-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+figure.photo img {
+  max-height: 90vh;
+  width: auto;
+} */

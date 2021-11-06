@@ -23,7 +23,7 @@ const photoCollection = photos.map((filename) => {
 ** separator can be any non-digit character
 ** e.g. 2017:03:09 14:49:21
 */
-function parseDate(s) {
+function parseExifDate(s) {
   var b = s.split(/\D/);
   return new Date(b[0],b[1]-1,b[2],b[3],b[4],b[5]);
 }
@@ -32,14 +32,21 @@ async function readPhotosWithExif() {
   const photosWithExif = []
   await Promise.all(photoCollection.map(async (photo) => {
     const exifData = await ExifReader.load(photo.path)
+    const lensFocalLength= (exifData.FocalLength?.value.toString() || '').split(',1')[0]
+    const date = exifData.DateTimeOriginal?.description ? parseExifDate(exifData.DateTimeOriginal?.description) : parseExifDate(exifData.DateTime.description)
     photosWithExif.push({
       ...photo,
-      date: parseDate(exifData.DateTimeOriginal.description),
-      make: exifData.Make.description,
-      model: exifData.Model.description,
-      lens: exifData.Lens?.value,
-      // exifData
+      date,
+      make: exifData.Make?.description || '',
+      model: exifData.Model?.description || '',
+      lens: exifData.Lens?.value || '',
+      lensFocalLength: lensFocalLength || '',
+      lensFocalLengthEquivalent: (lensFocalLength && lensFocalLength  * 1.5) || '',
+      iso: exifData.ISOSpeedRatings?.value || '',
+      aperture: exifData.FNumber?.description || '',
+      // 
     })
+    // console.log(exifData)
   }));
   // console.log(photosWithExif)
   return photosWithExif
@@ -58,7 +65,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");
+  });
+  
+  eleventyConfig.addFilter("monthYearDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("LLLL yyyy");
+  });
+  
+  eleventyConfig.addFilter("aperture", fNumber => {
+    return fNumber === 'f/0' ? '' : fNumber
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
