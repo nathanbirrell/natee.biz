@@ -63,14 +63,3 @@ figure.photo {
     margin-bottom: 8rem;
   }
 }
-
-/* figure.photo .photo-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-figure.photo img {
-  max-height: 90vh;
-  width: auto;
-} */
