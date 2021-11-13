@@ -118,6 +118,11 @@
   resolved "https://registry.yarnpkg.com/@ungap/event-target/-/event-target-0.2.3.tgz#be682c681126dca2371c4e1a1721f8e8bb400905"
   integrity sha512-7Bz0qdvxNGV9n0f+xcMKU7wsEfK6PNzo8IdAcOiBgMNyCuU0Mk9dv0Hbd/Kgr+MFFfn4xLHFbuOt820egT5qEA==
 
+"@xmldom/xmldom@^0.7.5":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.5.tgz#09fa51e356d07d0be200642b0e4f91d8e6dd408d"
+  integrity sha512-V3BIhmY36fXZ1OtVcI9W+FxQqxVLsPKcNjWigIaa81dLC9IolJl5Mt4Cvhmr0flUnjSpTdrbMTSbXqYqV5dT6A==
+
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/a-sync-waterfall/-/a-sync-waterfall-1.0.1.tgz#75b6b6aa72598b497a125e7a2770f14f4c8a1fa7"
@@ -847,6 +852,13 @@ eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
+
+exifreader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/exifreader/-/exifreader-4.0.0.tgz#6f9db1d67c9373ee26271dee06605cec481e4490"
+  integrity sha512-wW7W21KauAVG4/ga6FtJ7apscrpiXpx+lYqb19Nz1GrizRqiYJL2wMAEP+cXPLUPD9f3Kbz+Qk9vyBxPSTrS+g==
+  optionalDependencies:
+    "@xmldom/xmldom" "^0.7.5"
 
 extend-shallow@^2.0.1:
   version "2.0.1"
@@ -1821,6 +1833,11 @@ posthtml@^0.15.1:
   dependencies:
     posthtml-parser "^0.7.2"
     posthtml-render "^1.3.1"
+
+prettier@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
+  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
 
 pretty-ms@^0.2.1:
   version "0.2.2"

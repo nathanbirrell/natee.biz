@@ -31,7 +31,7 @@ Oct 2018 - present
 
 Mar 2018 - Oct 2018
 
-➡️ [View the app at weather.bom.gov.au](https://weather.bom.gov.au/)
+[View the app at weather.bom.gov.au →](https://weather.bom.gov.au/)
 
 - Working on a project team to build a completely new weather experience for BOM's general public audience.
 - One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
@@ -79,7 +79,7 @@ Full-Stack Developer (PHP) Contractor, 2015
 
 As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7.
 
-➡️ [View the app at futurebeats.fm](https://futurebeats.fm)
+[View the app at futurebeats.fm →](https://futurebeats.fm)
 
 ### Poseidon (June 2017 - 2018)
 

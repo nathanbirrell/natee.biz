@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const readPhotosWithExif = require('./photoReader')
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -19,7 +20,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");
+  });
+
+  eleventyConfig.addFilter("monthYearDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("LLLL yyyy");
+  });
+
+  eleventyConfig.addFilter("aperture", fNumber => {
+    return fNumber === 'f/0' ? '' : fNumber
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -48,12 +57,16 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
-  
+
   eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addPassthroughCopy({
-    "node_modules/github-markdown-css/github-markdown.css": "css/github-markdown.css" 
+    "node_modules/github-markdown-css/github-markdown.css": "css/github-markdown.css"
   });
+
+  // Create collection of photos
+  // TODO: assess processing these images for web https://www.raymondcamden.com/2021/04/07/building-a-simple-image-gallery-with-eleventy
+  eleventyConfig.addCollection('photos', readPhotosWithExif);
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
@@ -65,10 +78,11 @@ module.exports = function(eleventyConfig) {
       placement: "after",
       class: "direct-link",
       symbol: "#",
-      level: [1,2,3,4],
+      level: [1,2,3],
     }),
     slugify: eleventyConfig.getFilter("slug")
   });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Override Browsersync defaults (used only with --serve)
