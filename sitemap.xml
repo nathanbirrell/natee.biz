@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://nathanbirrell.me/</loc>
-    <lastmod>2021-11-04</lastmod>
+    <loc>https://nathanbirrell.me/resume/</loc>
+    <lastmod>2021-11-05</lastmod>
   </url>
   
   <url>
-    <loc>https://nathanbirrell.me/resume/</loc>
-    <lastmod>2021-11-05</lastmod>
+    <loc>https://nathanbirrell.me/</loc>
+    <lastmod>2021-11-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nathanbirrell.me/photo/</loc>
+    <lastmod>2021-11-13</lastmod>
   </url>
 </urlset>
