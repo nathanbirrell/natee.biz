@@ -20,7 +20,7 @@ Some pictures, mostly taken on my Fujifilm XE1 and a 7Artisans 35mm f1.4 manual 
 <!-- Beware of indentation turning into <pre> -->
 <span class="photo-info">
 {% if photo.make %}
-{{ photo.make | title }} {{ photo.model }} <span title="{{ photo.lensFocalLengthEquivalent }}mm (Film Equivalent Focal Length)">{{ photo.lensFocalLength }}mm</span> {{ photo.aperture }} ISO {{ photo.iso }}
+{{ photo.make | title }} {{ photo.model }} <span title="{{ photo.lensFocalLengthEquivalent }}mm (Film Equivalent Focal Length)">{{ photo.lensFocalLength }}mm</span> {{ photo.aperture }} {{ photo.shutter }} ISO {{ photo.iso }}
 {% endif %}
 </span>
 

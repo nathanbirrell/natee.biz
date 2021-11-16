@@ -48,6 +48,7 @@ module.exports = async function readPhotosWithExif() {
       lensFocalLengthEquivalent: (lensFocalLength && lensFocalLength  * 1.5) || '',
       iso: exifData.ISOSpeedRatings?.value || '',
       aperture: exifData.FNumber?.description || '',
+      shutter: exifData.ExposureTime?.description || '',
     }
 
     photosWithExif.push({
@@ -55,7 +56,7 @@ module.exports = async function readPhotosWithExif() {
       ...exifDataForCollection,
       //
     })
-    // console.log(exifData)
+    console.log(exifData)
   }));
   // console.log(photosWithExif)
 
