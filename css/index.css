@@ -37,6 +37,18 @@ html {
   margin-top: 1rem;
 }
 
+/* Photos :) */
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.photo {
+  margin: 2rem 0;
+}
+
 figcaption {
   font-size: 0.8rem;
   color: var(--color-fg-muted);
@@ -49,8 +61,13 @@ figcaption {
   width: 100%;
 }
 
-figure.photo {
-  margin: 2rem 0;
+.photo-image {
+  padding-top: 0.25rem;
+}
+
+
+.photo img {
+  max-height: 90vh;
 }
 
 @media (min-width: 767px) {
