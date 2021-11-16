@@ -7,6 +7,7 @@ Some pictures, mostly taken on my Fujifilm XE1 and a 7Artisans 35mm f1.4 manual 
 
 {% for photo in collections.photos %}
 
+<div class="photo-wrapper">
 <figure class="photo">
 <div class="photo-image">
     <img src="{{photo.src}}" alt="{{photo.name}}">
@@ -25,7 +26,7 @@ Some pictures, mostly taken on my Fujifilm XE1 and a 7Artisans 35mm f1.4 manual 
 </span>
 
 </figcaption>
-
 </figure>
+</div>
 
 {% endfor %}
