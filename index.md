@@ -12,3 +12,10 @@ Software engineer, primarily focussed on Javascript web application development.
 🎧 Listening to [Future Beats](https://futurebeats.fm)
 
 📸 Make pictures sometimes [here](/photo)
+
+<!-- **Previously:**
+
+- [Bureau of Meteorology](https://weather.bom.gov.au/)
+- [Belong (by Telstra)](https://www.belong.com.au/)
+- [Overcast for macOS (unofficial)](https://github.com/nathanbirrell/overcast-macos)
+- [Deloitte Digital](https://www.deloittedigital.com.au/) -->

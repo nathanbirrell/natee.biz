@@ -3,7 +3,7 @@ const fs = require("fs");
 
 
 const PHOTOS_DIR = 'img/photos'
-const photos = fs.readdirSync(PHOTOS_DIR);
+const photos = fs.readdirSync(PHOTOS_DIR).filter((filename) => filename !== '.DS_Store');
 
 const photoCollection = photos.map((filename) => {
   return {
@@ -26,9 +26,20 @@ function parseExifDate(s) {
 module.exports = async function readPhotosWithExif() {
   const photosWithExif = []
   await Promise.all(photoCollection.map(async (photo) => {
-    const exifData = await ExifReader.load(photo.path)
+    if (!photo) return
+    
+    let exifData
+
+    try {
+       exifData = await ExifReader.load(photo.path)
+    } catch (error) {
+      console.error('COULD NOT READ PHOTO: ' + photo.name)
+      console.error(error)
+      return
+    }
+
     const lensFocalLength= (exifData.FocalLength?.value.toString() || '').split(',1')[0]
-    const date = exifData.DateTimeOriginal?.description ? parseExifDate(exifData.DateTimeOriginal?.description) : parseExifDate(exifData.DateTime.description)
+    const date = exifData.DateTimeOriginal?.description ? parseExifDate(exifData.DateTimeOriginal?.description) : parseExifDate(exifData.DateTime?.description)
 
     const baseData = Object.assign({}, photo, {date})
 
@@ -56,7 +67,7 @@ module.exports = async function readPhotosWithExif() {
       ...exifDataForCollection,
       //
     })
-    console.log(exifData)
+    // console.log(exifData)
   }));
   // console.log(photosWithExif)
 

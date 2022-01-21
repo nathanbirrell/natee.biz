@@ -81,6 +81,12 @@ As a big fan of Soulection Radio, I made a little radio app to stream random epi
 
 [View the app at futurebeats.fm →](https://futurebeats.fm)
 
+### Overcast for macOS (Archived)
+
+A macOS client for the popular Overcast podcast player, with 140 stars on Github.
+
+[View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
+
 ### Poseidon (June 2017 - 2018)
 
 A side project with a friend, which involved a create-react-app + Typescript frontend and a Rails backend.
