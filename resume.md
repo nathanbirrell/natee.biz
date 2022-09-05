@@ -85,7 +85,7 @@ As a big fan of Soulection Radio, I made a little radio app to stream random epi
 
 ### Overcast for macOS (Archived)
 
-A macOS client for the popular Overcast podcast player, with 140 stars on Github.
+A macOS client for the popular Overcast podcast player, with over 130 stars on Github.
 
 [View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
 
