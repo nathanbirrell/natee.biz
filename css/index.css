@@ -65,7 +65,6 @@ figcaption {
   padding-top: 0.25rem;
 }
 
-
 .photo img {
   max-height: 90vh;
 }
@@ -79,4 +78,8 @@ figcaption {
     margin-top: 2rem;
     margin-bottom: 8rem;
   }
+}
+
+.markdown-body figure {
+  margin: 1rem 0;
 }
