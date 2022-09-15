@@ -24,8 +24,9 @@ Oct 2018 - present
 
 [View the landing page at stax.io →](https://stax.io/)
 
-Stax is an AWS cloud management platform, focussed on speeding up and improving quality of cloud infrastructure delivery. Building and managing strategy around our frontend applications, from the ground up.
+Stax is an AWS cloud management platform, which exists to speed-up and improve the quality of cloud infrastructure delivery.
 
+- As a Senior Front-end Engineer, I work on building and managing strategy around our frontend applications.
 - Responsible for both the single-page app (client side) and our backend-for-frontend app which consisted of an AppSync API with Lambda resolvers.
 - Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, Lambda and AppSync
 
