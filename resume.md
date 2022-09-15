@@ -1,6 +1,6 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2021-11-05
+date: 2022-09-15
 layout: layouts/base.njk
 ---
 
@@ -12,9 +12,9 @@ Skip to: [Experience](#experience) | [Side Projects](#side-projects) | [Interest
 
 About me:
 
-- Software engineering experience with some of Australia’s largest companies since 2012.
-- Primary focus on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node.
-- Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, lean philosophy and improving the way we work.
+- 10 years software engineering experience with some of Australia’s largest companies.
+- Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
+- On the technical side, my focus is mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node.
 
 ## Experience
 
@@ -79,23 +79,34 @@ Full-Stack Developer (PHP) Contractor, 2015
 
 ### Future Beats (2021)
 
-As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7.
+As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover.
 
 [View the app at futurebeats.fm →](https://futurebeats.fm)
 
+![Screenshot of futurebeats.fm](/img/projects/future-beats/future-beats-419.jpg)
+
 ### Overcast for macOS (Archived)
 
-A macOS client for the popular Overcast podcast player, with over 130 stars on Github.
+A macOS client for the popular Overcast podcast player, with over 130 stars on Github. Built with Electron and Node. Discontinued since Apple Silicon Macs can now run the iOS Overcast now.
 
 [View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
 
+![Screenshot of Overcast for macOS](/img/projects/overcast-macos/overcast-macos-screenshot.jpg)
+
 ### Poseidon (June 2017 - 2018)
 
-A side project with a friend, which involved a create-react-app + Typescript frontend and a Rails backend.
+A side project with a friend, which was built with Ruby on Rails and a create-react-app + Typescript frontend.
 
 The goal for the project was to improve the experience around surf forecast modelling, so we had some fun challenges around presenting graphs and numerical data in a friendly way; storing and parsing model data and so on. Multiple third-party integrations involved, including: NOAA, BOM, PlanetOS and Willyweather.
 
+A lot of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project!
+
 We decided to discontinue the project after some longstanding companies in the area vastly improved their offering and felt we couldn't add enough additional value.
+
+<figure>
+  <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
+  <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
+</figure>
 
 ### Freelance Projects (2013 - 2016)
 
