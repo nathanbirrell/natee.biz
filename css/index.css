@@ -37,6 +37,10 @@ html {
   margin-top: 1rem;
 }
 
+.resume-updated a {
+  color: var(--color-fg-muted);
+}
+
 /* Photos :) */
 
 .photo-wrapper {
@@ -82,4 +86,27 @@ figcaption {
 
 .markdown-body figure {
   margin: 1rem 0;
+}
+
+.markdown-body h6 {
+  margin-top: 0;
+}
+
+/* Heading href tags */
+
+.header-anchor {
+  display: none;
+}
+
+h2:hover .header-anchor,
+h3:hover .header-anchor {
+  display: inline-block;
+}
+
+@media (min-width: 767px) {
+  .header-anchor {
+    position: absolute;
+    margin-left: -1.5rem;
+    padding-right: 1.5rem; // maintain hover
+  }
 }
