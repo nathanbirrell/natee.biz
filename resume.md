@@ -12,7 +12,9 @@ About me:
 
 - 10 years software engineering experience with some of Australia’s largest companies, primarily in **Frontend Development**.
 - On the technical side, my focus is mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node. I am also comfortable working on Backend services, with experience in Node, Ruby/Rails, Lambda, GraphQL and more.
+- Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
+- I work 4-day weeks, usually Tue-Fri (4x10hr). Preference for more asynchronous modes of working, but still flexible around colocated teams and remote working (I enjoy both).
 
 ## Experience
 
@@ -25,6 +27,7 @@ Stax is an AWS cloud management platform, which exists to speed-up and improve t
 - As a Senior Front-end Engineer, I work on building and managing strategy around our frontend applications.
 - Responsible for both the single-page app (client side) and our backend-for-frontend app which consisted of an AppSync API with Lambda resolvers.
 - Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, Lambda and AppSync
+- Some challenges include: managing style consistency across multiple separate frontend projects and teams; having frontend engineers manage their own backend-for-frontend (our AppSync GraphQL API) and wrangling client-side state to present long-running cloud tasks.
 
 [View the landing page at stax.io →](https://stax.io/)
 
@@ -40,6 +43,8 @@ Stax is an AWS cloud management platform, which exists to speed-up and improve t
   - finding the right abstractions for reusable components
   - working with a medium-to-large team to agree on long-term technical decisions
 
+[View the app at weather.bom.gov.au →](https://weather.bom.gov.au/)
+
 ### Belong (by Telstra)
 
 ###### Front-end Developer • Nov 2016 - Mar 2018
@@ -50,8 +55,6 @@ Mid-level Front-end Developer on a React/Redux/Webpack web application. Key acti
 - Built out a hybrid native application using Expo and React Native.
 - Onboarding new developers, maintaining Jest unit testing coverage
 - Migration of our legacy front-end app out of an unmaintainable Knockout/JQuery set-up to a more manageable React/Redux ecosystem.
-
-[View the app at weather.bom.gov.au →](https://weather.bom.gov.au/)
 
 ### Deloitte Digital
 
@@ -74,13 +77,24 @@ Full-Stack Developer (PHP) Contractor, 2015
 - Part-time (and sole) full-stack PHP developer for the incentive marketing agency’s proprietary software, [Flashpoint](www.theflashpointapp.com), used by sales teams at BMW, Nissan and Samsung in Australia.
 - Technologies used: PHP, Symfony, Doctrine ORM, LAMP stack, Wordpress, Javascript/JQuery. -->
 
-## Side Projects
+## Side Projects & Volunteering
+
+### TourXOz 2019 (for the Black Dog Institute)
+
+TourXOz 2019 involved cycling from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities.
+
+Donations supported the Black Dog Institute with mental health education, early diagnosis and suicide prevention.
+
+<figure>
+  <img src="/img/projects/tourxoz-2019/tourxoz-2019-group.jpeg" alt="The TourXOz 2019 peloton">
+  <figcaption>The TourXOz 2019 group at the start of the famous Telegraph Track</figcaption>
+</figure>
 
 ### Future Beats (2021)
 
 As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover.
 
-[View the app at futurebeats.fm →](https://futurebeats.fm)
+[View the code project for futurebeats.fm →](https://github.com/nathanbirrell/future-beats)
 
 ![Screenshot of futurebeats.fm](/img/projects/future-beats/future-beats-419.jpg)
 
