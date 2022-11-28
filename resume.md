@@ -6,7 +6,9 @@ layout: layouts/base.njk
 
 <!-- <small>❌ **Not seeking work**</small> -->
 
-###### <small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> • Skip to: [Experience](#experience) | [Side Projects](#side-projects) | [Skills & Education](#skills)</small>
+###### <small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> • [View PDF](https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf)
+
+###### Skip to: [About](#), [Experience](#experience), [Side Projects & Volunteering](#side-projects-and-volunteering), [Education & Skills](#education)
 
 About me:
 
@@ -60,7 +62,7 @@ Mid-level Front-end Developer on a React/Redux/Webpack web application. Key acti
 
 ###### Front-end Developer • Jan '14 - Nov '16
 
-Website and web application builds for clients such as [Telstra](https://www.telstra.com.au), [ANZ](https://www.anz.com.au/personal/) , [Herbert Smith Freehills](https://www.herbertsmithfreehills.com) , [RACQ](https://www.racq.com.au), [Victorian Comprehensive Cancer Centre](https://conexus.victorianccc.org.au) and [QSuper](https://qsuper.qld.gov.au) .
+Website and web application builds for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, Victorian Comprehensive Cancer Centre and QSuper.
 
 Front-end feature development in SCRUM delivery teams:
 

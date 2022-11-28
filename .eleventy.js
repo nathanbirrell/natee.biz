@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const puppeteer = require("puppeteer");
 const readPhotosWithExif = require("./photoReader");
 
 module.exports = function (eleventyConfig) {
@@ -103,6 +104,24 @@ module.exports = function (eleventyConfig) {
     ui: false,
     ghostMode: false,
   });
+
+  // Using Manual pages doc instead
+  // eleventyConfig.on("afterBuild", async () => {
+  //   if (process.env.npm_lifecycle_event !== "start") return; // Build PDF for local builds only
+
+  //   const browser = await puppeteer.launch();
+  //   const page = await browser.newPage();
+  //   await page.goto("http://localhost:8080/resume", {
+  //     waitUntil: "networkidle2",
+  //   });
+  //   await page.pdf({
+  //     path: `./assets/resume.pdf`,
+  //     format: "a4",
+  //     scale: 0.84,
+  //     printBackground: false,
+  //   });
+  //   await browser.close();
+  // });
 
   return {
     // Control which files Eleventy will process
