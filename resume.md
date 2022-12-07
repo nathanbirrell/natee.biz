@@ -8,7 +8,7 @@ layout: layouts/base.njk
 
 ###### <small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> • [View PDF](https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf)
 
-###### Skip to: [About](#), [Experience](#experience), [Side Projects & Volunteering](#side-projects-and-volunteering), [Education & Skills](#education)
+###### Skip to: [About](#), [Experience](#experience), [Side Projects & Volunteering](#side-projects-and-volunteering), [Education](#education)
 
 About me:
 
@@ -16,7 +16,7 @@ About me:
 - On the technical side, my focus is mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node. I am also comfortable working on Backend services, with experience in Node, Ruby/Rails, Lambda, GraphQL and more.
 - Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
-- I work 4-day weeks, usually Tue-Fri (4x10hr). Preference for more asynchronous modes of working, but still flexible around colocated teams and remote working (I enjoy both).
+- I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both).
 
 ## Experience
 
@@ -116,7 +116,7 @@ The goal for the project was to improve the experience around surf forecast mode
 
 A lot of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project!
 
-We decided to discontinue the project after some longstanding companies in the area vastly improved their offering and felt we couldn't add enough additional value.
+We decided to discontinue the project after some long-standing companies in the area vastly improved their offering and felt we couldn't add enough additional value.
 
 <figure>
   <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
@@ -136,7 +136,7 @@ We decided to discontinue the project after some longstanding companies in the a
 3.  Managing teams and workflows around building software. Inspired by many things/people, to name a few: [Agile manifesto](http://agilemanifesto.org/), Lean philosophy, [Basecamp](https://m.signalvnoise.com/), [Ben Horowitz](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205), [Seth Godin](http://sethgodin.typepad.com/) and [Paul Graham](http://www.paulgraham.com/articles.html).
 4.  Outside of work I generally spend [well away from my computer](https://instagram.com/nathanbirrell) (mainly surfing/camping). -->
 
-## Skills
+<!-- ## Skills
 
 - Javascript, ES6, Typescript
 - React/Redux/Mobx front-end ecosystem
@@ -146,7 +146,7 @@ We decided to discontinue the project after some longstanding companies in the a
 - Ruby & Rails
 - Jest/Enzyme unit testing
 - Figma, Sketch, Photoshop, Illustrator
-- HTML, CSS, Sass
+- HTML, CSS, Sass -->
 
 ## Education
 

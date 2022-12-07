@@ -7,11 +7,11 @@ eleventyNavigation:
 
 Software engineer, primarily focussed on Javascript web application development.
 
-🛠 Building web interfaces at [Stax](https://stax.io)
+<!-- 🛠 Building web interfaces at [Stax](https://stax.io)
 
 🎧 Listening to [Future Beats](https://futurebeats.fm)
 
-📸 Make pictures sometimes [here](/photo)
+📸 Make pictures sometimes [here](/photo) -->
 
 <!-- **Previously:**
 
