@@ -13,10 +13,10 @@ layout: layouts/base.njk
 About me:
 
 - 10 years software engineering experience with some of Australia’s largest companies, primarily in **Frontend Development**.
-- On the technical side, my focus is mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node. I am also comfortable working on Backend services, with experience in Node, Ruby/Rails, Lambda, GraphQL and more.
+- Focussed mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node. I am also comfortable working on backend services, with experience in Node, Lambda, GraphQL, Ruby/Rails and more.
 - Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
-- I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both).
+<!-- - I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both). -->
 
 ## Experience
 
