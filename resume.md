@@ -27,7 +27,7 @@ About me:
 Stax is an AWS cloud management platform, which exists to speed-up and improve the quality of cloud infrastructure delivery.
 
 - As a Senior Front-end Engineer, I work on building and managing strategy around our frontend applications.
-- Responsible for both the single-page app (client side) and our backend-for-frontend app which consisted of an AppSync API with Lambda resolvers.
+- Responsible for both the single-page app (client side React app) and our backend-for-frontend app which consists of an AppSync API, NodeJS/Typescript Lambda resolvers, SQS Queues and more.
 - Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, Lambda and AppSync
 - Some challenges include: managing style consistency across multiple separate frontend projects and teams; having frontend engineers manage their own backend-for-frontend (our AppSync GraphQL API) and wrangling client-side state to present long-running cloud tasks.
 
