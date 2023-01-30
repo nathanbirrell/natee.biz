@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nathanbirrell.me/blog/build-a-backend-for-frontend-with-aws-appsync/</loc>
+    <lastmod>2021-01-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nathanbirrell.me/resume/</loc>
     <lastmod>2022-11-01</lastmod>
   </url>
@@ -13,11 +18,11 @@
   
   <url>
     <loc>https://nathanbirrell.me/</loc>
-    <lastmod>2022-12-18</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   
   <url>
     <loc>https://nathanbirrell.me/photo/</loc>
-    <lastmod>2022-12-18</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
 </urlset>
