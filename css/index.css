@@ -3,6 +3,20 @@ html {
   justify-content: center;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root .markdown-body {
+    --color-canvas-default: #222222;
+    --color-fg-default: #fefefe;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root .markdown-body {
+    --color-canvas-default: #fefefe;
+    --color-fg-default: #222222;
+  }
+}
+
 .markdown-body {
   box-sizing: border-box;
   width: 100%;
