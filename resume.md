@@ -1,6 +1,6 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2022-11-01
+date: 2023-03-01
 layout: layouts/base.njk
 ---
 
@@ -12,8 +12,9 @@ layout: layouts/base.njk
 
 About me:
 
-- 10 years software engineering experience with some of Australia’s largest companies, primarily in **Frontend Development**.
-- Focussed mainly on modern Javascript web-application development. In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), GraphQL and Node. I am also comfortable working on backend services, with experience in Node, Lambda, GraphQL, Ruby/Rails and more.
+- 10 years software engineering experience with some of Australia’s largest companies, primarily in modern front-end web application development
+- In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), NextJS, Vite/Vite SSR, GraphQL and Node.
+- As well as working experience with many backend services, for example Node, Express, GraphQL Yoga, GraphQL Pothos, Prisma ORM, Postgres and GraphQL. On the infra side most of my experience is in AWS, with products like Lambda, ECS, CDK and many more.
 - Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
 <!-- - I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both). -->
@@ -22,13 +23,16 @@ About me:
 
 ### Stax
 
+<!-- TODO: add Leesy -->
+<!-- ###### Senior Software Engineer • Oct 2018 - present -->
+
 ###### Senior Software Engineer • Oct 2018 - present
 
 Stax is an AWS cloud management platform, which exists to speed-up and improve the quality of cloud infrastructure delivery.
 
 - As a Senior Front-end Engineer, I work on building and managing strategy around our frontend applications.
 - Responsible for both the single-page app (client side React app) and our backend-for-frontend app which consists of an AppSync API, NodeJS/Typescript Lambda resolvers, SQS Queues and more.
-- Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, Lambda and AppSync
+- Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, AWS Lambda, AppSync, CDK, etc.
 - Some challenges include: managing style consistency across multiple separate frontend projects and teams; having frontend engineers manage their own backend-for-frontend (our AppSync GraphQL API) and wrangling client-side state to present long-running cloud tasks.
 
 [View the landing page at stax.io →](https://stax.io/)
