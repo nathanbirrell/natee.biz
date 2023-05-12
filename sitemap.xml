@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nathanbirrell.me/blog/surly-steamroller/</loc>
+    <lastmod>2020-02-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nathanbirrell.me/blog/improve-typescript-node-lambda-performance/</loc>
     <lastmod>2022-12-05</lastmod>
   </url>
@@ -18,11 +23,11 @@
   
   <url>
     <loc>https://nathanbirrell.me/</loc>
-    <lastmod>2023-04-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
   </url>
   
   <url>
     <loc>https://nathanbirrell.me/photo/</loc>
-    <lastmod>2023-04-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
   </url>
 </urlset>
