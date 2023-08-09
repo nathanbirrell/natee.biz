@@ -14,7 +14,7 @@ About me:
 
 - 10 years software engineering experience with some of Australia’s largest companies, primarily in modern front-end web application development
 - In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), NextJS, Vite/Vite SSR, GraphQL and Node.
-- As well as working experience with many backend services, for example Node, Express, GraphQL Yoga, GraphQL Pothos, Prisma ORM, Postgres and GraphQL. On the infra side most of my experience is in AWS, with products like Lambda, ECS, CDK and many more.
+- Working experience with many backend services as well. Namely Node, Express, GraphQL Yoga, GraphQL Pothos, Prisma ORM, Postgres and GraphQL. On the infra side most of my experience is in AWS, with products like Lambda, ECS, CDK and many more.
 - Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
 <!-- - I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both). -->
