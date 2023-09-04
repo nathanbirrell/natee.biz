@@ -29,7 +29,7 @@ About me:
 <!-- ###### Senior Software Engineer • Oct 2018 - present -->
 
 <h3>
-  <span>Stax</span>
+  <span>Stax (by Versent)</span>
   <span>Senior Software Engineer • Oct 2018 - present</span>
 </h3>
 
