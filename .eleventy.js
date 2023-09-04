@@ -5,7 +5,6 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const puppeteer = require("puppeteer");
 const readPhotosWithExif = require("./photoReader");
 
 module.exports = function (eleventyConfig) {
@@ -77,7 +76,7 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true,
   }).use(markdownItAnchor, {
-    level: [1, 2, 3],
+    level: [1, 2],
     symbol: "#",
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: "before",
@@ -105,7 +104,7 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
-  // Using Manual pages doc instead
+  // NOTE: Using ./resume-to-pdf.js instead
   // eleventyConfig.on("afterBuild", async () => {
   //   if (process.env.npm_lifecycle_event !== "start") return; // Build PDF for local builds only
 

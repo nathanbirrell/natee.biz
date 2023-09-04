@@ -1,32 +1,37 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2023-03-01
+date: 2023-09-01
 layout: layouts/base.njk
 ---
 
+<!-- ***************************************************************** -->
+<!-- NOTE: when updating this file, remember to run yarn run generate-resume-pdf to update the PDF version -->
+<!-- ***************************************************************** -->
+
 <!-- <small>❌ **Not seeking work**</small> -->
 
-###### <small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> • [View PDF](https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf)
+<h6 class="noprint"><small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | monthYearDate }}</time> • <a href="https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf">View PDF</a></small></h6>
 
-###### Skip to: [About](#), [Experience](#experience), [Side Projects & Volunteering](#side-projects-and-volunteering), [Education](#education)
+<h6 class="noprint">Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#side-projects-and-volunteering">Side Projects &amp; Volunteering</a>, <a href="#education">Education</a></h6>
 
 About me:
 
-- 10 years software engineering experience with some of Australia’s largest companies, primarily in modern front-end web application development
+- 10 years software engineering experience with some of Australia’s largest companies, specialising in modern front-end web application development.
 - In-depth experience with Typescript, create-react-app (and its surrounding ecosystem), NextJS, Vite/Vite SSR, GraphQL and Node.
-- Working experience with many backend services as well. Namely Node, Express, GraphQL Yoga, GraphQL Pothos, Prisma ORM, Postgres and GraphQL. On the infra side most of my experience is in AWS, with products like Lambda, ECS, CDK and many more.
+- Commercial experience with many backend services also. Namely Node, Express, GraphQL Yoga, GraphQL Pothos, Prisma ORM, Postgres and GraphQL. As for infrastructure, most of my experience is in AWS, with products like Lambda, ECS, CDK and many more.
 - Not attached to any specific technology or framework, generally open to new tech stacks and frameworks and always open to learning new things.
 - Typically thrive in empowered, self-sufficient and multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.
 <!-- - I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both). -->
 
 ## Experience
 
-### Stax
-
 <!-- TODO: add Leesy -->
 <!-- ###### Senior Software Engineer • Oct 2018 - present -->
 
-###### Senior Software Engineer • Oct 2018 - present
+<h3>
+  <span>Stax</span>
+  <span>Senior Software Engineer • Oct 2018 - present</span>
+</h3>
 
 Stax is an AWS cloud management platform, which exists to speed-up and improve the quality of cloud infrastructure delivery.
 
@@ -37,23 +42,25 @@ Stax is an AWS cloud management platform, which exists to speed-up and improve t
 
 [View the landing page at stax.io →](https://stax.io/)
 
-### Bureau of Meteorology
+<h3>
+  <span>Bureau of Meteorology</span>
+  <span>Software Engineer • Mar 2018 - Oct 2018</span>
+</h3>
 
-###### Software Engineer (Javascript) • Mar 2018 - Oct 2018
-
-- Working on a project team to build a completely new weather experience for BOM's general public audience.
+- Worked on a project team to build a completely new weather experience for BOM's general public audience.
 - One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
 - Tooling: Typescript, React, Mobx with mobx-state-tree, Jest/Enzyme, ES6+, styled-components.
 - Interesting challenges:
-  - managing tree-structured state
+  - managing tree-structured state and weather datapoints
   - finding the right abstractions for reusable components
-  - working with a medium-to-large team to agree on long-term technical decisions
+  - working with a moderate-sized team to agree on long-term technical decisions
 
-[View the app at weather.bom.gov.au →](https://weather.bom.gov.au/)
+<!-- [View the app at weather.bom.gov.au →](https://weather.bom.gov.au/) -->
 
-### Belong (by Telstra)
-
-###### Front-end Developer • Nov 2016 - Mar 2018
+<h3>
+  <span>Belong (by Telstra)</span>
+  <span>Front-end Developer • Nov 2016 - Mar 2018</span>
+</h3>
 
 Mid-level Front-end Developer on a React/Redux/Webpack web application. Key activities:
 
@@ -62,9 +69,10 @@ Mid-level Front-end Developer on a React/Redux/Webpack web application. Key acti
 - Onboarding new developers, maintaining Jest unit testing coverage
 - Migration of our legacy front-end app out of an unmaintainable Knockout/JQuery set-up to a more manageable React/Redux ecosystem.
 
-### Deloitte Digital
-
-###### Front-end Developer • Jan '14 - Nov '16
+<h3>
+  <span>Deloitte Digital</span>
+  <span>Front-end Developer • Jan 2014 - Nov 2016</span>
+</h3>
 
 Website and web application builds for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, Victorian Comprehensive Cancer Centre and QSuper.
 
@@ -91,18 +99,18 @@ TourXOz 2019 involved cycling from Cairns to Cape York, through some of Australi
 
 Donations supported the Black Dog Institute with mental health education, early diagnosis and suicide prevention.
 
-<figure>
+<figure class="noprint">
   <img src="/img/projects/tourxoz-2019/tourxoz-2019-group.jpeg" alt="The TourXOz 2019 peloton">
   <figcaption>The TourXOz 2019 group at the start of the famous Telegraph Track</figcaption>
 </figure>
 
-### Future Beats (2021)
+### Soulection 24/7 Radio App (2021)
 
 As a big fan of Soulection Radio, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover.
 
-[View the code project for futurebeats.fm →](https://github.com/nathanbirrell/future-beats)
+[View the project on Github →](https://github.com/nathanbirrell/future-beats)
 
-![Screenshot of futurebeats.fm](/img/projects/future-beats/future-beats-419.jpg)
+<img class="noprint" src="/img/projects/future-beats/future-beats-419.jpg" alt="Screenshot of futurebeats.fm">
 
 ### Overcast for macOS (Archived)
 
@@ -110,9 +118,9 @@ A macOS client for the popular Overcast podcast player, with over 130 stars on G
 
 [View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
 
-![Screenshot of Overcast for macOS](/img/projects/overcast-macos/overcast-macos-screenshot.jpg)
+<img class="noprint" src="/img/projects/overcast-macos/overcast-macos-screenshot.jpg" alt="Screenshot of Overcast for macOS">
 
-### Poseidon (June 2017 - 2018)
+<!-- ### Poseidon (June 2017 - 2018)
 
 A side project with a friend, which was built with Ruby on Rails and a create-react-app + Typescript frontend.
 
@@ -122,16 +130,16 @@ A lot of our time was spent on formulating the "Surf Potential" figure which too
 
 We decided to discontinue the project after some long-standing companies in the area vastly improved their offering and felt we couldn't add enough additional value.
 
-<figure>
+<figure class="noprint">
   <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
   <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
-</figure>
+</figure> -->
 
-### Freelance Projects (2013 - 2016)
+<!-- ### Freelance Projects (2013 - 2016)
 
 - Worked for myself from university as a web developer and digital consultant to small businesses.
 - Provided services from as basic as a Wordpress/Squarespace build to a custom Rails application.
-- Clients: [Damgar Group](http://damgargroup.com.au/), [Gaffneys Logistics](http://gaffneys.com.au/), [Serenity Face & Body](http://serenityfaceandbody.com.au/), All City Bathrooms & Kitchens, Memla Landscape Architects
+- Clients: [Damgar Group](http://damgargroup.com.au/), [Gaffneys Logistics](http://gaffneys.com.au/), [Serenity Face & Body](http://serenityfaceandbody.com.au/), All City Bathrooms & Kitchens, Memla Landscape Architects -->
 
 <!-- ## Interests
 
@@ -154,11 +162,11 @@ We decided to discontinue the project after some long-standing companies in the 
 
 ## Education
 
-**RMIT University (2012 - 2015)**
+**Royal Melbourne Institute of Technology (RMIT University) (2012 - 2015)**
 
 Bachelor of Business (Information Systems) (Applied) (minor in Marketing)
 
-## Contact
+<!-- ## Contact
 
 - [LinkedIn](https://www.linkedin.com/in/nathanbirrell)
-- [nathanbirrell@gmail.com](mailto:nathanbirrell@gmail.com)
+- [nathanbirrell@gmail.com](mailto:nathanbirrell@gmail.com) -->
