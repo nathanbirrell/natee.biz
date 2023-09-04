@@ -17,7 +17,7 @@
   <body class="markdown-body">
     <header class="header">
 
-      <div>
+      <div class="header-avatar">
       <img
         class="avatar"
         src="https://avatars.githubusercontent.com/u/4300215?v=4"
@@ -25,16 +25,26 @@
       />
       </div>
 
-      <div>
+      <div class="header-links">
         <h3 class="home"><a href="/">Nathan Birrell</a></h3>
         
 
-        <small>
+        <small class="noprint">
             🇦🇺 Melbourne, Australia | 
             <a href="https://github.com/nathanbirrell">Github</a> | 
             <a href="http://linkedin.com/in/nathanbirrell">Linkedin</a> | 
-            <a href="/resume">CV</a> | 
-            <a href="/photo">Photos</a>
+            <a href="/resume" class="noprint">CV</a><span class="noprint"> | </span>
+            <a href="/photo" class="noprint">Photos</a>
+            <a href="mailto:nathanbirrell@gmail.com" class="print">nathanbirrell@gmail.com</a>
+        </small>
+
+        <small class="print">
+            🇦🇺 Melbourne, Australia | 
+            <a href="https://natee.biz/resume">Web</a> | 
+            <a href="https://github.com/nathanbirrell">Github</a> | 
+            <a href="http://linkedin.com/in/nathanbirrell">Linkedin</a> | 
+            <a href="mailto:nathanbirrell@gmail.com">nathanbirrell@gmail.com</a> |
+            <time datetime="2022-12-05">December 2022</time>
         </small>
       </div>
     </header>
@@ -54,10 +64,10 @@
 </ol>
 <h2 id="bundle-size" tabindex="-1"><a class="header-anchor" href="#bundle-size" aria-hidden="true">#</a> Bundle Size</h2>
 <p>A major factor in the initialisation of Javascript functions, the larger the bundle the slower your Lambda's initialisation times, particularly in the event of cold starts. To bring this down, there are a few things to consider.</p>
-<h3 id="build-tooling" tabindex="-1"><a class="header-anchor" href="#build-tooling" aria-hidden="true">#</a> Build tooling</h3>
+<h3>Build tooling</h3>
 <p>Switching to modern Javascript build tooling is fundamental to your toolchain. Tools like <a href="https://esbuild.github.io/getting-started/">esbuild</a> and <a href="https://rollupjs.org/guide/en/">Rollup.js</a> provide many benefits for packaging your app, such as fast compilation times, minification, tree-shaking and more.</p>
 <p>These can and should be used with Typescript functions too. However, it might still be useful to continue using Typescript's <code>tsc</code> function in CI environments for better error messages. We saw a very significant bundle size improvement switching from the basic <code>tsc</code> transpilation command to esbuild, with all the features that brings with it.</p>
-<h3 id="dependencies-and-module-resolution" tabindex="-1"><a class="header-anchor" href="#dependencies-and-module-resolution" aria-hidden="true">#</a> Dependencies and module resolution</h3>
+<h3>Dependencies and module resolution</h3>
 <p>Chances are, the function makes use of AWS SDK. Version 3 of the SDK brings <a href="https://github.com/aws/aws-sdk-js-v3#new-features">many features</a>, including modularised packages and better performance. See the docs for their tips on using <a href="https://github.com/aws/aws-sdk-js-v3#modularized-packages">specific imports</a> which will bring down bundle size.</p>
 <p>Assess the rest of the functions dependencies. Be rigorous about which are absolutely necessary, which have smaller alternatives and so on. There are also <a href="https://bundle-buddy.com/">tools</a> to help diagnose the source of large dependencies as well.</p>
 <h2 id="code-improvements" tabindex="-1"><a class="header-anchor" href="#code-improvements" aria-hidden="true">#</a> Code improvements</h2>

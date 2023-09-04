@@ -17,7 +17,7 @@
   <body class="markdown-body">
     <header class="header">
 
-      <div>
+      <div class="header-avatar">
       <img
         class="avatar"
         src="https://avatars.githubusercontent.com/u/4300215?v=4"
@@ -25,16 +25,26 @@
       />
       </div>
 
-      <div>
+      <div class="header-links">
         <h3 class="home"><a href="/">Nathan Birrell</a></h3>
         
 
-        <small>
+        <small class="noprint">
             🇦🇺 Melbourne, Australia | 
             <a href="https://github.com/nathanbirrell">Github</a> | 
             <a href="http://linkedin.com/in/nathanbirrell">Linkedin</a> | 
-            <a href="/resume">CV</a> | 
-            <a href="/photo">Photos</a>
+            <a href="/resume" class="noprint">CV</a><span class="noprint"> | </span>
+            <a href="/photo" class="noprint">Photos</a>
+            <a href="mailto:nathanbirrell@gmail.com" class="print">nathanbirrell@gmail.com</a>
+        </small>
+
+        <small class="print">
+            🇦🇺 Melbourne, Australia | 
+            <a href="https://natee.biz/resume">Web</a> | 
+            <a href="https://github.com/nathanbirrell">Github</a> | 
+            <a href="http://linkedin.com/in/nathanbirrell">Linkedin</a> | 
+            <a href="mailto:nathanbirrell@gmail.com">nathanbirrell@gmail.com</a> |
+            <time datetime="2023-03-16">March 2023</time>
         </small>
       </div>
     </header>
@@ -50,7 +60,7 @@
 <p>Colocating your NextAuth project with your NodeJS backend makes sense in situations when an architecture has clear separation between frontend and backend, unlike many popular developer-velocity focussed tools out there now (for example, tRPC). With a backend or ORM (ie Prisma models) being in a completely separate container to our frontend server, it made sense to place it with our GraphQL Yoga, Express, Pothos and Prisma backend app. That way sessions (which are stored in Postgres via Prisma Models) can be accessed easily and it just makes logical sense to have Authentication &amp; Authorisation living with the backend container.</p>
 <p>Other reasons you may consider this architecture choice are that you simply aren't using Next.JS for your frontend, but still want the convenience of owning your authentication service with NextAuth. Or you've opt-ed out of server-side rendering altogether and want your client-side SPA to interact with NextAuth on the server.</p>
 <h2 id="configure-nextauth-with-node-and-express" tabindex="-1"><a class="header-anchor" href="#configure-nextauth-with-node-and-express" aria-hidden="true">#</a> Configure NextAuth with Node &amp; Express</h2>
-<h3 id="integration-with-express" tabindex="-1"><a class="header-anchor" href="#integration-with-express" aria-hidden="true">#</a> Integration with Express</h3>
+<h3>Integration with Express</h3>
 <p>Here we are setting up a custom Express Middleware function to handle all NextAuth requests.</p>
 <pre><code>// auth.ts
 
@@ -115,7 +125,7 @@ export const getServerAuthSession = async (
 
 app.use(NextAuthMiddleware());
 </code></pre>
-<h3 id="adding-a-complete-user-to-graphql-yoga's-context" tabindex="-1"><a class="header-anchor" href="#adding-a-complete-user-to-graphql-yoga's-context" aria-hidden="true">#</a> Adding a complete User to GraphQL Yoga's context</h3>
+<h3>Adding a complete User to GraphQL Yoga's context</h3>
 <p>Within your API you will likely want to add a complete User to the request's context. Here we are in GraphQL Yoga's <code>createContext</code> initialisation and taking the user from the already-validated (in Express Middleware) session and passing that to the context for future use, most often in authorisation logic.</p>
 <pre><code>// context.ts
 /**
@@ -143,7 +153,7 @@ export const createContext: TCreateContext = async initialContext =&gt; {
     user,
   }
 </code></pre>
-<h3 id="augmenting-typescript-types" tabindex="-1"><a class="header-anchor" href="#augmenting-typescript-types" aria-hidden="true">#</a> Augmenting TypeScript types</h3>
+<h3>Augmenting TypeScript types</h3>
 <p>If you're using TypeScript, you probably want to augment NextAuth's types for any custom attributes you have on your <code>User</code> model:</p>
 <pre><code>// next-auth.d.ts
 
@@ -165,7 +175,7 @@ declare module &quot;next-auth&quot; {
   }
 }
 </code></pre>
-<h3 id="polyfill-fetch" tabindex="-1"><a class="header-anchor" href="#polyfill-fetch" aria-hidden="true">#</a> Polyfill fetch</h3>
+<h3>Polyfill fetch</h3>
 <p>NextAuth depends on having globally-available Fetch. You could polyfill it with any number of libraries (ie: <a href="https://github.com/developit/unfetch">isomorphic-unfetch</a>, <a href="https://github.com/github/fetch">fetch polyfill</a>) but here we just pass <a href="https://github.com/node-fetch/node-fetch">node-fetch</a> to the global scope.</p>
 <pre><code>// Hackery to get NextAuth to play nice with us on a node server
 // We won't have to do this in node 18 :) https://nodejs.org/de/blog/announcements/v18-release-announce/#fetch-experimental
@@ -181,7 +191,7 @@ if (!globalThis.fetch) {
   globalThis.Response = Response;
 }
 </code></pre>
-<h3 id="send-your-authentication-headers!" tabindex="-1"><a class="header-anchor" href="#send-your-authentication-headers!" aria-hidden="true">#</a> ⚠️ Send your authentication headers!</h3>
+<h3>⚠️ Send your authentication headers!</h3>
 <p>Your backend won't be able to validate sessions if you don't pass on the necessary authentication headers and cookies! How this looks will depend on your API, but in our case we're set-up with <a href="https://formidable.com/open-source/urql/">urql</a> for our GraphQL Client. To send the relevant headers over to our API, we simply need to tell urql to pass them on when instantiating the client:</p>
 <pre><code>const client = createClient({
   url: process.env.API_URL,
@@ -198,7 +208,7 @@ if (!globalThis.fetch) {
   },
 });
 </code></pre>
-<h3 id="typescript-builds" tabindex="-1"><a class="header-anchor" href="#typescript-builds" aria-hidden="true">#</a> TypeScript builds</h3>
+<h3>TypeScript builds</h3>
 <p>Unfortunately NextAuth isn't quite <em>fully</em> extracted from its NextJS dependencies, so I found I needed to add a few NPM <code>devDependencies</code> to get the TypeScript build working:</p>
 <pre><code>  // package.json
   // ...
