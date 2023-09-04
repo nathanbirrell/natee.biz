@@ -12,9 +12,15 @@ yarn install
 yarn start
 ```
 
-## Misc
+## PDF Asset generation
 
-PDF Updates are manual, this doc is not automatically generated yet.
+<!-- wkhtmltopdf --disable-internal-links --print-media-type --user-style-sheet ./css/print.css http://localhost:8080/resume/ ./assets/resume.pdf -->
+
+**NOTE: PDF asset generation is currently a manual process**, in the future it would be nice to add this to a github action or eleventy plugin.
+
+Run the local dev server, then generate the resume PDF from HTML:
+
+`yarn run generate-resume-pdf`
 
 ## 🚢 CI & Deployments
 

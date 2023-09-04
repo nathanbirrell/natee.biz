@@ -23,6 +23,7 @@ html {
   max-width: 780px;
   margin: 0 auto;
   padding: 45px;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
@@ -44,6 +45,11 @@ html {
 
 .header {
   display: flex;
+  width: 100%;
+}
+
+.header-links {
+  width: 100%;
 }
 
 .header h3 {
@@ -102,6 +108,20 @@ figcaption {
   margin: 1rem 0;
 }
 
+.markdown-body h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.markdown-body h3 span:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  display: flex;
+  align-items: flex-end;
+}
+
 .markdown-body h6 {
   margin-top: 0;
 }
@@ -122,5 +142,43 @@ h3:hover .header-anchor {
     position: absolute;
     margin-left: -1.5rem;
     padding-right: 1.5rem; // maintain hover
+  }
+}
+
+/* Print related changes for resume-to-pdf.js */
+.print,
+.print * {
+  display: none !important;
+}
+
+@media print {
+  .noprint,
+  .noprint * {
+    display: none !important;
+  }
+  .print,
+  .print * {
+    display: initial !important;
+  }
+
+  :root .markdown-body {
+    --color-canvas-default: #fff;
+    --color-fg-default: #111111;
+  }
+
+  /* .resume-updated {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  } */
+
+  .markdown-body main h2 {
+    font-size: 1.2em;
+    padding-bottom: 0;
+  }
+
+  .markdown-body main h3 {
+    font-size: 1em;
+    padding-bottom: 0;
   }
 }

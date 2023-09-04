@@ -6,7 +6,8 @@
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "generate-resume-pdf": "node resume-to-pdf.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,6 @@
     "markdown-it": "^12.1.0",
     "markdown-it-anchor": "^8.6.5",
     "prettier": "^2.4.1",
-    "puppeteer": "^19.3.0"
+    "puppeteer": "^21.1.1"
   }
 }
