@@ -113,13 +113,23 @@ figcaption {
   justify-content: space-between;
 }
 
+.markdown-body h3 span:nth-of-type(1) {
+  line-height: 1.5;
+}
+
 .markdown-body h3 span:nth-of-type(2) {
-  font-weight: 500;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  color: var(--color-fg-muted);
   display: flex;
   align-items: flex-end;
+  /* align-items: center; */
+  line-height: 1.8;
+}
+
+.markdown-body h3.tx-overline,
+.markdown-body h3 .tx-overline {
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
 }
 
 .markdown-body h6 {
@@ -142,6 +152,23 @@ h3:hover .header-anchor {
     position: absolute;
     margin-left: -1.5rem;
     padding-right: 1.5rem; // maintain hover
+  }
+}
+
+@media (min-width: 767px) {
+  .profile {
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 55% 45%;
+  }
+}
+@media print {
+  .profile {
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 55% 45%;
   }
 }
 
