@@ -33,10 +33,10 @@ layout: layouts/base.njk
   </h3>
 
   <ol>
-  <li>React, Typescript &amp; GraphQL</li>
+  <li>React, Typescript, GraphQL &amp; CSS</li>
   <li>NextJS, Vite with SSR, Webpack and create-react-app</li>
-  <li>Apollo GraphQL and various other state-management libraries (MobX &amp; Redux)</li>
-  <li>Jest & testing-library for unit testing, Playwright for E2E tests</li>
+  <li>Apollo GraphQL and various state-management libraries (MobX &amp; Redux)</li>
+  <li>Jest &amp; testing-library for unit testing, Playwright for E2E tests</li>
   <li>GraphQL, Node.js, Express, Prisma ORM and Postgres</li>
   <li>AWS services like Lambda, ECS, AppSync, DynamoDB, CDK/SAM</li>
   </ol>
@@ -67,13 +67,9 @@ Stax is an AWS cloud management platform, which exists to speed-up and improve t
   <span class="tx-overline">Software Engineer • Mar 2018 - Oct 2018</span>
 </h3>
 
-- Worked on a project team to build a completely new weather experience for BOM's general public audience.
-- One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
+- Worked on a project team to build a completely new weather experience for BOM's general public audience. One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
 - Tooling: Typescript, React, Mobx with mobx-state-tree, Jest/Enzyme, ES6+, styled-components.
-- Interesting challenges:
-  - managing tree-structured state and weather datapoints
-  - finding the right abstractions for reusable components
-  - working with a moderate-sized team to agree on long-term technical decisions
+- Interesting challenges included managing tree-structured state and weather datapoints; finding the right abstractions for reusable components; and working with a moderate-sized team to agree on long-term technical decisions
 
 <!-- [View the app at weather.bom.gov.au →](https://weather.bom.gov.au/) -->
 
@@ -84,10 +80,9 @@ Stax is an AWS cloud management platform, which exists to speed-up and improve t
 
 Mid-level Front-end Developer on a React/Redux/Webpack web application. Key activities:
 
-- Tooling: React, Redux, Webpack, ES6/Babel, server-side React rendering
-- Built out a hybrid native application using Expo and React Native.
+- Tooling: React, Redux, Webpack, ES6/Babel, server-side React rendering, Expo and React Native.
 - Onboarding new developers, maintaining Jest unit testing coverage
-- Migration of our legacy front-end app out of an unmaintainable Knockout/JQuery set-up to a more manageable React/Redux ecosystem.
+- Migration of our legacy front-end app out of an old Knockout/JQuery project to a more manageable React/Redux ecosystem.
 
 <h3>
   <span>Deloitte Digital</span>
@@ -114,40 +109,65 @@ Front-end feature development in SCRUM delivery teams:
 
 ## Side Projects & Volunteering
 
-<!-- TODO: add Leesy -->
+<h3>
+  <span>Leesy (Startmate S23)</span>
+  <span class="tx-overline">
+    2023
+  </span>
+</h3>
 
-### Soulection 24/7 Radio App (2021)
+Advised a [local startup](https://leesy.com.au), on their tech strategy and helped build out their MVP web application. The project took advantage of modern Node and Front-end tooling, like Typescript, Vite with SSR, Express, GraphQL Pothos & Yoga, PostgreSQL and all on AWS.
 
-As a Soulection Radio listener, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls. This project was great to experiment with Tailwind CSS, drawing vectors on an iPad and integrating with SoundCloud's API.
+<h3>
+  <span>Soulection 24/7 Radio App</span>
+  <span class="tx-overline">
+    2021
+  </span>
+</h3>
 
-[View the project on Github →](https://github.com/nathanbirrell/future-beats)
+As a Soulection Radio listener, I made a little radio app to stream random episodes 24/7. It included some Apple Music-style [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls. This project was great to experiment with Tailwind CSS, drawing vectors on an iPad and integrating with SoundCloud's API.
+
+[Open the project on Github →](https://github.com/nathanbirrell/future-beats)
 
 <img class="noprint" src="/img/projects/future-beats/future-beats-419.jpg" alt="Screenshot of futurebeats.fm">
 
-### TourXOz 2019 (for the Black Dog Institute)
+<h3>
+  <span>TourXOz (for the Black Dog Institute)</span>
+  <span class="tx-overline">
+    2019
+  </span>
+</h3>
 
-TourXOz 2019 involved cycling from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities.
-
-Donations supported the Black Dog Institute with mental health education, early diagnosis and suicide prevention.
+A cycling trip from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities. Donations supported the Black Dog Institute.
 
 <figure class="noprint">
   <img src="/img/projects/tourxoz-2019/tourxoz-2019-group.jpeg" alt="The TourXOz 2019 peloton">
   <figcaption>The TourXOz 2019 group at the start of the famous Telegraph Track</figcaption>
 </figure>
 
-### Overcast for macOS (Archived)
+<h3>
+  <span>Overcast for macOS</span>
+  <span class="tx-overline">
+    2017
+  </span>
+</h3>
 
-A macOS client for the popular Overcast podcast player, with over 130 stars on Github. Built with Electron and Node. Discontinued since Apple Silicon Macs can now run the iOS Overcast now.
+A macOS client for the popular Overcast podcast player, with over 130 stars on Github. Built with Electron and Node.
 
-[View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
+[Open the project on Github →](https://github.com/nathanbirrell/overcast-macos)
 
 <img class="noprint" src="/img/projects/overcast-macos/overcast-macos-screenshot.jpg" alt="Screenshot of Overcast for macOS">
 
-### Poseidon (June 2017 - 2018)
+<h3>
+  <span>Poseidon</span>
+  <span class="tx-overline">
+    2017 - 2018
+  </span>
+</h3>
 
-A side project, built with Ruby on Rails and a create-react-app + Typescript frontend. The goal for the project was to improve the experience around surf forecast modelling, so we had some fun challenges around presenting graphs and numerical data in a friendly way; storing and parsing model data and so on. Multiple third-party integrations involved, including: NOAA, BOM, PlanetOS and Willyweather.
+A hobby project built with Ruby on Rails and a create-react-app + Typescript frontend. The goal: to improve the experience around surf forecast modelling. We had some fun challenges around presenting graphs and numerical data in a user-friendly way; storing and parsing model data and calculating a "Surf Potential" figure. Multiple third-party integrations involved (ie: NOAA, BOM).
 
-Most of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project!
+<!-- Most of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project! -->
 
 <!-- We decided to discontinue the project after some long-standing companies in the area vastly improved their offering and felt we couldn't add enough additional value. -->
 
@@ -168,18 +188,6 @@ Most of our time was spent on formulating the "Surf Potential" figure which took
 2.  Strong interest in wider front-end community involvement and contributing back to open source projects. Regular attendee at MelbJS and Ruby Melbourne meetups.
 3.  Managing teams and workflows around building software. Inspired by many things/people, to name a few: [Agile manifesto](http://agilemanifesto.org/), Lean philosophy, [Basecamp](https://m.signalvnoise.com/), [Ben Horowitz](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205), [Seth Godin](http://sethgodin.typepad.com/) and [Paul Graham](http://www.paulgraham.com/articles.html).
 4.  Outside of work I generally spend [well away from my computer](https://instagram.com/nathanbirrell) (mainly surfing/camping). -->
-
-<!-- ## Skills
-
-- Javascript, ES6, Typescript
-- React/Redux/Mobx front-end ecosystem
-- Git & git-flow
-- Webpack, Babel
-- React Native & Expo
-- Ruby & Rails
-- Jest/Enzyme unit testing
-- Figma, Sketch, Photoshop, Illustrator
-- HTML, CSS, Sass -->
 
 ## Education
 
