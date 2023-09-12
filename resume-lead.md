@@ -47,7 +47,7 @@ layout: layouts/base.njk
 
 <h3>
   <span>Stax (by Versent)</span>
-  <span class="tx-overline">Senior Software Engineer • Oct 2018 - present</span>
+  <span class="tx-overline">Front-end Lead (Platform) • Oct 2018 - present</span>
 </h3>
 
 Stax is an AWS cloud management platform, exists to empower teams with consistency, confidence and velocity. [View the landing page →](https://stax.io/)
@@ -62,7 +62,7 @@ Stax is an AWS cloud management platform, exists to empower teams with consisten
 
 <h3>
   <span>Bureau of Meteorology</span>
-  <span class="tx-overline">Software Engineer • Mar 2018 - Oct 2018</span>
+  <span class="tx-overline">Senior Software Engineer • Mar 2018 - Oct 2018</span>
 </h3>
 
 - A new weather experience for the general public audience — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
