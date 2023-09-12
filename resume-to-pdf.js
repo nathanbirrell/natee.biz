@@ -14,7 +14,7 @@ async function printPDF(
     format: "A4",
     scale: 0.8,
     printBackground: false,
-    margin: { top: "60px", right: "30px", bottom: "60px", left: "30px" },
+    margin: { top: "40px", right: "25px", bottom: "40px", left: "25px" },
   });
 
   await browser.close();

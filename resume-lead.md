@@ -21,8 +21,8 @@ layout: layouts/base.njk
   </h3>
 
   <p>Software Engineer with over ten years of experience, from some of Australia’s largest companies to small teams in fast-growing startups.</p>
-  <p>Currently motivated to continue developing my abilities in team leadership, beyond those of an individual contributor.</p>
-  <p>Open-minded engineer who typically thrives in empowered, multidisciplinary teams with a strong sense of purpose.</p>
+  <p>Currently motivated to continue developing my abilities in team leadership, beyond those of an individual contributor. Open-minded engineer who typically thrives in empowered, multidisciplinary teams with a strong sense of purpose.</p>
+  <p>I also enjoy 🏄🏼‍♂️ surfing, 🚴🏼 bicycles and ☕️ espresso.</p>
 
 </div>
 <div>
@@ -45,45 +45,38 @@ layout: layouts/base.njk
 
 ## Experience
 
-<!-- TODO: add Leesy -->
-<!-- ###### Senior Software Engineer • Oct 2018 - present -->
-
 <h3>
   <span>Stax (by Versent)</span>
-  <span class="tx-overline">Senior Software Engineer • Oct 2018 - present</span>
+  <span class="tx-overline">Front-end Lead (Platform) • Oct 2018 - present</span>
 </h3>
 
 Stax is an AWS cloud management platform, exists to empower teams with consistency, confidence and velocity. [View the landing page →](https://stax.io/)
 
-<!-- TODO: codebase size, scope etc -->
-
-- Ownership of long-term strategy for multiple frontend applications and a backend API service
+- Ownership of long-term strategy for a production frontend application (20k+ LOC), a component library, style system and a backend API service (60k LOC)
 - Led the architecture and build for a backend-for-frontend project, to bring multiple microservices together for the client-side
-- Set-up strong foundations early for maintainability with unit testing, linting, CI processes and written documentation for a growing team (from 8 to over 30 engineers at peak)
-- Improved quality of delivery through implementation of an automated end-to-end test solution to catch regressions early
-- Increased style consistency across multiple frontend projects with a CSS style system and shared components library
+- Set-up strong foundations early for maintainability with unit testing, linting, CI processes and written documentation for a growing team (from 2 project contributors to 15 at peak)
+- Improved quality through implementation of an automated end-to-end test solution to catch regressions
+- Increased style consistency across multiple frontend projects with a style system and component library
 - Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops
 - Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
 
 <h3>
   <span>Bureau of Meteorology</span>
-  <span class="tx-overline">Software Engineer • Mar 2018 - Oct 2018</span>
+  <span class="tx-overline">Senior Software Engineer • Mar 2018 - Oct 2018</span>
 </h3>
 
-- Worked on a project team to build a completely new weather experience for BOM's general public audience. One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic
-- Improved our application's reliability with a strongly-typed tree-structured state management library
+- A new weather experience for the general public audience — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
+- Improved our application's reliability with a strongly-typed, tree-structured state management library
 - Worked with junior engineers to improve reusability and maintainability through smart component abstraction and separation of concerns
 - Tech: Typescript, React, Mobx with mobx-state-tree, Service Workers, Jest/Enzyme, ES6+, styled-components.
-
-<!-- [View the app at weather.bom.gov.au →](https://weather.bom.gov.au/) -->
 
 <h3>
   <span>Belong (by Telstra)</span>
   <span class="tx-overline">Front-end Engineer • Nov 2016 - Mar 2018</span>
 </h3>
 
-- Responsibilities including onboarding new engineers, maintaining unit test coverage
-- Migrated a legacy Knockout/JQuery project to a more manageable React/Redux tooling configuration
+- Responsibilities including onboarding new engineers, improving unit test coverage
+- Migrated a legacy Knockout/JQuery codebase to a more manageable React/Redux project
 - Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.
 
 <h3>
@@ -91,14 +84,13 @@ Stax is an AWS cloud management platform, exists to empower teams with consisten
   <span class="tx-overline">Front-end Developer • Jan 2014 - Nov 2016</span>
 </h3>
 
-- Feature development for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, Victorian Comprehensive Cancer Centre and QSuper
-- Owned front-end estimation and delivery of user stories in an Agile SCRUM environment
+- Agile SCRUM delivery for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, VCCC and QSuper
+- Regularly presented ideas back to the wider Frontend Practice, participation at MelbJS, LASTConf, MelbCSS
+<!-- - Owned estimation and delivery of user stories in an Agile SCRUM environment
 - Improved quality on projects through architectural decision discussion and sharing ideas for writing readable and maintainable Javascript
-- Regularly presented ideas back to the wider Frontend Practice
 - Introduced a feature-based Git workflow ('git flow')
-- Regular attendee at MelbJS, LASTConf, MelbCSS
-  <!-- - Attended conferences and training such as: Pluralsight courses (i.e. Crockford’s JS Good Parts), meetups and conferences (MelbJS, LASTConf, MelbCSS) -->
-  <!-- - Assisted product owners, designers and UX to design solutions that maximise business value from more effective development effort -->
+- Attended conferences and training such as: Pluralsight courses (i.e. Crockford’s JS Good Parts), meetups and conferences (MelbJS, LASTConf, MelbCSS)
+- Assisted product owners, designers and UX to design solutions that maximise business value from more effective development effort -->
 
 <!-- <h3>
   <span>The Incentive Lab</span>
@@ -190,6 +182,8 @@ A hobby project built with Ruby on Rails and a create-react-app + Typescript fro
 2.  Strong interest in wider front-end community involvement and contributing back to open source projects. Regular attendee at MelbJS and Ruby Melbourne meetups.
 3.  Managing teams and workflows around building software. Inspired by many things/people, to name a few: [Agile manifesto](http://agilemanifesto.org/), Lean philosophy, [Basecamp](https://m.signalvnoise.com/), [Ben Horowitz](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205), [Seth Godin](http://sethgodin.typepad.com/) and [Paul Graham](http://www.paulgraham.com/articles.html).
 4.  Outside of work I generally spend [well away from my computer](https://instagram.com/nathanbirrell) (mainly surfing/camping). -->
+
+<br />
 
 ## Education
 

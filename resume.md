@@ -20,11 +20,9 @@ layout: layouts/base.njk
   About Me:
   </h3>
 
-  <p>Full-stack Software Engineer with over ten years of experience with some of Australia’s largest companies. <strong>Specialised in modern front-end web application development</strong>, particularly with React and Typescript, but also have years of commercial experience with a range of backend tooling.</p>
-
-  <p>Not attached to any specific technology or framework, always open to new ways of working. Typically thrive in empowered, multidisciplinary teams. Keen interest in process, written/async communication and improving the way teams work.</p>
-
-  <!-- - I work compressed 4-day weeks, usually Tue-Fri. Preference for more asynchronous modes of working, but still flexible around co-located teams and remote working (I enjoy both). -->
+  <p>Software Engineer with over ten years of experience, from some of Australia’s largest companies to small teams in fast-growing startups.</p>
+  <p>Currently motivated to continue developing my abilities in team leadership, beyond those of an individual contributor. Open-minded engineer who typically thrives in empowered, multidisciplinary teams with a strong sense of purpose.</p>
+  <p>I also enjoy 🏄🏼‍♂️ surfing, 🚴🏼 bicycles and ☕️ espresso.</p>
 
 </div>
 <div>
@@ -33,71 +31,66 @@ layout: layouts/base.njk
   </h3>
 
   <ol>
-  <li>React, Typescript, GraphQL &amp; CSS</li>
-  <li>NextJS, Vite with SSR, Webpack and create-react-app</li>
-  <li>Apollo GraphQL and various state-management libraries (MobX &amp; Redux)</li>
-  <li>Jest &amp; testing-library for unit testing, Playwright for E2E tests</li>
-  <li>GraphQL, Node.js, Express, Prisma ORM and Postgres</li>
-  <li>AWS services like Lambda, ECS, AppSync, DynamoDB, CDK/SAM</li>
+  <li>Specialised frontend experience across React, Typescript, NextJS &amp; CSS</li>
+  <li>Strong backend commercial experience with Node, GraphQL Yoga & Express, REST, both RDBMS & NoSQL</li>
+  <li>Solution architecture on AWS Lambda, ECS, AppSync, DynamoDB, CDK/SAM</li>
+  <li>Focus on maintainability, through unit testing, linting, E2E testing & CI</li>
+  <li>Agile SCRUM software delivery</li>
+  <!-- <li>NextJS, Vite with SSR, Webpack and create-react-app</li> -->
+  <!-- <li>Multiple state-management libraries (Apollo GraphQL, MobX &amp; Redux)</li> -->
+  <!-- <li>Unit testing and E2E testing</li> -->
   </ol>
 </div>
 </div>
 
 ## Experience
 
-<!-- TODO: add Leesy -->
-<!-- ###### Senior Software Engineer • Oct 2018 - present -->
-
 <h3>
   <span>Stax (by Versent)</span>
   <span class="tx-overline">Senior Software Engineer • Oct 2018 - present</span>
 </h3>
 
-Stax is an AWS cloud management platform, which exists to speed-up and improve the quality of cloud infrastructure delivery.
+Stax is an AWS cloud management platform, exists to empower teams with consistency, confidence and velocity. [View the landing page →](https://stax.io/)
 
-- As a Senior Software Engineer with a focus on front-end, I work on building and managing strategy around our frontend applications.
-- Responsible for both the single-page app (client side React app) and our backend-for-frontend app which consists of an AppSync API, NodeJS/Typescript Lambda resolvers, SQS Queues and more.
-- Tech: Typescript, GraphQL, Apollo, React, Jest, NodeJS, AWS Lambda, AppSync, Serverless, CDK, etc.
-- Some challenges include: managing style consistency across multiple separate frontend projects and teams; having frontend engineers manage their own backend-for-frontend (our AppSync GraphQL API) and wrangling client-side state to present long-running cloud tasks.
-
-[View the landing page at stax.io →](https://stax.io/)
+- Ownership of long-term strategy for a production frontend application (20k+ LOC), a component library, style system and a backend API service (60k LOC)
+- Led the architecture and build for a backend-for-frontend project, to bring multiple microservices together for the client-side
+- Set-up strong foundations early for maintainability with unit testing, linting, CI processes and written documentation for a growing team (from 2 project contributors to 15 at peak)
+- Improved quality through implementation of an automated end-to-end test solution to catch regressions
+- Increased style consistency across multiple frontend projects with a style system and component library
+- Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops
+- Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
 
 <h3>
   <span>Bureau of Meteorology</span>
   <span class="tx-overline">Software Engineer • Mar 2018 - Oct 2018</span>
 </h3>
 
-- Worked on a project team to build a completely new weather experience for BOM's general public audience. One of Australia's [top 40](https://www.alexa.com/topsites/countries/AU) websites by traffic.
-- Tooling: Typescript, React, Mobx with mobx-state-tree, Jest/Enzyme, ES6+, styled-components.
-- Interesting challenges included managing tree-structured state and weather datapoints; finding the right abstractions for reusable components; and working with a moderate-sized team to agree on long-term technical decisions
-
-<!-- [View the app at weather.bom.gov.au →](https://weather.bom.gov.au/) -->
+- A new weather experience for the general public audience — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
+- Improved our application's reliability with a strongly-typed, tree-structured state management library
+- Worked with junior engineers to improve reusability and maintainability through smart component abstraction and separation of concerns
+- Tech: Typescript, React, Mobx with mobx-state-tree, Service Workers, Jest/Enzyme, ES6+, styled-components.
 
 <h3>
   <span>Belong (by Telstra)</span>
-  <span class="tx-overline">Front-end Developer • Nov 2016 - Mar 2018</span>
+  <span class="tx-overline">Front-end Engineer • Nov 2016 - Mar 2018</span>
 </h3>
 
-Mid-level Front-end Developer on a React/Redux/Webpack web application. Key activities:
-
-- Tooling: React, Redux, Webpack, ES6/Babel, server-side React rendering, Expo and React Native.
-- Onboarding new developers, maintaining Jest unit testing coverage
-- Migration of our legacy front-end app out of an old Knockout/JQuery project to a more manageable React/Redux ecosystem.
+- Responsibilities including onboarding new engineers, improving unit test coverage
+- Migrated a legacy Knockout/JQuery codebase to a more manageable React/Redux project
+- Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.
 
 <h3>
   <span>Deloitte Digital</span>
   <span class="tx-overline">Front-end Developer • Jan 2014 - Nov 2016</span>
 </h3>
 
-Website and web application builds for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, Victorian Comprehensive Cancer Centre and QSuper.
-
-Front-end feature development in SCRUM delivery teams:
-
-- Regularly owned front-end estimation and delivery of user stories end-to-end with considerable complexity and time constraints.
-- Focussed on improving quality through: objective architectural decisions and discussion, sharing ideas for writing readable and maintainable Javascript and presenting ideas back to the wider FED team.
-- Assisted product owners, designers and UX to design solutions that maximise business value from more effective development effort.
-- Attended conferences and completed training such as: Deloitte FED training (mostly React & Angular), Pluralsight courses (i.e. Crockford’s JS Good Parts) and meetups/conferences (MelbJS, LASTConf).
-- Helped design/introduce a feature-based Git workflow (‘git flow’) for multiple clients.
+- Agile SCRUM delivery for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, VCCC and QSuper
+- Regularly presented ideas back to the wider Frontend Practice, participation at MelbJS, LASTConf, MelbCSS
+<!-- - Owned estimation and delivery of user stories in an Agile SCRUM environment
+- Improved quality on projects through architectural decision discussion and sharing ideas for writing readable and maintainable Javascript
+- Introduced a feature-based Git workflow ('git flow')
+- Attended conferences and training such as: Pluralsight courses (i.e. Crockford’s JS Good Parts), meetups and conferences (MelbJS, LASTConf, MelbCSS)
+- Assisted product owners, designers and UX to design solutions that maximise business value from more effective development effort -->
 
 <!-- <h3>
   <span>The Incentive Lab</span>
@@ -116,7 +109,10 @@ Front-end feature development in SCRUM delivery teams:
   </span>
 </h3>
 
-Advised a [local startup](https://leesy.com.au), on their tech strategy and helped build out their MVP web application. The project took advantage of modern Node and Front-end tooling, like Typescript, Vite with SSR, Express, GraphQL Pothos & Yoga, PostgreSQL and all on AWS.
+- Advised a [local startup](https://leesy.com.au), on their tech strategy and helped build out their MVP web application
+- Managed contractor delivery, set up CI/CD pipelines and helped refine their tech roadmap
+- Implemented NextAuth for authentication, with simple role-based access control
+- Tech: Typescript, Node JS, Vite with SSR, Next Auth, Express, GraphQL Pothos & Yoga, PostgreSQL, AWS ECS, Fargate, ELB
 
 <h3>
   <span>Soulection 24/7 Radio App</span>
@@ -125,9 +121,9 @@ Advised a [local startup](https://leesy.com.au), on their tech strategy and help
   </span>
 </h3>
 
-As a Soulection Radio listener, I made a little radio app to stream random episodes 24/7. It included some Apple Music-style [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls. This project was great to experiment with Tailwind CSS, drawing vectors on an iPad and integrating with SoundCloud's API.
-
-[Open the project on Github →](https://github.com/nathanbirrell/future-beats)
+- A [radio app](https://github.com/nathanbirrell/future-beats) to stream random Soulection Radio episodes 24/7
+- Included some Apple Music-style [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls
+- A great chance to experiment with Tailwind CSS, drawing vectors on iPad and integrating with SoundCloud's API
 
 <img class="noprint" src="/img/projects/future-beats/future-beats-419.jpg" alt="Screenshot of futurebeats.fm">
 
@@ -152,9 +148,7 @@ A cycling trip from Cairns to Cape York, through some of Australia’s most remo
   </span>
 </h3>
 
-A macOS client for the popular Overcast podcast player, with over 130 stars on Github. Built with Electron and Node.
-
-[Open the project on Github →](https://github.com/nathanbirrell/overcast-macos)
+A macOS client for the popular Overcast podcast player, with over [130 stars on Github](https://github.com/nathanbirrell/overcast-macos). Built with Electron and Node.
 
 <img class="noprint" src="/img/projects/overcast-macos/overcast-macos-screenshot.jpg" alt="Screenshot of Overcast for macOS">
 
@@ -188,6 +182,8 @@ A hobby project built with Ruby on Rails and a create-react-app + Typescript fro
 2.  Strong interest in wider front-end community involvement and contributing back to open source projects. Regular attendee at MelbJS and Ruby Melbourne meetups.
 3.  Managing teams and workflows around building software. Inspired by many things/people, to name a few: [Agile manifesto](http://agilemanifesto.org/), Lean philosophy, [Basecamp](https://m.signalvnoise.com/), [Ben Horowitz](https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205), [Seth Godin](http://sethgodin.typepad.com/) and [Paul Graham](http://www.paulgraham.com/articles.html).
 4.  Outside of work I generally spend [well away from my computer](https://instagram.com/nathanbirrell) (mainly surfing/camping). -->
+
+<br />
 
 ## Education
 

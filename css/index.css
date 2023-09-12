@@ -138,6 +138,10 @@ figcaption {
   margin-top: 0;
 }
 
+.profile ol {
+  margin-bottom: 0;
+}
+
 /* Heading href tags */
 
 .header-anchor {
@@ -203,6 +207,7 @@ h3:hover .header-anchor {
 
   .markdown-body main h2 {
     font-size: 1.2em;
+    margin-top: 1rem;
   }
 
   .markdown-body main h3 {
