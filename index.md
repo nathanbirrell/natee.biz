@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 1
 ---
 
-Software engineer, primarily focussed on Javascript web application development.
+Software engineer, primarily focussed on full-stack Typescript & Node web application development.
 
 <!-- 🛠 Building web interfaces at [Stax](https://stax.io)
 
