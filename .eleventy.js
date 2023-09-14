@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const readPhotosWithExif = require("./photoReader");
+const readPins = require("./pinsReader");
 
 module.exports = function (eleventyConfig) {
   // Add plugins
@@ -69,6 +70,8 @@ module.exports = function (eleventyConfig) {
   // Create collection of photos
   // TODO: assess processing these images for web https://www.raymondcamden.com/2021/04/07/building-a-simple-image-gallery-with-eleventy
   eleventyConfig.addCollection("photos", readPhotosWithExif);
+
+  eleventyConfig.addCollection("pinboard", readPins);
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
