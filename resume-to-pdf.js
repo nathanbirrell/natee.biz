@@ -23,4 +23,4 @@ async function printPDF(
 
 printPDF("http://localhost:8080/resume", "./assets/resume.pdf");
 
-printPDF("http://localhost:8080/resume-lead", "./assets/resume-lead.pdf");
+// printPDF("http://localhost:8080/resume-lead", "./assets/resume-lead.pdf");

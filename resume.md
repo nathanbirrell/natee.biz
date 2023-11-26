@@ -1,6 +1,6 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2023-09-10
+date: 2023-10-20
 layout: layouts/base.njk
 ---
 
@@ -20,9 +20,9 @@ layout: layouts/base.njk
   About Me:
   </h3>
 
-  <p>Software Engineer with over ten years of experience, from some of Australia’s largest companies to small teams in fast-growing startups.</p>
-  <p>Currently motivated to continue developing my abilities in team leadership, beyond those of an individual contributor. Open-minded engineer who typically thrives in empowered, multidisciplinary teams with a strong sense of purpose.</p>
-  <p>I also enjoy 🏄🏼‍♂️ surfing, 🚴🏼 bicycles and ☕️ espresso.</p>
+  <p>Software Engineer with over ten years of experience, from some of Australia’s largest companies to small teams in fast-growing startups. Currently living in Italy. </p>
+  <p>Currently motivated to continue developing my abilities in software engineering and outside of it, be that in team leadership, solutions architecture or sales engineering. Open-minded engineer who typically thrives in empowered, multidisciplinary teams with a strong sense of purpose. </p>
+  <p>I also enjoy 🏄🏼‍♂️ surfing, 🚴🏼 bicycles and ☕️ espresso. </p>
 
 </div>
 <div>
@@ -47,26 +47,35 @@ layout: layouts/base.njk
 
 <h3>
   <span>Stax (by Versent)</span>
-  <span class="tx-overline">Senior Software Engineer • Oct 2018 - present</span>
+  <span class="tx-overline">Front-end Lead (Platform) • Nov 2020 - present</span>
 </h3>
 
 Stax is an AWS cloud management platform, exists to empower teams with consistency, confidence and velocity. [View the landing page →](https://stax.io/)
 
+- Being at Stax from the ground up, I was fortunate enough to be part of scaling up our engineering capabilities from <10 engineers to well over 30+
 - Ownership of long-term strategy for a production frontend application (20k+ LOC), a component library, style system and a backend API service (60k LOC)
 - Led the architecture and build for a backend-for-frontend project, to bring multiple microservices together for the client-side
+- Ran Front-end Practice catch-ups, a platform for engineers to share new ideas and ensure cohesion across feature teams
+- Still a hands-on role, keeping our projects up-to-date and on the right tooling (ie. migrated create-react-app to Vite for better support)
+
+<h3>
+  <span>Stax (by Versent)</span>
+  <span class="tx-overline">Senior Front-end Engineer • Oct 2018 - 2020</span>
+</h3>
+
 - Set-up strong foundations early for maintainability with unit testing, linting, CI processes and written documentation for a growing team (from 2 project contributors to 15 at peak)
 - Improved quality through implementation of an automated end-to-end test solution to catch regressions
 - Increased style consistency across multiple frontend projects with a style system and component library
 - Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops
-- Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
+- Tech: Typescript, Vite, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
 
 <h3>
   <span>Bureau of Meteorology</span>
-  <span class="tx-overline">Software Engineer • Mar 2018 - Oct 2018</span>
+  <span class="tx-overline">Software Engineer (contract) • Mar 2018 - Oct 2018</span>
 </h3>
 
-- A new weather experience for the general public audience — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
-- Improved our application's reliability with a strongly-typed, tree-structured state management library
+- A new weather experience for the general public — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
+- Improved our application's reliability with a strongly-typed, tree-structured state management library and CSS-in-JS to help us build our application faster
 - Worked with junior engineers to improve reusability and maintainability through smart component abstraction and separation of concerns
 - Tech: Typescript, React, Mobx with mobx-state-tree, Service Workers, Jest/Enzyme, ES6+, styled-components.
 
@@ -84,7 +93,7 @@ Stax is an AWS cloud management platform, exists to empower teams with consisten
   <span class="tx-overline">Front-end Developer • Jan 2014 - Nov 2016</span>
 </h3>
 
-- Agile SCRUM delivery for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, VCCC and QSuper
+- Agile SCRUM delivery for clients such as Telstra, ANZ, Herbert Smith Freehills, RACQ, VCCC and QSuper. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations
 - Regularly presented ideas back to the wider Frontend Practice, participation at MelbJS, LASTConf, MelbCSS
 <!-- - Owned estimation and delivery of user stories in an Agile SCRUM environment
 - Improved quality on projects through architectural decision discussion and sharing ideas for writing readable and maintainable Javascript
