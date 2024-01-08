@@ -12,9 +12,11 @@ async function printPDF(
   const pdf = await page.pdf({
     path: output,
     format: "A4",
-    scale: 0.8,
+    // scale: 0.8,
     printBackground: false,
-    margin: { top: "40px", right: "25px", bottom: "40px", left: "25px" },
+    preferCSSPageSize: true,
+    // margin: { top: 0, right: 0, bottom: "20px", left: 0 },
+    // margin: 0,
   });
 
   await browser.close();

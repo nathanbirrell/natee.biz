@@ -23,19 +23,24 @@ html {
   max-width: 780px;
   margin: 0 auto;
   padding: 45px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .markdown-body {
     padding: 15px;
   }
+} */
+
+.header-avatar {
+  margin-right: 0.5rem;
 }
 
 .avatar {
   padding: 0.5rem;
-  margin-right: 0.5rem;
+  padding-left: 0;
   margin-bottom: 0;
+  margin-right: 0.5rem;
   width: 4rem;
   height: auto;
 
@@ -110,6 +115,7 @@ figcaption {
 
 .markdown-body h3 {
   display: flex;
+  font-size: 1rem;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   margin-top: 1.25rem;
@@ -123,7 +129,7 @@ figcaption {
   display: flex;
   align-items: flex-end;
   /* align-items: center; */
-  line-height: 1.9;
+  line-height: 1.5;
 }
 
 .markdown-body h3.tx-overline,
@@ -169,6 +175,7 @@ h3:hover .header-anchor {
     grid-template-columns: 55% 45%;
   }
 }
+
 @media print {
   .profile {
     display: grid;
@@ -205,13 +212,33 @@ h3:hover .header-anchor {
     right: 5rem;
   } */
 
+  .markdown-body p {
+    margin-bottom: 0.25rem;
+  }
+
   .markdown-body main h2 {
-    font-size: 1.2em;
-    margin-top: 1rem;
+    font-size: 1.15rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
   }
 
   .markdown-body main h3 {
-    font-size: 1em;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
     padding-bottom: 0;
+    margin-bottom: 0.35rem;
+  }
+
+  .header-links a {
+    color: var(--color-fg-default);
+  }
+
+  .markdown-body {
+    padding-top: 1.25rem;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0 1rem 1rem 1rem;
   }
 }
