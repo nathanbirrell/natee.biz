@@ -60,7 +60,7 @@ layout: layouts/base.njk
 [Stax](https://stax.io/) is a B2B SaaS AWS cloud management platform, which empowers teams to deliver on AWS with consistency, confidence and velocity. In October 2023, Stax & Versent sold to Telstra for $267.5m.
 
 - Ownership of long-term strategy for a production frontend application (20k+ LOC), a component library, style system and a backend API service (60k LOC).
-- Led architecture and build for a backend-for-frontend project, to simplify interfacing with microservices
+- Led architecture/build for a backend-for-frontend project, to simplify interfacing with microservices
 - Scaled-up engineering capabilities from 5 engineers to 30+, establishing best practices and processes for our growing organisation.
 - Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
 - Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
