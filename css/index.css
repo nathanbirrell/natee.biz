@@ -209,8 +209,8 @@ h3:hover .header-anchor {
 
   .markdown-body main h2 {
     font-size: 1.15rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
   }
   .markdown-body main h2:first-of-type {
     margin-top: 0;
@@ -221,6 +221,10 @@ h3:hover .header-anchor {
     margin-top: 0.5rem;
     padding-bottom: 0;
     margin-bottom: 0.15rem;
+  }
+
+  .markdown-body ul {
+    margin-bottom: 0.25rem;
   }
 
   .header {
