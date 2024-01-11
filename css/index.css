@@ -172,16 +172,7 @@ h3:hover .header-anchor {
     display: grid;
     grid-gap: 1rem;
     /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 55% 45%;
-  }
-}
-
-@media print {
-  .profile {
-    display: grid;
-    grid-gap: 1rem;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
   }
 }
 
@@ -221,16 +212,39 @@ h3:hover .header-anchor {
     margin-top: 0.75rem;
     margin-bottom: 0;
   }
+  .markdown-body main h2:first-of-type {
+    margin-top: 0;
+  }
 
   .markdown-body main h3 {
     font-size: 0.95rem;
     margin-top: 0.5rem;
     padding-bottom: 0;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .header {
+  }
+
+  .avatar {
+    width: 3.8rem;
   }
 
   .header-links a {
-    color: var(--color-fg-default);
+    /* color: var(--color-fg-default); */
+  }
+
+  .profile {
+    display: grid;
+    grid-gap: 0.75rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 50% 50%;
+
+    font-size: 0.8rem;
+  }
+
+  .profile h3.tx-overline {
+    margin-top: 0;
   }
 
   .markdown-body {
