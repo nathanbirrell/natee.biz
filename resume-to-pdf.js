@@ -6,9 +6,11 @@ async function printPDF(
 ) {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
+
   await page.goto(url, {
     waitUntil: "networkidle0",
   });
+
   const pdf = await page.pdf({
     path: output,
     format: "A4",
@@ -16,7 +18,6 @@ async function printPDF(
     printBackground: false,
     preferCSSPageSize: true,
     // margin: { top: 0, right: 0, bottom: "20px", left: 0 },
-    // margin: 0,
   });
 
   await browser.close();
