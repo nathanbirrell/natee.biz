@@ -23,7 +23,7 @@ layout: layouts/base.njk
   <p>
   Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. <strong>Interested in senior front-end roles, full-stack and open to lead roles (remote preferred).</strong>
   </p>
-  <p>I also enjoy 🏄🏼‍♂️ surfing, 🚴🏼 bicycles and ☕️ espresso. </p>
+  <p>Australian Citizen with working rights in the EU. Located in Bologna, Italy from March 17. </p>
 </div>
 <div>
   <h3 class="tx-overline">
@@ -49,8 +49,9 @@ layout: layouts/base.njk
 
 [MYOB](https://www.myob.com) is an accounting SaaS business. I was brought onto the Web & Content team.
 
-- Key deliverables: support article search with Algolia integration; core web vitals improvements; integration with headless CMS (Contentful) and middleware performance improvements.
-- Strategic guidance on architecture decisions (NextJS upgrades, localisation, partial prerendering).
+- Reduced inbound calls to support phone lines with the introduction of Support Article Search with Algolia. Built with reuse in mind, we used the same component on other areas of the website.
+- Strategic guidance on architecture decisions around NextJS, localisation and partial prerendering.
+- Other deliverables: core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a website rebrand.
 
 <h3>
   <span>Stax (by Versent)</span>
@@ -100,7 +101,9 @@ layout: layouts/base.njk
 - Built a strong brand for the consultancy, through presentations of our work at industry events like MelbJS, LASTConf and MelbCSS
 - Improved client satisfaction through strong communication skills, building rapport and ensuring we always focussed on their priorities -->
 
-<!-- ## Side Projects & Volunteering
+<div class="noprint">
+
+<h2>Side Projects & Volunteering</h2>
 
 <h3>
   <span>Leesy (Startmate, Summer 2023)</span>
@@ -112,26 +115,74 @@ layout: layouts/base.njk
 Advised a local startup on their tech strategy and helped build out their MVP web application. Saved the team hours of manual processes per day with a rental property appointment booking feature.
 
 <h3>
+<span>Soulection 24/7 Radio App</span>
+
+<span class="tx-overline">
+  2021
+</span>
+</h3>
+
+As a Soulection Radio listener, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls. This project was great to experiment with Tailwind CSS, drawing vectors on an iPad and integrating with SoundCloud's API.
+
+[View the project on Github →](https://github.com/nathanbirrell/future-beats)
+
+<img class="noprint" src="/img/projects/future-beats/future-beats-419.jpg" alt="Screenshot of futurebeats.fm">
+
+<h3>
   <span>TourXOz (for the Black Dog Institute)</span>
   <span class="tx-overline">
     June 2019
   </span>
 </h3>
 
-A cycling trip from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities. -->
+A cycling trip from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities.
 
-<!-- Donations supported the Black Dog Institute. -->
+Donations supported the Black Dog Institute.
+
+<h3>
+  <span>Overcast for macOS</span>
+  <span class="tx-overline">
+    2017
+  </span>
+</h3>
+
+A macOS client for the popular Overcast podcast player, with over [130 stars on Github](https://github.com/nathanbirrell/overcast-macos). Built with Electron and Node.
+
+[View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
+
+<img class="noprint" src="/img/projects/overcast-macos/overcast-macos-screenshot.jpg" alt="Screenshot of Overcast for macOS">
+
+<h3>
+  <span>Poseidon</span>
+  <span class="tx-overline">
+    2017 - 2018
+  </span>
+</h3>
+
+A hobby project built with Ruby on Rails and a create-react-app with a Typescript frontend. Our goal was to improve the experience around surf forecast modelling. We had some fun challenges around presenting graphs and numerical data in a user-friendly way; storing and parsing model data and calculating a "Surf Potential" figure. Multiple third-party integrations involved with NOAA, BOM and PlanetOS.
+
+<!-- Most of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project! -->
+
+<!-- We decided to discontinue the project after some long-standing companies in the area vastly improved their offering and felt we couldn't add enough additional value. -->
+
+<figure class="noprint">
+  <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
+  <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
+</figure>
+
+</div>
 
 ## Education
 
-<!-- <h3>
+<div class="noprint">
+<h3>
   <span>Certificate of Italian Language (B2 CEFR)</span>
   <span class="tx-overline">
     2023—present
   </span>
 </h3>
-
-Currently B1. Studying for my B2 CEFR exam in March, at the University for Foreigners of Perugia. -->
+Currently B1. Studying for my B2 CEFR exam in March, at the University for Foreigners of Perugia.
+</div>
 
 <h3>
   <span>Bachelor of Business (Information Systems)</span>
@@ -142,16 +193,19 @@ Currently B1. Studying for my B2 CEFR exam in March, at the University for Forei
 
 Royal Melbourne Institute of Technology (RMIT University)
 
-<!-- Applied course (industry placement), minor in Marketing, GPA 3.2 -->
+Applied course (industry placement), minor in Marketing, GPA 3.2
 
-<!-- <h3>
+<div class="noprint">
+<h3>
   <span>Certificate IV in Business Sales</span>
   <span class="tx-overline">
     2012-2013
   </span>
-</h3> -->
+</h3>
 
-<!-- Talent2 Education -->
+Talent2 Education
+
+</div>
 
 <!-- ## Contact
 
