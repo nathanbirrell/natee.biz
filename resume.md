@@ -1,6 +1,6 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2024-01-01
+date: 2024-02-01
 layout: layouts/base.njk
 ---
 
@@ -21,9 +21,9 @@ layout: layouts/base.njk
   </h3>
 
   <p>
-  Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. <strong>Interested in senior front-end roles, full-stack and open to lead roles (remote preferred).</strong>
+  Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. <strong>Interested in senior front-end roles, full-stack and open to lead roles.</strong>
   </p>
-  <p>Australian Citizen with working rights in the EU. Located in Bologna, Italy from March 17. </p>
+  <p>Australian Citizen with working rights in the EU. <b>Located in Bologna, Italy from March 17.</b></p>
 </div>
 <div>
   <h3 class="tx-overline">
@@ -55,7 +55,7 @@ layout: layouts/base.njk
 
 <h3>
   <span>Stax (by Versent)</span>
-  <span class="tx-overline">Front-end Lead (Platform) • Nov 2020 - Oct 2023</span>
+  <span class="tx-overline">Senior Software Engineer • Oct 2018 - Oct 2023</span>
 </h3>
 
 [Stax](https://stax.io/) is a B2B SaaS AWS cloud management platform, which empowers teams to deliver on AWS with consistency, confidence and velocity. In October 2023, Stax & Versent sold to Telstra for $267.5m.
@@ -64,15 +64,9 @@ layout: layouts/base.njk
 - Led architecture/build for a backend-for-frontend project, to simplify interfacing with microservices
 - Scaled-up engineering capabilities from 5 engineers to 30+, establishing best practices and processes for our growing organisation.
 - Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
-- Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
-
-<h3>
-  <span>Stax (by Versent)</span>
-  <span class="tx-overline">Senior Front-end Engineer • Oct 2018 - 2020</span>
-</h3>
-
 - Set-up best-practice foundations for our React app with unit testing, end-to-end tests, linting, CI processes and docs. Tooling snapshot: NextJS, React, Typescript, GraphQL, Lambda, DynamoDB.
 - Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library.
+- Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
 
 <h3>
   <span>Bureau of Meteorology</span>
@@ -87,19 +81,22 @@ layout: layouts/base.njk
   <span class="tx-overline">Front-end Developer • Nov 2016 - Mar 2018</span>
 </h3>
 
+<ul class="noprint">
+<li>Responsible for delivering features, building out a component library with the design team, onboarding new engineers, improving unit test coverage and general hygiene with linting and better peer-review processes.</li>
+<li>Migrated a legacy Knockout/JQuery codebase to a more manageable React & Redux project</li>
+<li>Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.</li>
+</ul>
+
 <h3 style="margin-top: 0;">
   <span>Deloitte Digital</span>
   <span class="tx-overline">UI Developer (Consultant) • Jan 2014 - Nov 2016</span>
 </h3>
 
-<!-- <h3 style="margin-top: 0;">
-  <span>Deloitte Digital</span>
-  <span class="tx-overline">Graduate • Jan 2014 - Oct 2015</span>
-</h3> -->
-
-<!-- - Agile SCRUM delivery for clients such as Telstra, ANZ Bank and Herbert Smith Freehills. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations
-- Built a strong brand for the consultancy, through presentations of our work at industry events like MelbJS, LASTConf and MelbCSS
-- Improved client satisfaction through strong communication skills, building rapport and ensuring we always focussed on their priorities -->
+<ul class="noprint">
+<li>Agile SCRUM delivery for clients such as Telstra, ANZ Bank and Herbert Smith Freehills. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations</li>
+<li>Built a strong brand for the consultancy, through presentations of our work at industry events like MelbJS, LASTConf and MelbCSS</li>
+<li>Improved client satisfaction through strong communication skills, building rapport, regular updates and upfront discussions on deadlines.</li>
+</ul>
 
 <div class="noprint">
 
