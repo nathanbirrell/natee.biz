@@ -21,9 +21,9 @@ layout: layouts/base.njk
   </h3>
 
   <p>
-  Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. <strong>Interested in senior front-end roles, full-stack and open to lead roles.</strong>
+  Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. Interested in Senior Frontend and Fullstack Engineer roles at software product companies.
   </p>
-  <!-- <p>Australian Citizen with working rights in the EU. <b>Located in Bologna, Italy from March 17.</b></p> -->
+  <p>Australian Citizen with working rights in the EU. <b>Located in Bologna, Italy from March 17.</b></p>
 </div>
 <div>
   <h3 class="tx-overline">
@@ -38,48 +38,70 @@ layout: layouts/base.njk
 </div>
 </div>
 
-<!-- 🏄🏼‍♂️ Surfer, 🚴🏼 bicycle and ☕️ espresso nerd. -->
-
 ## Experience
 
-<h3>
-  <span>MYOB</span>
-  <span class="tx-overline">Senior Software Engineer (Contract) • Oct 2023 - present</span>
-</h3>
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Senior Software Engineer (Contract)</h3>
+  <h4 class="experience__header-company"><a href="https://www.myob.com">MYOB</a></h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">Oct 2023 - present</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
 
-[MYOB](https://www.myob.com) is an accounting SaaS business. I was brought onto the Web & Content team.
+<!-- [MYOB](https://www.myob.com) is an accounting SaaS business. -->
 
 - Reduced inbound calls to support phone lines with the introduction of Support Article Search with Algolia. Built with reuse in mind, we used the same component on other areas of the website.
 - Strategic guidance on architecture decisions around NextJS, localisation and partial prerendering.
-- Other deliverables: core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a website rebrand.
+- Other areas of focus: core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a website rebrand.
 
-<h3>
-  <span>Stax (by Versent)</span>
-  <span class="tx-overline">Senior Software Engineer • Oct 2018 - Oct 2023</span>
-</h3>
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Senior Software Engineer</h3>
+  <h4 class="experience__header-company"><a href="https://stax.io/">Stax</a> (by Versent)</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">Oct 2018 - Oct 2023</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
 
-[Stax](https://stax.io/) is a B2B SaaS AWS cloud management platform, which empowers teams to deliver on AWS with consistency, confidence and velocity. In October 2023, Stax & Versent sold to Telstra for $267.5m.
+Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS infrastructure. In October 2023, Stax & Versent sold to Telstra for $267.5m.
 
-- Ownership of long-term strategy for a production frontend application (20k+ LOC), a component library, style system and a backend API service (60k LOC).
-- Led architecture/build for a backend-for-frontend project, to simplify interfacing with microservices as the business grew. Serverless AWS project using AWS Appsync at its core.
+- Ownership of long-term strategy for a production frontend application, a component library, style system and a backend API service.
+- Led architecture and build for a backend-for-frontend project. This simplied interfacing with microservices as the business grew, leveraging highly scalable event-driven, serverless architecture.
 - Scaled-up engineering capabilities from 5 engineers to 30+, establishing best practices and processes for our growing organisation.
 - Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
-- Set-up best-practice foundations for our React app with unit testing, end-to-end tests, linting, CI processes and docs. Tooling snapshot: NextJS, React, Typescript, GraphQL, Lambda, DynamoDB.
-- Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library.
-- Tech: Typescript, GraphQL, Apollo, React, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
+- Set-up best-practice foundations for our React app with unit testing, end-to-end tests, linting, CI processes and docs.
+- Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library implementation.
+- Tech: Typescript, React, GraphQL, Apollo, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
 
-<h3>
-  <span>Bureau of Meteorology</span>
-  <span class="tx-overline">Software Engineer (contract) • Mar 2018 - Oct 2018</span>
-</h3>
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Frontend Engineer (Contract)</h3>
+  <h4 class="experience__header-company"><a href="https://bom.gov.au/">Bureau of Meteorology</a></h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">Mar 2018 - Oct 2018</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
 
-- A new weather experience for the general public — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
-- Improved reliability and protyping speed with static typing & tree-structured state management lib
+- Building a new weather experience for the general public — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
+- Improved reliability and protyping speed with static typing & tree-structured state management library (Typescript, Mobx and mobx-state-tree; integrations with weather API services)
 
-<h3 style="margin-top: 0;">
-  <span>Belong (by Telstra)</span>
-  <span class="tx-overline">Front-end Developer • Nov 2016 - Mar 2018</span>
-</h3>
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Frontend Developer</h3>
+  <h4 class="experience__header-company"><a href="https://belong.com.au/">Belong</a> (by Telstra)</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">Nov 2016 - Mar 2018</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
 
 <ul class="noprint">
 <li>Responsible for delivering features, building out a component library with the design team, onboarding new engineers, improving unit test coverage and general hygiene with linting and better peer-review processes.</li>
@@ -87,15 +109,21 @@ layout: layouts/base.njk
 <li>Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.</li>
 </ul>
 
-<h3 style="margin-top: 0;">
-  <span>Deloitte Digital</span>
-  <span class="tx-overline">UI Developer (Consultant) • Jan 2014 - Nov 2016</span>
-</h3>
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Graduate » Consultant (Frontend Developer)</h3>
+  <h4 class="experience__header-company"><a href="https://www.deloittedigital.com/au/en.html">Deloitte Digital</a></h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">Jan 2014 - Nov 2016</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
 
 <ul class="noprint">
-<li>Agile SCRUM delivery for clients such as Telstra, ANZ Bank and Herbert Smith Freehills. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations</li>
+<li>Working as a consultant, using Agile SCRUM delivery for clients such as Telstra, ANZ Bank and Herbert Smith Freehills. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations</li>
 <li>Built a strong brand for the consultancy, through presentations of our work at industry events like MelbJS, LASTConf and MelbCSS</li>
-<li>Improved client satisfaction through strong communication skills, building rapport, regular updates and upfront discussions on deadlines.</li>
+<li>Improved client relationships through strong communication skills, building rapport, regular updates and upfront discussions on deadlines.</li>
 </ul>
 
 <div class="noprint">
@@ -190,7 +218,9 @@ Currently B1. Studying for my B2 CEFR exam in March, at the University for Forei
 
 Royal Melbourne Institute of Technology (RMIT University)
 
+<span class="noprint">
 Applied course (industry placement), minor in Marketing, GPA 3.2
+</span>
 
 <div class="noprint">
 <h3>

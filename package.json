@@ -28,6 +28,6 @@
     "markdown-it": "^12.1.0",
     "markdown-it-anchor": "^8.6.5",
     "prettier": "^2.4.1",
-    "puppeteer": "^21.1.1"
+    "puppeteer": "^22.1.0"
   }
 }
