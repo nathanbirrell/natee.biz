@@ -126,6 +126,49 @@ Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS i
 <li>Improved client relationships through strong communication skills, building rapport, regular updates and upfront discussions on deadlines.</li>
 </ul>
 
+## Education
+
+<div class="noprint">
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Certificate of Italian Language (B2 CEFR)</h3>
+  <h4 class="experience__header-company">University for Foreigners of Perugia</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">2023—present</h4>
+    <h4>Italy 📍</h4>
+  </span>
+</div>
+<p>Currently B1. Studying for my B2 CEFR exam in March.</p>
+</div>
+
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Bachelor of Business (Information Systems)</h3>
+  <h4 class="experience__header-company">Royal Melbourne Institute of Technology (RMIT University)</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">2012-2015</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
+<p class="noprint">
+Applied course (industry placement), minor in Marketing, GPA 3.2
+</p>
+
+<div class="noprint">
+<div class="experience__header">
+  <span class="experience__header-left">
+  <h3 class="experience__header-role">Certificate IV in Business Sales</h3>
+  <h4 class="experience__header-company">Talent2 Education</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">2012-2013</h4>
+    <h4>Melbourne, AU 📍</h4>
+  </span>
+</div>
+</div>
+
 <div class="noprint">
 
 <h2>Side Projects & Volunteering</h2>
@@ -194,43 +237,6 @@ A hobby project built with Ruby on Rails and a create-react-app with a Typescrip
   <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
   <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
 </figure>
-
-</div>
-
-## Education
-
-<div class="noprint">
-<h3>
-  <span>Certificate of Italian Language (B2 CEFR)</span>
-  <span class="tx-overline">
-    2023—present
-  </span>
-</h3>
-Currently B1. Studying for my B2 CEFR exam in March, at the University for Foreigners of Perugia.
-</div>
-
-<h3>
-  <span>Bachelor of Business (Information Systems)</span>
-  <span class="tx-overline">
-    2012-2015
-  </span>
-</h3>
-
-Royal Melbourne Institute of Technology (RMIT University)
-
-<span class="noprint">
-Applied course (industry placement), minor in Marketing, GPA 3.2
-</span>
-
-<div class="noprint">
-<h3>
-  <span>Certificate IV in Business Sales</span>
-  <span class="tx-overline">
-    2012-2013
-  </span>
-</h3>
-
-Talent2 Education
 
 </div>
 
