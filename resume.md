@@ -23,7 +23,7 @@ layout: layouts/base.njk
   <p>
   Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. Interested in Senior Frontend and Fullstack Engineer roles at software product companies.
   </p>
-  <p>Australian Citizen with working rights in the EU. <b>Located in Bologna, Italy from March 17.</b></p>
+  <p>Australian Citizen with working rights in the EU.</p>
 </div>
 <div>
   <h3 class="tx-overline">
