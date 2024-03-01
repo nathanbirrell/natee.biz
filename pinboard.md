@@ -3,7 +3,7 @@ title: "Pinboard"
 layout: layouts/base.njk
 ---
 
-Nice things from the internet.
+Nice things and inspiration I find on the internet.
 
 {% for photo in collections.pinboard %}
 
@@ -15,7 +15,7 @@ Nice things from the internet.
 
 <figcaption>
 <span class="photo-name">
-    <!-- {{photo.name}} -->
+    {{photo.name}}
     <!-- <time datetime="{{ photo.date | htmlDateString }}">{{ photo.date | monthYearDate }}</time> -->
 </span>
 </figcaption>

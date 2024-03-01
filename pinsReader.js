@@ -31,7 +31,8 @@ module.exports = async function readPinsCollection() {
   await Promise.all(
     pinboardCollection.map(async (photo) => {
       if (!photo) return;
-      var date = fs.statSync(photo.path).birthtime;
+      // var date = fs.statSync(photo.path).birthtime;
+      var date = fs.statSync(photo.path).mtime;
       const baseData = Object.assign({}, photo, { date });
       photosWithExif.push({
         ...baseData,
