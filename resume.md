@@ -128,7 +128,7 @@ Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS i
 
 ## Education
 
-<div class="noprint">
+<!-- <div class="noprint">
 <div class="experience__header">
   <span class="experience__header-left">
   <h3 class="experience__header-role">Certificate of Italian Language (B2 CEFR)</h3>
@@ -140,7 +140,7 @@ Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS i
   </span>
 </div>
 <p>Currently B1. Studying for my B2 CEFR exam in March.</p>
-</div>
+</div> -->
 
 <div class="experience__header">
   <span class="experience__header-left">
