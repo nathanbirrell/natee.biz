@@ -7,9 +7,9 @@ My personal website, built with:
 ## Get started
 
 ```
-yarn install
+pnpm install
 
-yarn start
+pnpm start
 ```
 
 ## PDF Asset generation
@@ -20,7 +20,7 @@ yarn start
 
 Run the local dev server, then generate the resume PDF from HTML:
 
-`yarn run generate-resume-pdf`
+`pnpm run generate-resume-pdf`
 
 ## 🚢 CI & Deployments
 

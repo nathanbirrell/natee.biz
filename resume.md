@@ -5,7 +5,7 @@ layout: layouts/base.njk
 ---
 
 <!-- ***************************************************************** -->
-<!-- NOTE: when updating this file, remember to run yarn run generate-resume-pdf to update the PDF version -->
+<!-- NOTE: when updating this file, remember to run pnpm run generate-resume-pdf to update the PDF version -->
 <!-- ***************************************************************** -->
 
 <!-- <small>❌ **Not seeking work**</small> -->

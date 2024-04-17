@@ -2,11 +2,12 @@
   "name": "nathanbirrell.me",
   "version": "1.0.0",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
-    "dev": "npm run start",
+    "dev": "pnpm run start",
     "debug": "DEBUG=* eleventy",
     "generate-resume-pdf": "node resume-to-pdf.js"
   },
