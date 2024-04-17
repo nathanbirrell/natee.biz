@@ -12,7 +12,7 @@ pnpm install
 pnpm start
 ```
 
-## PDF Asset generation
+## PDF resume generation
 
 <!-- wkhtmltopdf --disable-internal-links --print-media-type --user-style-sheet ./css/print.css http://localhost:8080/resume/ ./assets/resume.pdf -->
 
@@ -20,7 +20,7 @@ pnpm start
 
 Run the local dev server, then generate the resume PDF from HTML:
 
-`pnpm run generate-resume-pdf`
+`pnpm run generate-resume-pdf` or just open it in a browser and CMD+P.
 
 ## 🚢 CI & Deployments
 
