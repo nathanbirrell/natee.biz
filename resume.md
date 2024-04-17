@@ -12,7 +12,7 @@ layout: layouts/base.njk
 
 <h6 class="noprint"><small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | monthYearDate }}</time> • <a href="https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf">View PDF</a></small></h6>
 
-<h6 class="noprint">Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#side-projects-and-volunteering">Side Projects &amp; Volunteering</a>, <a href="#education">Education</a></h6>
+<h6 class="noprint">Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#education">Side Projects &amp; Volunteering</a>, <a href="#education">Education</a></h6>
 
 <div class="profile">
 <div>
@@ -171,7 +171,7 @@ Applied course (industry placement), minor in Marketing, GPA 3.2
 
 <div class="noprint">
 
-<h2>Side Projects & Volunteering</h2>
+<h2>Side Projects &amp; Volunteering</h2>
 
 <h3>
   <span>Leesy (Startmate, Summer 2023)</span>
