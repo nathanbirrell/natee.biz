@@ -66,6 +66,11 @@ html {
   color: var(--color-fg-muted);
 }
 
+.markdown-body h2 {
+  padding-bottom: 0;
+  margin-bottom: 0.25rem;
+}
+
 /* Photos :) */
 
 .photo-wrapper {
@@ -131,26 +136,28 @@ figcaption {
   h4 {
     font-weight: 400;
   }
-}
 
-.markdown-body .experience__header .experience__header-company {
-  font-weight: 400;
-}
+  span {
+    line-height: 1.5;
+  }
 
-.markdown-body .experience__header span {
-  line-height: 1.5;
-}
+  .experience__header-company {
+    a {
+      color: var(--color-fg-default);
+    }
+  }
 
-.markdown-body .experience__header .experience__header-right {
-  color: var(--color-fg-muted);
-  text-align: right;
-}
+  .experience__header-right {
+    color: var(--color-fg-muted);
+    text-align: right;
+  }
 
-.markdown-body .experience__header .tx-overline {
-  font-weight: 500;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--color-fg-muted);
+  .tx-overline {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--color-fg-muted);
+  }
 }
 
 .markdown-body h6 {
@@ -238,25 +245,34 @@ h3:hover .header-anchor {
 
   .markdown-body main h3 {
     font-size: 0.95rem;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     padding-bottom: 0;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0;
   }
 
   .markdown-body ul {
-    margin-top: 0.15rem;
+    margin-top: 0;
     margin-bottom: 0.25rem;
+    padding-left: 1rem;
   }
 
   .header {
+    h3 {
+      font-size: 1.25rem;
+    }
   }
 
   .avatar {
     width: 3.8rem;
   }
 
-  .header-links a {
-    /* color: var(--color-fg-default); */
+  .header-links {
+    text-align: center;
+  }
+
+  .header-links a,
+  .markdown-body a {
+    color: var(--color-fg-default);
   }
 
   .profile {
@@ -270,6 +286,18 @@ h3:hover .header-anchor {
 
   .profile h3.tx-overline {
     margin-top: 0;
+  }
+
+  .markdown-body .experience__header {
+    margin-bottom: 0.25rem;
+  }
+
+  .markdown-body ul {
+    margin-bottom: 0.5rem;
+  }
+
+  #skills-and-interests + ul {
+    columns: 2;
   }
 
   .markdown-body {
