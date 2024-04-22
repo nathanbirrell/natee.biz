@@ -1,6 +1,6 @@
 ---
 title: "Resume — Nathan Birrell"
-date: 2024-02-01
+date: 2024-04-01
 layout: layouts/base.njk
 ---
 
@@ -14,16 +14,19 @@ layout: layouts/base.njk
 
 <h6 class="noprint">Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#education">Side Projects &amp; Volunteering</a>, <a href="#education">Education</a></h6>
 
-<div class="profile">
+<div class="profile noprint">
 <div>
   <h3 class="tx-overline">
   About Me:
   </h3>
 
   <p>
-  Software Engineer with 10+ years of technical experience, scaling-up software products and building great teams. Interested in Senior Frontend and Fullstack Engineer roles at software product companies.
+  Software Engineer with over 10 years of technical experience, scaling-up software products in both startup and enterprise environments.
   </p>
-  <p>Australian Citizen with working rights in the EU.</p>
+
+  <p>
+  Specialised in full-stack Typescript application development, with extensive experience in the ecosystems around React, NextJS, Node, GraphQL, AWS and more.
+  </p>
 </div>
 <div>
   <h3 class="tx-overline">
@@ -32,8 +35,8 @@ layout: layouts/base.njk
 
   <ol>
   <li>Specialised frontend experience across React, Typescript, NextJS & CSS</li>
-  <li>Strong backend commercial experience with Node, GraphQL, Express, REST, both RDBMS & NoSQL</li>
-  <li>Solution architecture on AWS: Lambda, ECS, AppSync, DynamoDB, CDK</li>
+  <li>Strong backend commercial experience with Node, Express, GraphQL, REST, both relational & NoSQL databases</li>
+  <li>Solution architecture with AWS: SST, Nx, Lambda, ECS, AppSync, DynamoDB, CDK, event-driven architecture</li>
   </ol>
 </div>
 </div>
@@ -42,81 +45,80 @@ layout: layouts/base.njk
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Senior Software Engineer (Contract)</h3>
-  <h4 class="experience__header-company"><a href="https://www.myob.com">MYOB</a></h4>
+  <h3 class="experience__header-company"><a href="https://www.myob.com">MYOB</a></h4>
+  <h4 class="experience__header-role">Senior Software Engineer (Contract)</h3>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">Oct 2023 - present</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU (Remote)</h4>
   </span>
 </div>
 
 <!-- [MYOB](https://www.myob.com) is an accounting SaaS business. -->
 
-- Reduced inbound calls to support phone lines with the introduction of Support Article Search with Algolia. Built with reuse in mind, we used the same component on other areas of the website.
-- Strategic guidance on architecture decisions around NextJS, localisation and partial prerendering.
-- Other areas of focus: core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a website rebrand.
+- Technical lead in a team of four. Feature delivery and strategic guidance on NextJS architecture decisions, component library prop-APIs, localisation and partial prerendering.
+- Reduced inbound calls to support phone lines by building a Support Article Search with Algolia. Built to be re-used and re-styled (ie. MYOB Apps Search).
+- Core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a full website rebrand.
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Senior Software Engineer</h3>
-  <h4 class="experience__header-company"><a href="https://stax.io/">Stax</a> (by Versent)</h4>
+  <h3 class="experience__header-company"><a href="https://stax.io/">Stax</a> (by Versent)</h3>
+  <h4 class="experience__header-role">Senior Software Engineer</h4>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">Oct 2018 - Oct 2023</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU (Remote)</h4>
   </span>
 </div>
 
-Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS infrastructure. In October 2023, Stax & Versent sold to Telstra for $267.5m.
-
+- Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS infrastructure. In October 2023, Stax & Versent sold to Telstra for $267.5m.
 - Ownership of long-term strategy for a production frontend application, a component library, style system and a backend API service.
-- Led architecture and build for a backend-for-frontend project. This simplied interfacing with microservices as the business grew, leveraging highly scalable event-driven, serverless architecture.
-- Scaled-up engineering capabilities from 5 engineers to 30+, establishing best practices and processes for our growing organisation.
-- Mentored and supported junior engineers, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
-- Set-up best-practice foundations for our React app with unit testing, end-to-end tests, linting, CI processes and docs.
-- Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library implementation.
-- Tech: Typescript, React, GraphQL, Apollo, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more.
+- Led architecture and delivery for a backend-for-frontend project. This simplied interfacing with our microservices, leveraging highly scalable event-driven, serverless architecture.
+- Scaled our team's capabilities from 5 to 30+ engineers, establishing best practices and processes for our growing organisation. For example: faster CI build times, [Angular Commit Style](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format) and [Conventional Comments](https://conventionalcomments.org/) for code reviews and more efficient releases through [Semantic Release](https://github.com/semantic-release/semantic-release).
+- Mentored and supported junior engineers across different timezones, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
+- Set-up best-practice foundations with unit testing, coverage monitoring, end-to-end tests, ESLint linting, CI processes, Core Web Vitals and well-maintained docs.
+  <!-- - Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library implementation. -->
+  <!-- - Tech: Typescript, React, GraphQL, Apollo, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more. -->
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Frontend Engineer (Contract)</h3>
-  <h4 class="experience__header-company"><a href="https://bom.gov.au/">Bureau of Meteorology</a></h4>
+  <h3 class="experience__header-company"><a href="https://bom.gov.au/">Bureau of Meteorology</a></h3>
+  <h4 class="experience__header-role">Frontend Engineer (Contract)</h4>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">Mar 2018 - Oct 2018</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU</h4>
   </span>
 </div>
 
-- Building a new weather experience for the general public — in Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites
-- Improved reliability and protyping speed with static typing & tree-structured state management library (Typescript, Mobx and mobx-state-tree; integrations with weather API services)
+- Built a new weather experience for the general public. In Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites.
+- Improved reliability and protyping speed with static typing & tree-structured state management library (React, Typescript, Mobx and mobx-state-tree; integrations with weather API services).
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Frontend Developer</h3>
-  <h4 class="experience__header-company"><a href="https://belong.com.au/">Belong</a> (by Telstra)</h4>
+  <h3 class="experience__header-company"><a href="https://belong.com.au/">Belong</a> (by Telstra)</h3>
+  <h4 class="experience__header-role">Frontend Developer</h4>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">Nov 2016 - Mar 2018</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU</h4>
   </span>
 </div>
 
-<ul class="noprint">
-<li>Responsible for delivering features, building out a component library with the design team, onboarding new engineers, improving unit test coverage and general hygiene with linting and better peer-review processes.</li>
-<li>Migrated a legacy Knockout/JQuery codebase to a more manageable React & Redux project</li>
-<li>Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.</li>
+<ul>
+<li>React & Redux frontend, component library, migration from Knockout/JQuery, Expo React Native app</li>
+<li class="noprint">Migrated a legacy Knockout/JQuery codebase to a more robust React & Redux project</li>
+<li class="noprint">Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.</li>
 </ul>
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Graduate » Consultant (Frontend Developer)</h3>
-  <h4 class="experience__header-company"><a href="https://www.deloittedigital.com/au/en.html">Deloitte Digital</a></h4>
+  <h3 class="experience__header-company"><a href="https://www.deloittedigital.com/au/en.html">Deloitte Digital</a></h3>
+  <h4 class="experience__header-role">Graduate » Consultant (Frontend Developer)</h4>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">Jan 2014 - Nov 2016</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU</h4>
   </span>
 </div>
 
@@ -128,33 +130,19 @@ Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS i
 
 ## Education
 
-<!-- <div class="noprint">
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-role">Certificate of Italian Language (B2 CEFR)</h3>
-  <h4 class="experience__header-company">University for Foreigners of Perugia</h4>
-  </span>
-  <span class="experience__header-right">
-    <h4 class="experience__header-time tx-overline">2023—present</h4>
-    <h4>Italy 📍</h4>
-  </span>
-</div>
-<p>Currently B1. Studying for my B2 CEFR exam in March.</p>
-</div> -->
-
-<div class="experience__header">
-  <span class="experience__header-left">
-  <h3 class="experience__header-role">Bachelor of Business (Information Systems)</h3>
-  <h4 class="experience__header-company">Royal Melbourne Institute of Technology (RMIT University)</h4>
+  <h3 class="experience__header-company">Royal Melbourne Institute of Technology (RMIT University)</h3>
+  <h4 class="experience__header-role">Bachelor of Business (Information Systems)</h4>
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">2012-2015</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU</h4>
   </span>
 </div>
-<p class="noprint">
-Applied course (industry placement), minor in Marketing, GPA 3.2
-</p>
+<ul class="noprint">
+<li>Applied course (industry placement), minor in Marketing, GPA 3.2</li>
+</ul>
 
 <div class="noprint">
 <div class="experience__header">
@@ -164,14 +152,21 @@ Applied course (industry placement), minor in Marketing, GPA 3.2
   </span>
   <span class="experience__header-right">
     <h4 class="experience__header-time tx-overline">2012-2013</h4>
-    <h4>Melbourne, AU 📍</h4>
+    <h4>Melbourne, AU</h4>
   </span>
 </div>
 </div>
 
+## Skills & Interests
+
+- **Frontend:** React, Typescript, JS, NextJS, Jest, HTML, CSS, Storybook, E2E testing.
+- **Backend:** Node, Express, GraphQL, REST, both relational & NoSQL databases and Ruby on Rails.
+- **Infra:** SST, Nx, AWS Lambda, ECS, AppSync, DynamoDB, CDK, Buildkite and Docker.
+- **Skills:** solution architecture, event-driven architecture, monorepos, mentoring, Agile
+
 <div class="noprint">
 
-<h2>Side Projects &amp; Volunteering</h2>
+## Side Projects &amp; Volunteering
 
 <h3>
   <span>Leesy (Startmate, Summer 2023)</span>
@@ -237,7 +232,6 @@ A hobby project built with Ruby on Rails and a create-react-app with a Typescrip
   <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
   <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
 </figure>
-
 </div>
 
 <!-- ## Contact
