@@ -1,13 +1,13 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import PageBase from './PageBase.astro'
-import type { MarkdownInstance } from 'astro';
+import type { CollectionEntry } from "astro:content";
+import PageBase from "./PageBase.astro";
+import type { MarkdownInstance } from "astro";
 
-type Props = MarkdownInstance<CollectionEntry<'blog'>['data']>;
+type Props = MarkdownInstance<CollectionEntry<"blog">["data"]>;
 
-const {frontmatter} = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <PageBase {...frontmatter}>
-	<slot />
+  <slot />
 </PageBase>

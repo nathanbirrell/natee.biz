@@ -80,19 +80,21 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body class="markdown-body">
     <Header />
-      <main>
+    <main>
       <section>
-          <ul>
+        <ul>
           {
             posts.map((post) => (
-            	<li>
+              <li>
                 <a href={`/blog/${post.slug}/`}>
-                  {post.data.heroImage && <img
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    alt=""
-                  />}
+                  {post.data.heroImage && (
+                    <img
+                      width={720}
+                      height={360}
+                      src={post.data.heroImage}
+                      alt=""
+                    />
+                  )}
 
                   <h4 class="title">{post.data.title}</h4>
                 </a>
