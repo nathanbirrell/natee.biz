@@ -107,7 +107,7 @@ layout: layouts/base.njk
   </span>
 </div>
 
-- React & **Redux** frontend, component library, migration from Knockout/JQuery, Expo React Native app.
+- Introduced **Redux** state management to our React frontend. **Expo React Native** app for iOS/Android.
 - Migration away from legacy Knockout/JQuery app. Integration to **Adobe AEM** content management.
 
 <div class="experience__header">
