@@ -5,7 +5,8 @@ layout: layouts/base.njk
 ---
 
 <!-- ***************************************************************** -->
-<!-- NOTE: when updating this file, remember to run pnpm run generate-resume-pdf to update the PDF version -->
+<!-- NOTE: when updating, remember to cmd+P from Firefox and update ./assets/resume.pdf -->
+<!-- https://docs.google.com/document/d/1QcZgLCcauW2k1cIC9JcGQFAIfrszyIE2/edit?pli=1 -->
 <!-- ***************************************************************** -->
 
 <!-- <small>❌ **Not seeking work**</small> -->
@@ -56,9 +57,10 @@ layout: layouts/base.njk
 
 <!-- [MYOB](https://www.myob.com) is an accounting SaaS business. -->
 
-- Technical lead in a team of four. Feature delivery and strategic guidance on NextJS architecture decisions, component library prop-APIs, localisation and partial prerendering.
-- Reduced inbound calls to support phone lines by building a Support Article Search with Algolia. Built to be re-used and re-styled (ie. MYOB Apps Search).
-- Core web vitals improvements; integration with headless CMS Contentful; middleware performance improvements; and a full website rebrand.
+- Strategic guidance on MYOB's NextJS public website, guiding architecture decisions, component library prop-APIs, localisation and partial prerendering to improve core web vitals score.
+- Introduced **trunk-based git workflow** with feature flagging and commit conventions to achieve smaller changesets, more focussed code reviews and quicker release cycles.
+- Reduced inbound calls to support phone lines by building a Support Article Search with Algolia and React. Built to be re-used and re-styled (ie. MYOB Apps Search) with strong SEO in mind.
+- Other areas of focus: **Core Web Vitals**; integration with **Contentful** CMS; and middleware performance.
 
 <div class="experience__header">
   <span class="experience__header-left">
@@ -72,11 +74,11 @@ layout: layouts/base.njk
 </div>
 
 - Stax is a B2B SaaS cloud management platform, for deploying and monitoring AWS infrastructure. In October 2023, Stax & Versent sold to Telstra for $267.5m.
-- Ownership of long-term strategy for a production frontend application, a component library, style system and a backend API service.
-- Led architecture and delivery for a backend-for-frontend project. This simplied interfacing with our microservices, leveraging highly scalable event-driven, serverless architecture.
-- Scaled our team's capabilities from 5 to 30+ engineers, establishing best practices and processes for our growing organisation. For example: faster CI build times, [Angular Commit Style](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format) and [Conventional Comments](https://conventionalcomments.org/) for code reviews and more efficient releases through [Semantic Release](https://github.com/semantic-release/semantic-release).
-- Mentored and supported junior engineers across different timezones, helping them grow their skills and confidence through pair programming, code reviews and leading workshops.
-- Set-up best-practice foundations with unit testing, coverage monitoring, end-to-end tests, ESLint linting, CI processes, Core Web Vitals and well-maintained docs.
+- Ownership of long-term strategy for a production **Typescript & React** frontend application, a component library (**Storybook**) and a backend API service (**AWS Lambda**, AppSync).
+- Led architecture and delivery for a backend-for-frontend project. Simplied interfacing with microservice APIs through one **GraphQL API**, leveraging highly scalable event-driven, serverless architecture.
+- Scaled the team from 5 to 30+ engineers, establishing best practices for our growing organisation: Jest unit test coverage, **E2E tests**, ESLint linting, trunk-based git workflow and a living DEVELOPMENT.md.
+- **Mentoring** junior engineers across different timezones, helping them grow their skills and confidence through **pair programming**, 1:1s, helping **write ADRs** and leading workshops.
+- Also achieved: faster CI build times; increased **code review frequency** with [Angular Commit Style](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format) and [Conventional Comments](https://conventionalcomments.org/) reviews; and more efficient releases through [Semantic Release](https://github.com/semantic-release/semantic-release).
   <!-- - Increased consistency across multiple frontend projects and across Engineering and Design teams, with a style system and component library implementation. -->
   <!-- - Tech: Typescript, React, GraphQL, Apollo, Jest, Playwright, NodeJS, AWS Lambda, AppSync, DynamoDB Serverless, SQS, SAM, CDK and more. -->
 
@@ -91,8 +93,8 @@ layout: layouts/base.njk
   </span>
 </div>
 
-- Built a new weather experience for the general public. In Australia's [top 30](https://www.similarweb.com/top-websites/australia/) most visited websites.
-- Improved reliability and protyping speed with static typing & tree-structured state management library (React, Typescript, Mobx and mobx-state-tree; integrations with weather API services).
+- Built a new weather experience for Australia's [most visited](https://www.similarweb.com/top-websites/australia/) weather website.
+- Improved reliability and protyping speed with static typing & tree-structured state management library (React, Typescript, **Mobx** and mobx-state-tree; integrations with weather **REST API** services).
 
 <div class="experience__header">
   <span class="experience__header-left">
@@ -105,11 +107,8 @@ layout: layouts/base.njk
   </span>
 </div>
 
-<ul>
-<li>React & Redux frontend, component library, migration from Knockout/JQuery, Expo React Native app</li>
-<li class="noprint">Migrated a legacy Knockout/JQuery codebase to a more robust React & Redux project</li>
-<li class="noprint">Tooling: React, Redux, Webpack, ES6/Babel, React server-side rendering, Expo and React Native.</li>
-</ul>
+- React & **Redux** frontend, component library, migration from Knockout/JQuery, Expo React Native app.
+- Migration away from legacy Knockout/JQuery app. Integration to **Adobe AEM** content management.
 
 <div class="experience__header">
   <span class="experience__header-left">
@@ -159,9 +158,9 @@ layout: layouts/base.njk
 
 ## Skills & Interests
 
-- **Frontend:** React, Typescript, JS, NextJS, Jest, HTML, CSS, Storybook, E2E testing.
-- **Backend:** Node, Express, GraphQL, REST, both relational & NoSQL databases and Ruby on Rails.
-- **Infra:** SST, Nx, AWS Lambda, ECS, AppSync, DynamoDB, CDK, Buildkite and Docker.
+- **Frontend:** React, Typescript, Javascript, NextJS, Jest, HTML, CSS, PostCSS, Storybook, Playwright.
+- **Backend:** Node, Express, **Vitest**, GraphQL, REST, relational & NoSQL databases and Ruby on Rails.
+- **Infra:** **SST**, **Nx**, AWS Lambda, ECS, AppSync, DynamoDB, CDK, Buildkite and Docker.
 - **Skills:** solution architecture, event-driven architecture, monorepos, mentoring, Agile
 
 <div class="noprint">
