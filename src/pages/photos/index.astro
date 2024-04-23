@@ -1,0 +1,176 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import ExifReader from "exifreader";
+import FormattedDate from "../../components/FormattedDate.astro";
+import PageBase from "../../layouts/PageBase.astro";
+import { ImageMetadata } from "astro";
+
+/* Parse date string in YYYY-MM-DD hh:mm:ss format
+ ** separator can be any non-digit character
+ ** e.g. 2017:03:09 14:49:21
+ */
+function parseExifDate(s: string) {
+  var b = s.split(/\D/);
+  return new Date(b[0], b[1] - 1, b[2], b[3], b[4], b[5]);
+}
+
+// const photosInput = await getCollection("photos")
+
+// const photosInput = await Astro.glob("/src/content/photos/*").then(files => {
+//   return files.map(file => file.default);
+// });
+
+// NOTE: https://docs.astro.build/en/recipes/dynamically-importing-images/
+// @ts-expect-error
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/content/photos/*.{jpeg,jpg,png,gif}",
+);
+
+const photosWithMetadata = await Promise.all(
+  Object.entries(images).map(async ([path, loadImageFn]) => {
+    const absolutePath = `${process.cwd()}${path}`;
+    const exifData = await ExifReader.load(absolutePath);
+
+    // console.log({exifData})
+
+    const make = exifData.Make?.description || "";
+    const pubDate = exifData.DateTimeOriginal?.description
+      ? parseExifDate(exifData.DateTimeOriginal?.description)
+      : parseExifDate(exifData.DateTime?.description);
+    let lensFocalLength: number | undefined;
+
+    // we only want exif for reliable fuji pics
+    if (make.toLowerCase().includes("fujifilm")) {
+      lensFocalLength = Number.parseInt(
+        (exifData.FocalLength?.value.toString() || "").split(",1")[0],
+      );
+    }
+
+    const exif = {
+      make,
+      model: exifData.Model?.description || "",
+      lens: exifData.Lens?.value || "",
+      lensFocalLength: lensFocalLength,
+      lensFocalLengthEquivalent: lensFocalLength && lensFocalLength * 1.5,
+      iso: exifData.ISOSpeedRatings?.value || "",
+      aperture: exifData.FNumber?.description || "",
+      shutter: exifData.ExposureTime?.description || "",
+    };
+
+    // console.log({ exif });
+
+    // ie loadImage: () => import('./my-photo.jpg')
+    const loadImage = loadImageFn as () => string;
+
+    return { loadImage, pubDate, exif };
+  }),
+);
+
+const photos = photosWithMetadata.sort(
+  (a, b) => b.pubDate.valueOf() - a.pubDate.valueOf(),
+);
+
+// console.log({photos})
+
+const props = Astro.props;
+
+const title = "My Photos";
+const description = "My photos.";
+const pubDate = new Date("2024-04-01");
+---
+
+<PageBase {...{ title, description, pubDate }}>
+  <section class="photos">
+    <div>
+      {
+        photos.map((photo) => (
+          <div class="photo-wrapper">
+          <figure class="photo">
+            <div class="photo-image">
+              <Image src={photo.loadImage()} alt="" />
+            </div>
+
+            <figcaption>
+              {photo.pubDate && (
+                <p class="photo-name">
+                  <FormattedDate date={photo.pubDate} />
+                </p>
+              )}
+
+              <span class="photo-info">
+                <p>
+                  {photo.exif.make} {photo.exif.model}{" "}
+                  <span
+                    title={`${photo.exif.lensFocalLengthEquivalent}mm (Film Equivalent Focal Length)`}
+                  >
+                    {photo.exif.lensFocalLength}mm
+                  </span>{" "}
+                  {photo.exif.aperture} {photo.exif.shutter} ISO{" "}
+                  {photo.exif.iso}
+                </p>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+        ))
+      }
+    </div>
+  </section>
+</PageBase>
+
+<style>
+  /* TODO bring photo only styles here */
+  img {
+    height: initial;
+    width: initial;
+    max-height: 90vh;
+  }
+
+  /* Photos :) */
+
+  .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure.photo {
+    margin: 2rem 0;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: var(--color-fg-muted);
+    /* text-transform: uppercase; */
+  }
+
+  .photo figcaption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .photo-image {
+    padding-top: 0.25rem;
+  }
+
+  .photo img {
+    max-height: 90vh;
+  }
+
+  @media (min-width: 767px) {
+    figure.photo {
+      margin: 8rem 0;
+    }
+
+    figure.photo:first-of-type {
+      margin-top: 2rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  .markdown-body figure {
+    margin: 1rem 0;
+  }
+</style>

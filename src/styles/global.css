@@ -1,0 +1,214 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root .markdown-body {
+    --color-canvas-default: #222222;
+    --color-fg-default: #fefefe;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root .markdown-body {
+    --color-canvas-default: #fefefe;
+    --color-fg-default: #222222;
+  }
+}
+
+.markdown-body {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 45px;
+  font-size: 14px;
+}
+
+.markdown-body .header h3 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.resume-updated a {
+  color: var(--color-fg-muted);
+}
+
+.markdown-body h2 {
+  padding-bottom: 0;
+  margin-bottom: 0.25rem;
+}
+
+.markdown-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.markdown-body .experience__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+
+  h3,
+  h4 {
+    margin: 0;
+  }
+  h4 {
+    font-weight: 400;
+  }
+
+  span {
+    line-height: 1.5;
+  }
+
+  .experience__header-company {
+    a {
+      color: var(--color-fg-default);
+    }
+  }
+
+  .experience__header-right {
+    color: var(--color-fg-muted);
+    text-align: right;
+  }
+
+  .tx-overline {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--color-fg-muted);
+  }
+}
+
+.markdown-body h6 {
+  margin-top: 0;
+}
+
+.profile ol {
+  margin-bottom: 0;
+}
+
+/* Heading href tags */
+
+.header-anchor {
+  display: none;
+}
+
+h2:hover .header-anchor,
+h3:hover .header-anchor {
+  display: inline-block;
+}
+
+@media (min-width: 767px) {
+  .header-anchor {
+    position: absolute;
+    margin-left: -1.5rem;
+    padding-right: 1.5rem; // maintain hover
+  }
+}
+
+@media (min-width: 767px) {
+  .profile {
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* Print related changes for resume-to-pdf.js */
+.print,
+.print * {
+  display: none !important;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .noprint,
+  .noprint * {
+    display: none !important;
+  }
+  .print,
+  .print * {
+    display: initial !important;
+  }
+
+  :root .markdown-body {
+    --color-canvas-default: #fff;
+    --color-fg-default: #111111;
+  }
+
+  /* .resume-updated {
+	  position: absolute;
+	  top: 2rem;
+	  right: 5rem;
+	} */
+
+  .markdown-body p {
+    margin-bottom: 0.15rem;
+  }
+
+  .markdown-body main h2 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .markdown-body main h2:first-of-type {
+    margin-top: 0.25rem;
+  }
+
+  .markdown-body main h3 {
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .markdown-body ul {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    padding-left: 1rem;
+  }
+
+  .profile {
+    display: grid;
+    grid-gap: 0.75rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 50% 50%;
+
+    font-size: 0.8rem;
+  }
+
+  .profile h3.tx-overline {
+    margin-top: 0;
+  }
+
+  .markdown-body .experience__header {
+    margin-bottom: 0.25rem;
+  }
+
+  .markdown-body ul {
+    margin-bottom: 0.5rem;
+  }
+
+  #skills--interests + ul {
+    columns: 2;
+  }
+
+  .markdown-body {
+    padding-top: 1.25rem;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0 1rem 1rem 1rem;
+  }
+}

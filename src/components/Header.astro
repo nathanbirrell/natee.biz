@@ -1,0 +1,117 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="header">
+	<nav>
+		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
+
+			<div class="header-avatar noprint">
+			<img class="avatar" src="https://avatars.githubusercontent.com/u/4300215?v=4" alt="[object Object]">
+			</div>
+	  
+			<div class="header-links">
+			  <h2 class="home"><a href="https://natee.biz/resume">Nathan Birrell</a></h2>
+			  
+	  
+			  <small class="noprint">
+				  🇮🇹 Bologna, Italy | 
+				  
+				  <HeaderLink href="/" class="noprint">Home</HeaderLink> | 
+				<HeaderLink href="/resume">Resume</HeaderLink> | 
+				<HeaderLink href="/photos">Photos</HeaderLink> | 
+					<a href="https://github.com/nathanbirrell">Github</a> | 
+					<a href="http://linkedin.com/in/nathanbirrell">Linkedin</a>
+				  
+			  </small>
+	  
+			  <small class="print">
+				
+				Bologna, Italy | 
+				
+				
+				
+				<a href="tel:+393338500408">+39 333 8500408</a> | 
+				
+				<a href="mailto:nathanbirrell@gmail.com">nathanbirrell@gmail.com</a> | 
+				<a href="https://github.com/nathanbirrell">Github</a> | 
+				<a href="http://linkedin.com/in/nathanbirrell">Linkedin</a>
+			  </small>
+			</div>
+
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+	}
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav a {
+		color: var(--color-fg-default);
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: underline;
+	}
+	
+	.header-avatar {
+	margin-right: 0.5rem;
+	}
+
+	.avatar {
+	padding: 0;
+	margin-bottom: 0;
+	margin: 0.5rem;
+	margin-left: 0;
+	width: 4rem;
+	height: auto;
+
+	border-radius: 50% !important;
+	box-shadow: 0 0 0 1px var(--color-avatar-border);
+	}
+
+	.header {
+	display: flex;
+	width: 100%;
+	}
+
+	.header-links {
+	width: 100%;
+	}
+
+	@media print {
+		.header {
+			h3 {
+			font-size: 1.25rem;
+			}
+		}
+
+		.avatar {
+			width: 3.8rem;
+		}
+
+		.header-links {
+			text-align: center;
+		}
+
+		.header-links a,
+		.markdown-body a {
+			color: var(--color-fg-default);
+		}
+	}
+</style>
