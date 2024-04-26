@@ -10,11 +10,12 @@ layout: ../layouts/Page.astro
 
 ### Leesy (Startmate, Summer 2023)
 
-Advised an Australianp startup on their tech strategy and helped build out their MVP web application. Saved the team hours of manual processes per day with a rental property appointment booking feature.
+Advised an Australianp startup on their tech strategy and helped build out an MVP web application.
 
-- Managed contractor delivery, set up CI/CD pipelines and helped refine their tech roadmap
-- Implemented NextAuth for authentication, with simple role-based access control
-- Tech: Typescript, Node JS, Vite with SSR, Next Auth, Express, GraphQL Pothos & Yoga, PostgreSQL, AWS ECS, Fargate, ELB
+- Saved the team hours of manual processes per day with a rental property appointment booking feature.
+- Implemented NextAuth for authentication, with simple role-based access control (RBAC).
+- Managed contractor delivery, set up CI/CD pipelines and helped refine a tech roadmap.
+- Tech: Typescript, Node JS, Vite with SSR, Next Auth, Express, GraphQL Pothos & Yoga, PostgreSQL, AWS ECS, Fargate, ELB.
 
 [View the Landing page →](https://www.leesy.com.au/)
 
