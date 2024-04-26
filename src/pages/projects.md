@@ -10,7 +10,7 @@ layout: ../layouts/Page.astro
 
 ### Leesy (Startmate, Summer 2023)
 
-Advised an Australian startup on their tech strategy and helped build out their MVP web application. Saved the team hours of manual processes per day with a rental property appointment booking feature.
+Advised an Australianp startup on their tech strategy and helped build out their MVP web application. Saved the team hours of manual processes per day with a rental property appointment booking feature.
 
 - Managed contractor delivery, set up CI/CD pipelines and helped refine their tech roadmap
 - Implemented NextAuth for authentication, with simple role-based access control
