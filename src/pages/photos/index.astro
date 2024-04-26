@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+import FormattedDate from "../../components/FormattedDate.astro";
+import PageBase from "../../layouts/PageBase.astro";
+import { parsePhotosWithExif } from "../../helpers/parse-photo-exif";
+
+const photos = await parsePhotosWithExif(
+  import.meta.glob<{ default: ImageMetadata }>(
+    "/src/content/photos/*.{jpeg,jpg,png,gif}"
+  )
+);
+
+const title = "My Photos";
+const description = "My photos.";
+const pubDate = new Date("2024-04-01");
+---
+
+<PageBase {...{ title, description, pubDate }}>
+  <section class="photos">
+    <div>
+      {
+        photos.map((photo) => (
+          <div class="photo-wrapper">
+            <figure class="photo">
+              <div class="photo-image">
+                <Image src={photo.loadImage()} alt="" />
+              </div>
+
+              <figcaption>
+                {photo.pubDate && (
+                  <p class="photo-name">
+                    <FormattedDate date={photo.pubDate} />
+                  </p>
+                )}
+
+                <span class="photo-info">
+                  <p>
+                    {photo.exif.make} {photo.exif.model}{" "}
+                    <span
+                      title={`${photo.exif.lensFocalLengthEquivalent}mm (Film Equivalent Focal Length)`}
+                    >
+                      {photo.exif.lensFocalLength}mm
+                    </span>{" "}
+                    {photo.exif.aperture} {photo.exif.shutter} ISO{" "}
+                    {photo.exif.iso}
+                  </p>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</PageBase>
+
+<style>
+  /* TODO bring photo only styles here */
+  img {
+    height: initial;
+    width: initial;
+    max-height: 90vh;
+  }
+
+  /* Photos :) */
+
+  .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure.photo {
+    margin: 2rem 0;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: var(--color-fg-muted);
+    /* text-transform: uppercase; */
+  }
+
+  .photo figcaption {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .photo-image {
+    padding-top: 0.25rem;
+  }
+
+  .photo img {
+    max-height: 90vh;
+  }
+
+  @media (min-width: 767px) {
+    figure.photo {
+      margin: 8rem 0;
+    }
+
+    figure.photo:first-of-type {
+      margin-top: 2rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  .markdown-body figure {
+    margin: 1rem 0;
+  }
+</style>
