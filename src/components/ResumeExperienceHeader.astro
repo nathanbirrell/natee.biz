@@ -1,4 +1,6 @@
 ---
+import { slugify } from "../helpers/slugify";
+
 interface Props {
   company: {
     name: string;
@@ -10,9 +12,10 @@ interface Props {
 }
 
 const { company, role, date, location } = Astro.props;
+const slug = slugify(company.name);
 ---
 
-<div class="experience__header">
+<div class="experience__header" id={slug}>
   <span class="experience__header-left">
     <h3 class="experience__header-company">
       <a href={company.url}>{company.name}</a>
