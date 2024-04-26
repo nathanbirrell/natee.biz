@@ -8,7 +8,6 @@ layout: ../layouts/Page.astro
 
 <!-- ***************************************************************** -->
 <!-- NOTE: when updating, remember to cmd+P from Firefox and update ./assets/resume.pdf -->
-<!-- https://docs.google.com/document/d/1QcZgLCcauW2k1cIC9JcGQFAIfrszyIE2/edit?pli=1 -->
 <!-- ***************************************************************** -->
 
 <!-- <small>❌ **Not seeking work**</small> -->
