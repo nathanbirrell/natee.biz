@@ -1,27 +1,14 @@
 My personal website, built with:
 
-- eleventy for static site and blog toolchain
-- exifreader for reading image details
+- [Typescript](https://www.typescriptlang.org/), [Astro](https://astro.build/), [MDX](https://mdxjs.com/docs/what-is-mdx)
+- Deployed to Github Pages via Github Actions
 - github-markdown-css for github-ish styles
 
 ## Get started
 
 ```
+nvm use
 pnpm install
 
-pnpm start
+pnpm run dev
 ```
-
-## PDF resume generation
-
-<!-- wkhtmltopdf --disable-internal-links --print-media-type --user-style-sheet ./css/print.css http://localhost:8080/resume/ ./assets/resume.pdf -->
-
-**NOTE: PDF asset generation is currently a manual process**, in the future it would be nice to add this to a github action or eleventy plugin.
-
-Run the local dev server, then generate the resume PDF from HTML:
-
-`pnpm run generate-resume-pdf` or just open it in a browser and CMD+P.
-
-## 🚢 CI & Deployments
-
-All handled in Github Actions automagically.
