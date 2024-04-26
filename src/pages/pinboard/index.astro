@@ -24,6 +24,7 @@ const pubDate = new Date("2024-04-01");
         const match = new RegExp(/[ \w-]+\./).exec(path);
         const filename = match ? match[0] : "";
 
+        // @ts-expect-error
         return <Image src={image} alt={filename} />;
       })
     }
