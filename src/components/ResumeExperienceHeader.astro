@@ -1,0 +1,64 @@
+---
+interface Props {
+  company: {
+    name: string;
+    url: string;
+  };
+  role: string;
+  date: string;
+  location: string;
+}
+
+const { company, role, date, location } = Astro.props;
+---
+
+<div class="experience__header">
+  <span class="experience__header-left">
+    <h3 class="experience__header-company">
+      <a href={company.url}>{company.name}</a>
+    </h3>
+    <h4 class="experience__header-role">{role}</h4>
+  </span>
+  <span class="experience__header-right">
+    <h4 class="experience__header-time tx-overline">{date}</h4>
+    <h4>{location}</h4>
+  </span>
+</div>
+
+<style>
+  .experience__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+
+    h3,
+    h4 {
+      margin: 0;
+    }
+    h4 {
+      font-weight: 400;
+    }
+
+    span {
+      line-height: 1.5;
+    }
+
+    .experience__header-company {
+      a {
+        color: var(--color-fg-default);
+      }
+    }
+
+    .experience__header-right {
+      color: var(--color-fg-muted);
+      text-align: right;
+    }
+
+    .tx-overline {
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--color-fg-muted);
+    }
+  }
+</style>

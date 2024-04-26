@@ -1,0 +1,85 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Page from "./Page.astro";
+import type { MarkdownInstance } from "astro";
+
+type Props = MarkdownInstance<CollectionEntry<"blog">["data"]>;
+---
+
+<Page {...Astro.props}>
+  <h6 class="noprint">
+    <small class="resume-updated">
+      <!-- TODO: use pubDate here -->
+      Updated <time datetime="2024-04-01 00:00:00 UTC+0">April 2024</time> •{
+        " "
+      }
+      <a
+        href="https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf"
+      >
+        View PDF
+      </a>
+    </small>{" "}
+    • Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>,
+    <a href="#education">Education</a>
+  </h6>
+
+  <slot />
+</Page>
+
+<!-- NOTE: "is:inline" required here for print-only CSS -->
+<style is:inline>
+  .resume-updated a {
+    color: var(--color-fg-muted);
+  }
+
+  @media print {
+    .markdown-body p {
+      margin-bottom: 0.15rem;
+    }
+
+    .markdown-body a {
+      color: var(--color-fg-muted);
+    }
+
+    .markdown-body main h2 {
+      font-size: 1.15rem;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .markdown-body main h2:first-of-type {
+      margin-top: 0.25rem;
+    }
+
+    .markdown-body main h3 {
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .markdown-body ul {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+      padding-left: 1rem;
+    }
+
+    .profile {
+      display: grid;
+      grid-gap: 0.75rem;
+      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-columns: 50% 50%;
+
+      font-size: 0.8rem;
+    }
+
+    #skills--interests + ul {
+      columns: 2;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
+</style>
