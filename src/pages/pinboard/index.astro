@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import PageBase from "../../layouts/PageBase.astro";
 import type { ImageMetadata } from "astro";
 
-const images = await import.meta.glob<ImageMetadata>(
+const images = import.meta.glob<ImageMetadata>(
   "/src/content/pinboard/*.{jpeg,jpg,png,gif}"
 );
 
