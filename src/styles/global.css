@@ -31,10 +31,6 @@ html {
   margin-top: 1rem;
 }
 
-.resume-updated a {
-  color: var(--color-fg-muted);
-}
-
 .markdown-body h2 {
   padding-bottom: 0;
   margin-bottom: 0.25rem;
@@ -44,42 +40,6 @@ html {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   margin-top: 1.25rem;
-}
-
-.markdown-body .experience__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-
-  h3,
-  h4 {
-    margin: 0;
-  }
-  h4 {
-    font-weight: 400;
-  }
-
-  span {
-    line-height: 1.5;
-  }
-
-  .experience__header-company {
-    a {
-      color: var(--color-fg-default);
-    }
-  }
-
-  .experience__header-right {
-    color: var(--color-fg-muted);
-    text-align: right;
-  }
-
-  .tx-overline {
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: var(--color-fg-muted);
-  }
 }
 
 .markdown-body h6 {
@@ -118,7 +78,6 @@ h3:hover .header-anchor {
   }
 }
 
-/* Print related changes for resume-to-pdf.js */
 .print,
 .print * {
   display: none !important;
@@ -135,9 +94,14 @@ h3:hover .header-anchor {
   .noprint * {
     display: none !important;
   }
+
   .print,
   .print * {
     display: initial !important;
+  }
+
+  astro-dev-toolbar {
+    display: none !important;
   }
 
   :root .markdown-body {
@@ -145,74 +109,15 @@ h3:hover .header-anchor {
     --color-fg-default: #111111;
   }
 
-  /* .resume-updated {
-	  position: absolute;
-	  top: 2rem;
-	  right: 5rem;
-	} */
-
-  .markdown-body p {
-    margin-bottom: 0.15rem;
-  }
-
-  .markdown-body a {
-    color: var(--color-fg-muted);
-  }
-
-  .markdown-body main h2 {
-    font-size: 1.15rem;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .markdown-body main h2:first-of-type {
-    margin-top: 0.25rem;
-  }
-
-  .markdown-body main h3 {
-    font-size: 0.95rem;
-    margin-top: 0.75rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .markdown-body ul {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-    padding-left: 1rem;
-  }
-
-  .profile {
-    display: grid;
-    grid-gap: 0.75rem;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 50% 50%;
-
-    font-size: 0.8rem;
-  }
-
   .profile h3.tx-overline {
     margin-top: 0;
-  }
-
-  .markdown-body .experience__header {
-    margin-bottom: 0.25rem;
   }
 
   .markdown-body ul {
     margin-bottom: 0.5rem;
   }
 
-  #skills--interests + ul {
-    columns: 2;
-  }
-
   .markdown-body {
     padding-top: 1.25rem;
-  }
-
-  @page {
-    size: A4 portrait;
-    margin: 0 1rem 1rem 1rem;
   }
 }

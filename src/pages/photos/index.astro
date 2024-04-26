@@ -1,76 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import ExifReader from "exifreader";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PageBase from "../../layouts/PageBase.astro";
-import type { ImageMetadata } from "astro";
+import { parsePhotosWithExif } from "../../helpers/parse-photo-exif";
 
-/* Parse date string in YYYY-MM-DD hh:mm:ss format
- ** separator can be any non-digit character
- ** e.g. 2017:03:09 14:49:21
- */
-function parseExifDate(input: string) {
-  var split = input.split(/\D/).map(i => Number.parseFloat(i));
-  return new Date(split[0],split[1] - 1, split[2], split[3], split[4], split[5]);
-}
-
-// const photosInput = await getCollection("photos")
-
-// const photosInput = await Astro.glob("/src/content/photos/*").then(files => {
-//   return files.map(file => file.default);
-// });
-
-// NOTE: https://docs.astro.build/en/recipes/dynamically-importing-images/
-
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/content/photos/*.{jpeg,jpg,png,gif}",
+const photos = await parsePhotosWithExif(
+  import.meta.glob<{ default: ImageMetadata }>(
+    "/src/content/photos/*.{jpeg,jpg,png,gif}"
+  )
 );
-
-const photosWithMetadata = await Promise.all(
-  Object.entries(images).map(async ([path, loadImageFn]) => {
-    const absolutePath = `${process.cwd()}${path}`;
-    const exifData = await ExifReader.load(absolutePath);
-
-    // console.log({exifData})
-
-    const make = exifData.Make?.description || "";
-    const pubDate = exifData.DateTimeOriginal?.description
-      ? parseExifDate(exifData.DateTimeOriginal?.description)
-      : parseExifDate(exifData.DateTime?.description || '');
-    let lensFocalLength: number | undefined;
-
-    // we only want exif for reliable fuji pics
-    if (make.toLowerCase().includes("fujifilm")) {
-      lensFocalLength = Number.parseInt(
-        (exifData.FocalLength?.value.toString() || "").split(",1")[0],
-      );
-    }
-
-    const exif = {
-      make,
-      model: exifData.Model?.description || "",
-      lens: exifData.Lens?.value || "",
-      lensFocalLength: lensFocalLength,
-      lensFocalLengthEquivalent: lensFocalLength && lensFocalLength * 1.5,
-      iso: exifData.ISOSpeedRatings?.value || "",
-      aperture: exifData.FNumber?.description || "",
-      shutter: exifData.ExposureTime?.description || "",
-    };
-
-    // console.log({ exif });
-
-    // ie loadImage: () => import('./my-photo.jpg')
-    const loadImage = loadImageFn;
-
-    return { loadImage, pubDate, exif };
-  }),
-);
-
-const photos = photosWithMetadata.sort(
-  (a, b) => b.pubDate.valueOf() - a.pubDate.valueOf(),
-);
-
-// console.log({photos})
 
 const title = "My Photos";
 const description = "My photos.";

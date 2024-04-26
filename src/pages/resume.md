@@ -13,9 +13,9 @@ layout: ../layouts/Page.astro
 
 <!-- <small>❌ **Not seeking work**</small> -->
 
-<h6 class="noprint"><small class="resume-updated">Updated <time datetime="{{ page.date | htmlDateString }}">{{ page.date | monthYearDate }}</time> • <a href="https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf">View PDF</a></small></h6>
-
-<h6 class="noprint">Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#education">Side Projects &amp; Volunteering</a>, <a href="#education">Education</a></h6>
+<h6 class="noprint">
+<small class="resume-updated">Updated <time datetime="2024-04-01 00:00:00 UTC+0">April 2024</time> • <a href="https://raw.githubusercontent.com/nathanbirrell/natee.biz/master/assets/resume.pdf">View PDF</a></small> • Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#education">Education</a>
+</h6>
 
 <div class="profile noprint">
 <div>
@@ -66,7 +66,7 @@ layout: ../layouts/Page.astro
 
 <div class="experience__header">
   <span class="experience__header-left">
-  <h3 class="experience__header-company"><a href="https://stax.io/">Stax</a> (by Versent)</h3>
+  <h3 class="experience__header-company"><a href="https://stax.io/">Stax</a> (by <a href="http://versent.com.au/">Versent</a>)</h3>
   <h4 class="experience__header-role">Senior Software Engineer</h4>
   </span>
   <span class="experience__header-right">
@@ -126,7 +126,7 @@ layout: ../layouts/Page.astro
 <ul class="noprint">
 <li>Working as a consultant, using Agile SCRUM delivery for clients such as Telstra, ANZ Bank and Herbert Smith Freehills. Building websites with ES5/6, Sass CSS, Webpack and CMS integrations</li>
 <li>Built a strong brand for the consultancy, through presentations of our work at industry events like MelbJS, LASTConf and MelbCSS</li>
-<li>Improved client relationships through strong communication skills, building rapport, regular updates and upfront discussions on deadlines.</li>
+<li>Built strong communication skills, through client relationships and expectation management.</li>
 </ul>
 
 ## Education
@@ -165,77 +165,106 @@ layout: ../layouts/Page.astro
 - **Infra:** **SST**, **Nx**, AWS Lambda, ECS, AppSync, DynamoDB, CDK, Buildkite and Docker.
 - **Skills:** solution architecture, event-driven architecture, monorepos, mentoring, Agile
 
-<div class="noprint">
+<style>
+  .resume-updated a {
+    color: var(--color-fg-muted);
+  }
 
-## Side Projects & Volunteering
+  .markdown-body .experience__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 
-<h3>
-  <span>Leesy (Startmate, Summer 2023)</span>
-  <span class="tx-overline">
-    Early 2023
-  </span>
-</h3>
+    h3,
+    h4 {
+      margin: 0;
+    }
+    h4 {
+      font-weight: 400;
+    }
 
-Advised a local startup on their tech strategy and helped build out their MVP web application. Saved the team hours of manual processes per day with a rental property appointment booking feature.
+    span {
+      line-height: 1.5;
+    }
 
-<h3>
-<span>Soulection 24/7 Radio App</span>
+    .experience__header-company {
+      a {
+        color: var(--color-fg-default);
+      }
+    }
 
-<span class="tx-overline">
-  2021
-</span>
-</h3>
+    .experience__header-right {
+      color: var(--color-fg-muted);
+      text-align: right;
+    }
 
-As a Soulection Radio listener, I made a little radio app to stream random episodes 24/7, with some Apple Music-esque [blurry animated backgrounds](/img/projects/future-beats/future-beats-367.gif) that match the episode cover and tablet-drawn player controls. This project was great to experiment with Tailwind CSS, drawing vectors on an iPad and integrating with SoundCloud's API.
+    .tx-overline {
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--color-fg-muted);
+    }
+  }
 
-[View the project on Github →](https://github.com/nathanbirrell/future-beats)
+  .markdown-body .experience__header {
+    margin-bottom: 0.25rem;
+  }
 
-<img class="noprint" src="/img/projects/future-beats/future-beats-419.jpg" alt="Screenshot of futurebeats.fm">
+  @media print {
+    /* .resume-updated {
+      position: absolute;
+      top: 2rem;
+      right: 5rem;
+    } */
 
-<h3>
-  <span>TourXOz (for the Black Dog Institute)</span>
-  <span class="tx-overline">
-    June 2019
-  </span>
-</h3>
+    .markdown-body p {
+      margin-bottom: 0.15rem;
+    }
 
-A cycling trip from Cairns to Cape York, through some of Australia’s most remote country to raise awareness for mental health and engage with local communities.
+    .markdown-body a {
+      color: var(--color-fg-muted);
+    }
 
-Donations supported the Black Dog Institute.
+    .markdown-body main h2 {
+      font-size: 1.15rem;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
 
-<h3>
-  <span>Overcast for macOS</span>
-  <span class="tx-overline">
-    2017
-  </span>
-</h3>
+    .markdown-body main h2:first-of-type {
+      margin-top: 0.25rem;
+    }
 
-A macOS client for the popular Overcast podcast player, with over [130 stars on Github](https://github.com/nathanbirrell/overcast-macos). Built with Electron and Node.
+    .markdown-body main h3 {
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
 
-[View the project on Github →](https://github.com/nathanbirrell/overcast-macos)
+    .markdown-body ul {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+      padding-left: 1rem;
+    }
 
-<img class="noprint" src="/img/projects/overcast-macos/overcast-macos-screenshot.jpg" alt="Screenshot of Overcast for macOS">
+    .profile {
+      display: grid;
+      grid-gap: 0.75rem;
+      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-columns: 50% 50%;
 
-<h3>
-  <span>Poseidon</span>
-  <span class="tx-overline">
-    2017 - 2018
-  </span>
-</h3>
+      font-size: 0.8rem;
+    }
+    
+      #skills--interests + ul {
+        columns: 2;
+      }
 
-A hobby project built with Ruby on Rails and a create-react-app with a Typescript frontend. Our goal was to improve the experience around surf forecast modelling. We had some fun challenges around presenting graphs and numerical data in a user-friendly way; storing and parsing model data and calculating a "Surf Potential" figure. Multiple third-party integrations involved with NOAA, BOM and PlanetOS.
+      @page {
+        size: A4 portrait;
+        margin: 0 1rem 1rem 1rem;
+      }
+  }
 
-<!-- Most of our time was spent on formulating the "Surf Potential" figure which took in a range of variables from different sources to calculate a rating (out of 10) of likelihood of good surf at a given location. Each surf spot is unique in the ideal conditions, so this made for a challenging project! -->
-
-<!-- We decided to discontinue the project after some long-standing companies in the area vastly improved their offering and felt we couldn't add enough additional value. -->
-
-<figure class="noprint">
-  <img src="/img/projects/surf-poseidon/grid-view.jpg" alt="Screenshot of surfposeidon.io">
-  <figcaption>Unfortunately I don't have any proper screenshots for surfposeidon.io</figcaption>
-</figure>
-</div>
-
-<!-- ## Contact
-
-- [LinkedIn](https://www.linkedin.com/in/nathanbirrell)
-- [nathanbirrell@gmail.com](mailto:nathanbirrell@gmail.com) -->
+</style>

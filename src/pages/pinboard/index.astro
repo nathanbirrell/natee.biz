@@ -1,5 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import PageBase from "../../layouts/PageBase.astro";
+import type { ImageMetadata } from "astro";
+
+const images = await import.meta.glob<ImageMetadata>(
+  "/src/content/pinboard/*.{jpeg,jpg,png,gif}"
+);
+
+console.log({ images });
 
 const title = "Pinboard";
 const description = "Pinboard.";
@@ -8,6 +16,24 @@ const pubDate = new Date("2024-04-01");
 
 <PageBase {...{ title, description, pubDate }}>
   <section class="photos">
-    <div>TODO :)</div>
+    <div>WIP :)</div>
+
+    {
+      Object.entries(images).map(([path, importImage]) => {
+        const image = importImage();
+        const match = new RegExp(/[ \w-]+\./).exec(path);
+        const filename = match ? match[0] : "";
+
+        return <Image src={image} alt={filename} />;
+      })
+    }
   </section>
 </PageBase>
+
+<style>
+  img {
+    height: initial;
+    width: initial;
+    max-height: 90vh;
+  }
+</style>
