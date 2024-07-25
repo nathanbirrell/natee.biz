@@ -1,0 +1,33 @@
+<div class="banner noprint">
+  <slot />
+</div>
+
+<style is:inline>
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* background: rgb(17 24 39 / var(--color-canvas-default)); */
+    background: var(--color-banner);
+
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.325rem;
+    padding-bottom: 0.325rem;
+  }
+  .banner > p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  .markdown-body .banner > p > a {
+    color: #fefefe;
+    font-size: 0.775rem;
+    /* text-transform: uppercase; */
+  }
+</style>

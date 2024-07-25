@@ -1,22 +1,32 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Page from "./Page.astro";
 import type { MarkdownInstance } from "astro";
+import Page from "./Page.astro";
+import Banner from "../components/Banner.astro";
 
 type Props = MarkdownInstance<CollectionEntry<"blog">["data"]>;
+
+const RESUME_PDF = "/public/assets/Nathan Birrell - Resume.pdf";
 ---
 
 <Page {...Astro.props}>
+  <Banner>
+    <p style="line-height: 1.5rem;">
+      <a href={RESUME_PDF}>
+        Download PDF <span aria-hidden="true">&rarr;</span>
+      </a>
+    </p>
+  </Banner>
+
   <h6 class="noprint">
     <small class="resume-updated">
       <!-- TODO: use pubDate here -->
       Updated <time datetime="2024-04-01 00:00:00 UTC+0">April 2024</time> •{
         " "
       }
-      <a href="/public/assets/Nathan Birrell - Resume.pdf"> Download PDF </a>
+      <a href={RESUME_PDF}>Download PDF</a>
     </small>{" "}
-    • Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>,
-    <a href="#education">Education</a>
+    <!-- • Skip to: <a href="#">About</a>, <a href="#experience">Experience</a>, <a href="#education">Education</a> -->
   </h6>
 
   <slot />
