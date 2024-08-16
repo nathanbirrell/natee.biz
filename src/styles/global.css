@@ -24,7 +24,8 @@ html {
   width: 100%;
   max-width: 780px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 2rem;
+  padding-top: 3rem;
   font-size: 14px;
 }
 

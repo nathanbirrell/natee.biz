@@ -22,7 +22,7 @@ const COMPANY_ICONS = [
   },
   {
     label: "Bureau of Meteorology Australia",
-    icon: "https://play-lh.googleusercontent.com/fnC21Kh-cDG5u1h0vOXv5bFECWHOX2pjkcl_N4zCB3ZrmvNGKDE_LNex9vTBHPSlHz_1=w240-h480-rw",
+    icon: "https://www.flightsafetyaustralia.com/wp-content/uploads/2023/02/Bureau_Brandmark_Blue_RGB.png",
     href: "https://www.bom.gov.au/",
   },
 ];
@@ -44,12 +44,20 @@ const COMPANY_ICONS = [
 <style>
   .companies {
     display: grid;
-    grid-template-columns: repeat(5, [col-start] 1fr);
     gap: 1rem;
     align-items: center;
+
+    @media (min-width: 375px) {
+      grid-template-columns: repeat(3, [col-start] 1fr);
+    }
+
+    @media (min-width: 767px) {
+      grid-template-columns: repeat(6, [col-start] 1fr);
+    }
   }
   .companies > * {
-    max-width: 6rem;
-    /* max-height: 2rem; */
+    @media (min-width: 375px) {
+      max-width: 6rem;
+    }
   }
 </style>
