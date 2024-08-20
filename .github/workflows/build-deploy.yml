@@ -8,6 +8,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
+env:
+  CLOUDFARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFARE_ANALYTICS_TOKEN }}
+
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
@@ -17,6 +20,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -38,4 +43,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}

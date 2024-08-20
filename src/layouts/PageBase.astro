@@ -12,6 +12,8 @@ const {
   description = SITE_DESCRIPTION,
   heroImage,
 } = Astro.props;
+
+console.log({ ANALYTICS_TOKEN: import.meta.env.CLOUDFARE_ANALYTICS_TOKEN });
 ---
 
 <html lang="en">
@@ -41,5 +43,15 @@ const {
       </article>
     </main>
     <Footer />
+
+    {
+      import.meta.env.PROD && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={`{"token": "${import.meta.env.CLOUDFARE_ANALYTICS_TOKEN}"}`}
+        />
+      )
+    }
   </body>
 </html>
