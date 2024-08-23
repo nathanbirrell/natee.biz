@@ -1,40 +1,86 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from "@unpic/astro";
+// import { Image } from "astro:assets";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PageBase from "../../layouts/PageBase.astro";
 import { parsePhotosWithExif } from "../../helpers/parse-photo-exif";
+import { getCollection } from "astro:content";
+import type { ImageMetadata } from "astro";
+import { parse } from "date-fns/parse";
 
-const photos = await parsePhotosWithExif(
-  import.meta.glob<{ default: ImageMetadata }>(
-    "/src/content/photos/*.{jpeg,jpg,png,gif}"
-  )
-);
+// const photos = await parsePhotosWithExif(
+//   import.meta.glob<{ default: ImageMetadata }>(
+//     "/src/content/photos/*.{jpeg,jpg,png,gif}"
+//   )
+// );
+
+const photos = (await getCollection("photos"))
+  // .sort((a, b) => a.data.created_at.valueOf() - b.data.created_at.valueOf())
+  .sort((a, b) => a.data.realFilename - b.data.realFilename)
+  .filter((image) => !!image.data.imageMetadata);
 
 const title = "My Photos";
 const description = "My photos.";
-const pubDate = new Date("2024-04-01");
+const pubDate = new Date();
 ---
 
 <PageBase {...{ title, description, pubDate }}>
   <section class="photos">
     <div>
       {
-        photos.map((photo) => (
-          <div class="photo-wrapper">
-            <figure class="photo">
-              <div class="photo-image">
-                <Image src={photo.loadImage()} alt="" />
-              </div>
+        photos.map((photo) => {
+          const metadata = photo.data.imageMetadata!;
 
-              <figcaption>
-                {photo.pubDate && (
-                  <p class="photo-name">
-                    <FormattedDate date={photo.pubDate} />
-                  </p>
-                )}
+          const ratioNumber = metadata.width / metadata.height;
+          const width =
+            metadata.height >= metadata.width ? "auto" : `${metadata.width}px`;
+          const height = width === "auto" ? `${metadata.height}px` : "auto";
 
-                <span class="photo-info">
-                  <p>
+          // filename == date YYYY-MM-DD
+          const date = parse(
+            photo.data.realFilename,
+            "yyyy-MM-dd-HH-mm-ss",
+            new Date()
+          );
+
+          return (
+            <div class="photo-wrapper">
+              <figure class="photo">
+                <div class="photo-image">
+                  {/* A fixed div wrapper to allow the placeholder blur to work */}
+                  <div
+                    style={{
+                      aspectRatio: `${ratioNumber}`,
+                      width,
+                      height,
+                      maxHeight: "90vh",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    {/* https://unpic.pics/img/astro */}
+                    {/* width={750}
+                  height={0} */}
+                    <Image
+                      src={metadata.src}
+                      width={750}
+                      height={0}
+                      alt={photo.data.title}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                      }}
+                    />
+
+                    <figcaption>
+                      {photo.data.created_at && (
+                        <p class="photo-name">
+                          <FormattedDate date={date} />
+                        </p>
+                      )}
+
+                      <span class="photo-info">
+                        <p>todo</p>
+                        {/* <p>
                     {photo.exif.make} {photo.exif.model}{" "}
                     <span
                       title={`${photo.exif.lensFocalLengthEquivalent}mm (Film Equivalent Focal Length)`}
@@ -43,32 +89,22 @@ const pubDate = new Date("2024-04-01");
                     </span>{" "}
                     {photo.exif.aperture} {photo.exif.shutter} ISO{" "}
                     {photo.exif.iso}
-                  </p>
-                </span>
-              </figcaption>
-            </figure>
-          </div>
-        ))
+                  </p> */}
+                      </span>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          );
+        })
       }
     </div>
   </section>
 </PageBase>
 
 <style>
-  /* TODO bring photo only styles here */
-  img {
-    height: initial;
-    width: initial;
-    max-height: 90vh;
-  }
-
   /* Photos :) */
-
-  .photo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   figure.photo {
     margin: 2rem 0;
@@ -88,10 +124,8 @@ const pubDate = new Date("2024-04-01");
 
   .photo-image {
     padding-top: 0.25rem;
-  }
-
-  .photo img {
-    max-height: 90vh;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 767px) {

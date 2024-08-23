@@ -1,8 +1,8 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-
-import tailwind from "@astrojs/tailwind";
+import { imageService } from "@unpic/astro/service";
+// import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,4 +14,16 @@ export default defineConfig({
     // TODO: add tailwind if needed
     // tailwind(),
   ],
+  image: {
+    domains: ["storyblok.com"],
+
+    service: imageService({
+      fallbackService: "storyblok",
+      // https://unpic.pics/img/astro/#placeholders
+      placeholder: "blurhash",
+    }),
+  },
+  experimental: {
+    contentLayer: true,
+  },
 });
