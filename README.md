@@ -1,3 +1,5 @@
+# natee.biz
+
 My personal website, built with:
 
 - [Typescript](https://www.typescriptlang.org/), [Astro](https://astro.build/), [MDX](https://mdxjs.com/docs/what-is-mdx)
