@@ -1,45 +1,41 @@
 ---
 // icon names are from https://github.com/onemarc/tech-icons/tree/main/icons
+const getImageUrl = (technology: string) =>
+  `https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/${technology.toLowerCase()}.svg`;
+const getImageV2Url = (technology: string) =>
+  `https://raw.githubusercontent.com/onemarc/tech-icons/main/icons%232/${technology.toLowerCase()}.svg`;
 
 const FRONTEND_ICONS = [
-  {
-    label: "Typescript",
-    icon: "typescript",
-  },
-  { label: "React", icon: "react-dark" },
-  { label: "Vite", icon: "vitejs" },
-  { label: "Vitest", icon: "vitest" },
-  { label: "NextJS", icon: "nextjs-dark" },
-  { label: "CSS3", icon: "css" },
-  { label: "Playwright", icon: "playwright-dark" },
-  { label: "Storybook", icon: "storybook" },
-  { label: "Github Actions", icon: "githubactions-dark" },
-  { label: "Git", icon: "git" },
-];
-const BACKEND_ICONS = [
-  {
-    label: "Typescript",
-    icon: "typescript",
-  },
-  { label: "Node", icon: "node" },
-  { label: "NextAuth", icon: "graphql" },
-  { label: "Jest", icon: "jestjs" },
-  { label: "AWS", icon: "aws" },
-  { label: "DynamoDB", icon: "dynamodb-dark" },
-  { label: "Docker", icon: "docker-dark" },
-  { label: "Prisma", icon: "prisma-dark" },
-  { label: "Express", icon: "expressjs-dark" },
-  { label: "NextAuth", icon: "nextauthjs-dark" },
-];
-const DESIRABLE_ICONS = [
-  { label: "tRPC", icon: "trpc-dark" },
-  { label: "Ruby", icon: "ruby-dark" },
-  { label: "Vercel", icon: "vercel-dark" },
-  { label: "Go", icon: "go-dark" },
+  { label: "Typescript", icon: getImageUrl("typescript") },
+  { label: "React", icon: getImageUrl("react-dark") },
+  { label: "Vite", icon: getImageUrl("vitejs") },
+  { label: "Vitest", icon: getImageUrl("vitest") },
+  { label: "NextJS", icon: getImageUrl("nextjs-dark") },
+  { label: "CSS3", icon: getImageUrl("css") },
+  { label: "Playwright", icon: getImageUrl("playwright-dark") },
+  { label: "Storybook", icon: getImageUrl("storybook") },
+  { label: "Github Actions", icon: getImageUrl("githubactions-dark") },
+  { label: "Git", icon: getImageUrl("git") },
 ];
 
-const getImageUrl = (technology: (typeof FRONTEND_ICONS)[0]["label"]) =>
-  `https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/${technology.toLowerCase()}.svg`;
+const BACKEND_ICONS = [
+  { label: "Typescript", icon: getImageUrl("typescript") },
+  { label: "Node", icon: getImageUrl("node") },
+  { label: "NextAuth", icon: getImageUrl("graphql") },
+  { label: "Jest", icon: getImageUrl("jestjs") },
+  { label: "AWS", icon: getImageV2Url("aws") },
+  { label: "DynamoDB", icon: getImageUrl("dynamodb-dark") },
+  { label: "Docker", icon: getImageUrl("docker-dark") },
+  { label: "Prisma", icon: getImageUrl("prisma-dark") },
+  { label: "Express", icon: getImageUrl("expressjs-dark") },
+  { label: "NextAuth", icon: getImageUrl("nextauthjs-dark") },
+];
+const DESIRABLE_ICONS = [
+  { label: "tRPC", icon: getImageUrl("trpc-dark") },
+  { label: "Ruby", icon: getImageUrl("ruby-dark") },
+  { label: "Vercel", icon: getImageUrl("vercel-dark") },
+  { label: "Go", icon: getImageUrl("go-dark") },
+];
 ---
 
 <h3>On the front-end</h3>
@@ -48,7 +44,7 @@ const getImageUrl = (technology: (typeof FRONTEND_ICONS)[0]["label"]) =>
   {
     FRONTEND_ICONS.map(({ label, icon }) => (
       <div>
-        <img title={label} src={getImageUrl(icon)} />
+        <img title={label} src={icon} />
         <small>{label}</small>
       </div>
     ))
@@ -61,7 +57,7 @@ const getImageUrl = (technology: (typeof FRONTEND_ICONS)[0]["label"]) =>
   {
     BACKEND_ICONS.map(({ label, icon }) => (
       <div>
-        <img title={label} src={getImageUrl(icon)} />
+        <img title={label} src={icon} />
         <small>{label}</small>
       </div>
     ))
