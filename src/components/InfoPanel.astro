@@ -1,0 +1,129 @@
+---
+import packageJson from "../../package.json";
+// Not using pubDate because this is the date my site was last updated
+const updatedDate = new Date();
+
+const websiteCarbonResponse = await fetch(
+  "https://api.websitecarbon.com/site?url=https%3A%2F%2Fwww.natee.biz%2F&green=1"
+);
+const websiteCarbon = await websiteCarbonResponse.json();
+const gramsPerView = (
+  websiteCarbon.statistics.co2.renewable.grams * 100
+).toFixed(2);
+const lastChecked = new Date(0);
+lastChecked.setUTCSeconds(websiteCarbon.timestamp);
+---
+
+<table class="header w-full">
+  <tbody>
+    <tr>
+      <td colspan="2" rowspan="4" class="width-auto">
+        <h1 class="title">Nathan Birrell</h1>
+        <span class="subtitle">Software Engineer</span>
+      </td>
+      <th>Today</th>
+      <td class="width-min"><span id="today-date">—</span></td>
+    </tr>
+    <tr>
+      <th title="Atmospheric Carbon Dioxide" colspan="2">
+        Atmospheric CO<sub>2</sub>
+      </th>
+    </tr>
+    <tr>
+      <th title="Atmospheric Carbon Dioxide">Born</th>
+      <td class="width-min">357ppm</td>
+    </tr>
+    <tr>
+      <th title="Atmospheric Carbon Dioxide">Today</th>
+      <!-- TODO: fetch from https://datahub.io/core/co2-ppm#r -->
+      <td class="width-min"><span id="today-co2">—</span></td>
+    </tr>
+    <tr>
+      <th class="width-min">Pages</th>
+      <td class="width-auto">
+        <a href="/">Home</a>
+        <a href="/resume">Resume</a>
+        <a href="/projects">Projects</a>
+        <a href="/photos">Photos</a>
+      </td>
+      <th class="width-min">Links</th>
+      <td class="width-min">
+        <a href="https://github.com/nathanbirrell">Github</a>
+        <a href="http://linkedin.com/in/nathanbirrell">Linkedin</a>
+      </td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td>🇮🇹 Bologna, Italy</td>
+      <!-- TODO -->
+      <th>Weather</th>
+      <td class="width-min"> 30ºC </td>
+    </tr>
+    <tr>
+      <th rowspan="2">Website Info</th>
+      <td rowspan="2">
+        <span
+          title={`${websiteCarbon.rating} Carbon Rating — Last Checked ${lastChecked.toLocaleString("en-GB")}`}
+        >
+          {gramsPerView}g of CO<sub>2</sub> per pageview (<a
+            href="https://www.websitecarbon.com/website/natee-biz/"
+            target="_blank">info</a
+          >)
+        </span>
+        <br />
+        <br />
+        <p>
+          Built with: <a href="https://astro.build/">Astro</a>,
+          <a href="https://www.typescriptlang.org/">Typescript</a>,
+          <a href="https://owickstrom.github.io/the-monospace-web/">
+            Monospace Web
+          </a>
+        </p>
+        <p>
+          Inspiration from:
+          <a href="https://benhoyt.com/writings/the-small-web-is-beautiful/">
+            Ben Hoyt
+          </a>,
+          <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">
+            Berkeley Graphics
+          </a>,
+          <a href="https://x.com/usgraphics"> US Graphics Company </a>,
+          <a href="https://wonger.dev/posts/monospace-dump">wonger.dev</a>
+        </p>
+      </td>
+      <th>Version</th>
+      <td class="width-min">v{packageJson.version}</td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td class="width-min">
+        <time title={updatedDate.toISOString()}>
+          {updatedDate.toISOString().split("T")[0]}
+        </time>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<style is:global>
+  header nav {
+    /* display: none !important; */
+  }
+</style>
+
+<script type="module">
+  const todayDateElement = document.getElementById("today-date");
+  const todayCo2Element = document.getElementById("today-co2");
+
+  const todayDate = new Date();
+  // TODO: make this a <time> semantic HTML element
+  todayDateElement.innerText = todayDate.toLocaleDateString(
+    "en-gb"
+    // {
+    //   year: "numeric",
+    //   month: "long",
+    //   day: "numeric",
+    //   weekday: "long",
+    // }
+  );
+</script>

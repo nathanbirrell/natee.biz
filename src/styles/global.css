@@ -3,6 +3,25 @@ html {
   justify-content: center;
 }
 
+body {
+  padding-top: 3rem;
+  position: initial;
+}
+
+* + * {
+  margin-top: initial;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.grow {
+  flex-grow: 1;
+}
+
 @media (prefers-color-scheme: dark) {
   :root .markdown-body {
     --color-canvas-default: #222222;
@@ -19,7 +38,7 @@ html {
   }
 }
 
-.markdown-body {
+/* .markdown-body {
   box-sizing: border-box;
   width: 100%;
   max-width: 780px;
@@ -27,7 +46,7 @@ html {
   padding: 2rem;
   padding-top: 3rem;
   font-size: 14px;
-}
+} */
 
 .markdown-body .header h3 {
   margin-bottom: 0;
@@ -52,25 +71,6 @@ html {
 
 .profile ol {
   margin-bottom: 0;
-}
-
-/* Heading href tags */
-
-.header-anchor {
-  display: none;
-}
-
-h2:hover .header-anchor,
-h3:hover .header-anchor {
-  display: inline-block;
-}
-
-@media (min-width: 767px) {
-  .header-anchor {
-    position: absolute;
-    margin-left: -1.5rem;
-    padding-right: 1.5rem;
-  }
 }
 
 @media (min-width: 767px) {

@@ -29,15 +29,15 @@ importers:
       exifreader:
         specifier: ^4.22.1
         version: 4.22.1
-      github-markdown-css:
-        specifier: ^5.5.1
-        version: 5.5.1
       sharp:
         specifier: ^0.33.3
         version: 0.33.3
       tailwindcss:
         specifier: ^3.4.7
         version: 3.4.7
+      the-monospace-web:
+        specifier: github:owickstrom/the-monospace-web
+        version: https://codeload.github.com/owickstrom/the-monospace-web/tar.gz/90df20cd6a06a5bb59d5120a94de73515fc4a55a
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -1121,10 +1121,6 @@ packages:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
 
-  github-markdown-css@5.5.1:
-    resolution: {integrity: sha512-2osyhNgFt7DEHnGHbgIifWawAqlc68gjJiGwO1xNw/S48jivj8kVaocsVkyJqUi3fm7fdYIDi4C6yOtcqR/aEQ==}
-    engines: {node: '>=10'}
-
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
 
@@ -2015,6 +2011,10 @@ packages:
     resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
+
+  the-monospace-web@https://codeload.github.com/owickstrom/the-monospace-web/tar.gz/90df20cd6a06a5bb59d5120a94de73515fc4a55a:
+    resolution: {tarball: https://codeload.github.com/owickstrom/the-monospace-web/tar.gz/90df20cd6a06a5bb59d5120a94de73515fc4a55a}
+    version: 0.0.0
 
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -3497,8 +3497,6 @@ snapshots:
 
   get-stream@8.0.1: {}
 
-  github-markdown-css@5.5.1: {}
-
   github-slugger@2.0.0: {}
 
   glob-parent@5.1.2:
@@ -4799,6 +4797,8 @@ snapshots:
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
+
+  the-monospace-web@https://codeload.github.com/owickstrom/the-monospace-web/tar.gz/90df20cd6a06a5bb59d5120a94de73515fc4a55a: {}
 
   thenify-all@1.6.0:
     dependencies:

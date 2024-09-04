@@ -13,7 +13,7 @@ const {
   heroImage,
 } = Astro.props;
 
-console.log({ ANALYTICS_TOKEN: import.meta.env.CLOUDFARE_ANALYTICS_TOKEN });
+const pubDate = new Date(Astro.props.pubDate);
 ---
 
 <html lang="en">
@@ -22,7 +22,7 @@ console.log({ ANALYTICS_TOKEN: import.meta.env.CLOUDFARE_ANALYTICS_TOKEN });
   </head>
 
   <body class="markdown-body">
-    <Header />
+    <Header pubDate={pubDate} />
     <main>
       <article>
         <div class="hero-image">

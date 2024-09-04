@@ -56,7 +56,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   </head>
 
   <body class="markdown-body">
-    <Header />
+    <Header pubDate={pubDate} />
     <main>
       <article>
         <div class="hero-image">
