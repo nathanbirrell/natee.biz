@@ -1,40 +1,43 @@
 ---
 // icon names are from https://github.com/onemarc/tech-icons/tree/main/icons
 const getImageUrl = (technology: string) =>
-  `https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/${technology.toLowerCase()}.svg`;
-const getImageV2Url = (technology: string) =>
-  `https://raw.githubusercontent.com/onemarc/tech-icons/main/icons%232/${technology.toLowerCase()}.svg`;
+  `https://icon.icepanel.io/Technology/svg/${technology}.svg`;
 
 const FRONTEND_ICONS = [
-  { label: "Typescript", icon: getImageUrl("typescript") },
-  { label: "React", icon: getImageUrl("react-dark") },
-  { label: "Vite", icon: getImageUrl("vitejs") },
-  { label: "Vitest", icon: getImageUrl("vitest") },
-  { label: "NextJS", icon: getImageUrl("nextjs-dark") },
-  { label: "CSS3", icon: getImageUrl("css") },
-  { label: "Playwright", icon: getImageUrl("playwright-dark") },
-  { label: "Storybook", icon: getImageUrl("storybook") },
-  { label: "Github Actions", icon: getImageUrl("githubactions-dark") },
-  { label: "Git", icon: getImageUrl("git") },
+  { label: "Typescript", icon: getImageUrl("TypeScript") },
+  { label: "React", icon: getImageUrl("React") },
+  { label: "Vite", icon: getImageUrl("Vite.js") },
+  { label: "Vitest", icon: getImageUrl("Vite.js") },
+  { label: "NextJS", icon: getImageUrl("Next.js") },
+  { label: "CSS3", icon: getImageUrl("CSS3") },
+  { label: "Playwright", icon: getImageUrl("Playwrite") },
+  { label: "Storybook", icon: getImageUrl("Storybook") },
+  { label: "Astro", icon: getImageUrl("Astro") },
+  { label: "Github Actions", icon: getImageUrl("GitHub-Actions") },
+  { label: "Git", icon: getImageUrl("Git") },
 ];
 
 const BACKEND_ICONS = [
-  { label: "Typescript", icon: getImageUrl("typescript") },
-  { label: "Node", icon: getImageUrl("node") },
-  { label: "NextAuth", icon: getImageUrl("graphql") },
-  { label: "Jest", icon: getImageUrl("jestjs") },
-  { label: "AWS", icon: getImageV2Url("aws") },
-  { label: "DynamoDB", icon: getImageUrl("dynamodb-dark") },
-  { label: "Docker", icon: getImageUrl("docker-dark") },
-  { label: "Prisma", icon: getImageUrl("prisma-dark") },
-  { label: "Express", icon: getImageUrl("expressjs-dark") },
-  { label: "NextAuth", icon: getImageUrl("nextauthjs-dark") },
+  { label: "Typescript", icon: getImageUrl("TypeScript") },
+  { label: "Node", icon: getImageUrl("Node.js") },
+  { label: "Graphql", icon: getImageUrl("GraphQL") },
+  { label: "Jest", icon: getImageUrl("Jest") },
+  { label: "Lambda", icon: getImageUrl("AWS") },
+  { label: "DynamoDB", icon: getImageUrl("AWS") },
+  { label: "Docker", icon: getImageUrl("Docker") },
+  { label: "Prisma", icon: getImageUrl("Node.js") },
+  { label: "Kafka", icon: getImageUrl("Apache-Kafka") },
+  { label: "OpenAPI", icon: getImageUrl("OpenAPI") },
+  { label: "Fastify", icon: getImageUrl("Fastify") },
+  { label: "Express", icon: getImageUrl("Express") },
+  { label: "Vercel", icon: getImageUrl("Vercel") },
+  // { label: "NextAuth", icon: getImageUrl("Nextauthjs") },
 ];
 const DESIRABLE_ICONS = [
-  { label: "tRPC", icon: getImageUrl("trpc-dark") },
-  { label: "Ruby", icon: getImageUrl("ruby-dark") },
-  { label: "Vercel", icon: getImageUrl("vercel-dark") },
-  { label: "Go", icon: getImageUrl("go-dark") },
+  { label: "tRPC", icon: getImageUrl("Trpc") },
+  { label: "Ruby", icon: getImageUrl("Ruby") },
+  { label: "Vercel", icon: getImageUrl("Vercel") },
+  { label: "Go", icon: getImageUrl("Go") },
 ];
 ---
 
